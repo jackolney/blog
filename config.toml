@@ -36,8 +36,8 @@ pygmentsstyle = "monokai"
 
 
   [params.palette]
-        primary = "deep-orange"
-        accent  = "light-blue"
+        primary = "red"
+        accent  = "deep-red"
 
   [params.font]
         text = "Avenir Next"

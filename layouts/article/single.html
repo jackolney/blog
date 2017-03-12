@@ -28,30 +28,30 @@
 			<h1>{{ .Title }} {{ if .IsDraft }} (Draft){{ end }}</h1>
 			<!-- date below title -->
 			<div>
-				{{ .Date.Format "Mon, Jan 2, 2006" }}
-				{{ if not (eq .Lastmod .Date) }}
-					Last Modified: {{ .Lastmod.Format "Jan 2, 2006" }}
-				{{ end }}
-				<br>
-				<!-- show tags and categories -->
-				{{ if isset .Params "categories" }}
-				{{ if not (eq (len .Params.categories) 0) }}
-				  {{ range .Params.categories }}
-				  Category: <a href="{{ $.Site.BaseURL }}categories/{{ . | urlize }}">{{ . }}</a>
-				  {{ end }}
-				{{ end }}
-				{{ end }}
+				<subtitle>
+					{{ .Date.Format "Mon, Jan 2, 2006" }}
+					{{ if not (eq .Lastmod .Date) }}
+						Last Modified: {{ .Lastmod.Format "Jan 2, 2006" }}
+					{{ end }}
+					<br>
+					<!-- show tags and categories -->
+					{{ if isset .Params "categories" }}
+					{{ if not (eq (len .Params.categories) 0) }}
+					  {{ range .Params.categories }}
+					  Category: <a href="{{ $.Site.BaseURL }}categories/{{ . | urlize }}">{{ . }}</a>
+					  {{ end }}
+					{{ end }}
+					{{ end }}
 
-				{{ if isset .Params "tags" }}
-				{{ if not (eq (len .Params.tags) 0) }}
-					Tags:
-					{{ range .Params.tags }}
-					  <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">[{{ . }}]</a>
-				  {{ end }}
-				{{ end }}
-				{{ end }}
-
-
+					{{ if isset .Params "tags" }}
+					{{ if not (eq (len .Params.tags) 0) }}
+						Tags:
+						{{ range .Params.tags }}
+						  <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">[{{ . }}]</a>
+					  {{ end }}
+					{{ end }}
+					{{ end }}
+				</subtitle>
 			</div>
 
 			{{ .Content }}
