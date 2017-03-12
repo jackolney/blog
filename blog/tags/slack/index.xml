@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slack on Jack Olney</title>
+    <link>https://jackolney.github.io/blog/tags/slack/index.xml</link>
+    <description>Recent content in Slack on Jack Olney</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://jackolney.github.io/blog/tags/slack/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hubot - a Siri to call my own</title>
+      <link>https://jackolney.github.io/blog/post/2016-01-09-hubot/</link>
+      <pubDate>Sat, 09 Jan 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/post/2016-01-09-hubot/</guid>
+      <description>
+
+&lt;p&gt;I have always been interested in how these &lt;em&gt;automated&lt;/em&gt; personal assistants: Siri, Google Now, Cortana etc. actually function. Aside from the speech recognition algorithms, the meaning of the sentence spoken to these programs must be deciphered and then acted upon pretty quickly. &amp;lsquo;Trigger&amp;rsquo; words are clearly important here e.g. &amp;ldquo;give me &lt;strong&gt;directions&lt;/strong&gt; to&amp;hellip;&amp;rdquo; but the breadth of words that a computer must understand in order to appear &lt;em&gt;human&lt;/em&gt; is simply vast.&lt;/p&gt;
+
+&lt;p&gt;Recently, I have been getting pretty into &lt;a href=&#34;https://slack.com/&#34;&gt;Slack&lt;/a&gt; and stumbled across this bot developed by the guys at &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt; called hubot. Hubot, is a &lt;em&gt;robot&lt;/em&gt; who you talk to and give commands through a chat-interface, such as slack! Hubot can be setup to run locally, or pushed to an online application hosting service such as &lt;a href=&#34;https://dashboard.heroku.com/&#34;&gt;Heroku&lt;/a&gt;. The great thing about hubot is that it is completely open source and can be expanded by writing simple &lt;a href=&#34;http://coffeescript.org/&#34;&gt;CoffeeScripts&lt;/a&gt; (simplified JavaScript). Here I will explain the basic installation and setup of Hubot, before writing basic scripts that can be executed.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;../../images/hubot/hubot.jpg&#34; alt=&#34;hubot&#34; style=&#34;width: 300px;&#34;/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;getting-started-with-hubot&#34;&gt;Getting Started With Hubot&lt;/h2&gt;
+
+&lt;p&gt;First things first, install &lt;a href=&#34;https://nodejs.org/en/&#34;&gt;nodejs&lt;/a&gt; and the nodejs package manager &lt;a href=&#34;https://www.npmjs.com/&#34;&gt;npm&lt;/a&gt;. The best way to install these is through &lt;a href=&#34;http://brew.sh/&#34;&gt;HomeBrew&lt;/a&gt;, possiblity the greatest package manager for OS X.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;brew install nodejs
+brew install npm
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;With nodejs and npm installed, we can pull down and install hubot. Running the below command will pull down a hubot installer and run a whole bunch of system tests to ensure that the local system can run a bot.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;npm install -g yo generator-hubot
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now we need to create a directory to hold our bot.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;mkdir my-hubot-directory
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;cd&lt;/span&gt; ./my-hubot-directory
+yo hubot
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, our new hubot will ask a whole bunch of setup questions about who it is and what its purpose is. The best thing to do next is to turn this directory into a git repository so we can track changes, and lets face it, everything should be under version control and pushed to GitHub.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;git init
+git add --all
+git commit -m &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;initial commit&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Here is where the fun starts.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;./bin/hubot
+hello
+&lt;span style=&#34;color: #75715e&#34;&gt;# Well hello there, &amp;lt;name&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;How cool is that!!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;custom-scripts&#34;&gt;Custom Scripts&lt;/h2&gt;
+
+&lt;p&gt;The great thing about hubot is that it is infinitely customizable and dead easy to write new scripts. To begin, as is tradition, lets create a &lt;em&gt;&amp;lsquo;Hello, World!&amp;rsquo;&lt;/em&gt; script. Within the &lt;code&gt;./scripts&lt;/code&gt; directory create a file called &lt;code&gt;hello.coffee&lt;/code&gt; with &lt;code&gt;touch&lt;/code&gt; or a similar function. Edit the file and include the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;# Description:&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;#   Greet the world&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# Commands:&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;#   hubot greet - Say hello to the world&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;module.exports = &lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;(robot) -&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;robot&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;respond&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;greet&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;i&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;(msg) -&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color: #a6e22e&#34;&gt;msg&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;send&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Hello, World!&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Restart hubot (&lt;code&gt;./bin/hubot&lt;/code&gt;) and try the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;hubot &lt;span style=&#34;color: #f8f8f2&#34;&gt;help&lt;/span&gt; greet
+&lt;span style=&#34;color: #75715e&#34;&gt;# hubot greet - Say hello to the world&lt;/span&gt;
+hubot greet
+&lt;span style=&#34;color: #75715e&#34;&gt;# Hello, World!&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;For more information on scripts, check out &lt;a href=&#34;https://leanpub.com/automation-and-monitoring-with-hubot/&#34;&gt;Automation and Monitoring with Hubot&lt;/a&gt; by &lt;a href=&#34;https://github.com/spajus&#34;&gt;Tomas Varaneckas&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;remote-bot-hosting&#34;&gt;Remote Bot Hosting&lt;/h2&gt;
+
+&lt;p&gt;So far, I have only discussed implementing hubot locally, but in reality, we don&amp;rsquo;t want to be running our own machine the whole time, we want the bot to be hosted somewhere remotely and interfaced through a chat client like &lt;a href=&#34;https://slack.com/&#34;&gt;slack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;heroku&#34;&gt;Heroku&lt;/h3&gt;
+
+&lt;p&gt;Introducing, &lt;a href=&#34;https://heroku.com/&#34;&gt;Heroku&lt;/a&gt;, the Cloud platform company, that allows you to create, deploy, and manage web applications. What we are going to do is to &amp;lsquo;host&amp;rsquo; our hubot instance on a heroku server so that the bot is always running. Luckily, Heroku has a free tier so this also doesn&amp;rsquo;t cost a penny!&lt;/p&gt;
+
+&lt;p&gt;But, before we deploy to Heroku we need to install some software in the form of the &lt;a href=&#34;https://toolbelt.heroku.com/&#34;&gt;Heroku Toolbelt&lt;/a&gt;. This will allow us to talk to Heroku&amp;rsquo;s servers from the command line of our local machine.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;heroku create my-own-slackbot
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This will create an application on heroku&amp;rsquo;s servers (you may need to alter the name to be unique). With a skeleton application created, we can access the heroku &lt;a href=&#34;https://dashboard.heroku.com/&#34;&gt;dashboard&lt;/a&gt; to find our app&amp;rsquo;s URL and use it to set a config flag in our hubots directory:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;heroku config:add &lt;span style=&#34;color: #f8f8f2&#34;&gt;HEROKU_URL&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;https://my-own-slackbot.herokuapp.com
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;slack-integration&#34;&gt;Slack Integration&lt;/h3&gt;
+
+&lt;p&gt;Now, we need to add a &lt;a href=&#34;http://my.slack.com/services/new/hubot&#34;&gt;hubot &amp;lsquo;integration&amp;rsquo; in slack&lt;/a&gt;. This will generate a &amp;lsquo;SLACK_TOKEN&amp;rsquo; which can be added as a config flag:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;heroku config:add &lt;span style=&#34;color: #f8f8f2&#34;&gt;HUBOT_SLACK_TOKEN&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;abcd-1234-5678-91011-12e4fg
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;deploy&#34;&gt;Deploy&lt;/h3&gt;
+
+&lt;p&gt;The most amazing, and logical, aspect of all of this, is that deployment to Heroku is done entirely through &lt;a href=&#34;https://git-scm.com/&#34;&gt;git&lt;/a&gt;. When we &amp;lsquo;create&amp;rsquo; our heroku app locally, it sets up a remote repository which we can &amp;lsquo;push&amp;rsquo; changes to.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;git remote -v
+&lt;span style=&#34;color: #75715e&#34;&gt;# heroku  https://git.heroku.com/my-own-slackbot.git (fetch)&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# heroku  https://git.heroku.com/my-own-slackbot.git (push)&lt;/span&gt;
+
+git push heroku master
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;That&amp;rsquo;s it! Now, if we login to slack we should see that our very own hubot is online and ready to play. Yes, I called my bot &lt;em&gt;&amp;lsquo;hal&amp;rsquo;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;../../images/hubot/hal.jpg&#34; alt=&#34;hal&#34; style=&#34;width: 350px;&#34;/&gt;&lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

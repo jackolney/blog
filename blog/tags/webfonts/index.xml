@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webfonts on Jack Olney</title>
+    <link>https://jackolney.github.io/blog/tags/webfonts/index.xml</link>
+    <description>Recent content in Webfonts on Jack Olney</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://jackolney.github.io/blog/tags/webfonts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Webfonts in ggplot2</title>
+      <link>https://jackolney.github.io/blog/post/2016-08-15-ggplot2-font/</link>
+      <pubDate>Mon, 15 Aug 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/post/2016-08-15-ggplot2-font/</guid>
+      <description>
+
+&lt;p&gt;Thanks to Hadley&amp;rsquo;s &lt;a href=&#34;https://github.com/hadley/ggplot2&#34;&gt;ggplot2 package&lt;/a&gt;, we are no longer confined to base graphics plots in &lt;a href=&#34;https://www.r-project.org/&#34;&gt;R&lt;/a&gt;. However, by default all fonts are generated using the &amp;lsquo;Helvetica&amp;rsquo; family. Now this is a great sans serif font, as evidenced by the fact that it is use literally everywhere in everything.&lt;/p&gt;
+
+&lt;p&gt;But now that we have these incredible graphical capabilities, and the ability to produce &lt;a href=&#34;http://fivethirtyeight.com/features/our-47-weirdest-charts-from-2015/&#34;&gt;FiveThirtyEight&lt;/a&gt; quality figures, we should really explore how to enhance our plots further with the use of better fonts.&lt;/p&gt;
+
+&lt;p&gt;The gold-standard library for web developer fonts is &lt;a href=&#34;https://fonts.google.com/&#34;&gt;Google Fonts&lt;/a&gt;. Designed for the web, these can be imported into any page and used to style the content. Unfortunately, as R users we have been confined for a while to using Winston Chang&amp;rsquo;s &lt;a href=&#34;https://github.com/wch/extrafont&#34;&gt;extrafont&lt;/a&gt; package to pull in any TrueType fonts from our local machine and use them to style our figures. While this works pretty well, for anyone with more than a few dozens fonts, the process of importing fonts becomes pretty tedious.&lt;/p&gt;
+
+&lt;h2 id=&#34;showtext&#34;&gt;showtext&lt;/h2&gt;
+
+&lt;p&gt;After spending some time trawling the web for a better solution, I stumbled across a github package by Yixuan Qiu called &lt;a href=&#34;https://github.com/yixuan/showtext&#34;&gt;showtext&lt;/a&gt;. This neat little package allows users to install fonts directly from Google&amp;rsquo;s Font library with a single line of code. The result is plots that look like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;../../images/fonts.jpg&#34; alt=&#34;fonts&#34; style=&#34;width: 800px;&#34;/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;I used the following source code to generate the figure above. All credit to Yixuan Qiu&amp;rsquo;s &lt;a href=&#34;https://github.com/yixuan/showtext&#34;&gt;showtext&lt;/a&gt; package for this.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;    &lt;span style=&#34;color: #75715e&#34;&gt;# Install the package direct from GitHub with devtools&lt;/span&gt;
+    devtools&lt;span style=&#34;color: #f92672&#34;&gt;::&lt;/span&gt;install_github&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;yixuan/showtext&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Load up the package&lt;/span&gt;
+    &lt;span style=&#34;color: #f92672&#34;&gt;require&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;showtext&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #f92672&#34;&gt;require&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;ggplot2&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Download a wefont&lt;/span&gt;
+    font.add.google&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;name &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Indie Flower&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; family &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Indie Flower&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; regular.wt &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;400&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; bold.wt &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;700&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# name = the name of the font in Google&amp;#39;s Library (https://fonts.google.com)&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# family = how you want to refer to the font inside R&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# regular.wt = the weight of font used in axis, labels etc.&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# bolt.wt = the weight of font used in the title&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Perhaps the only tricky bit is remembering to run the following function to enable webfonts&lt;/span&gt;
+    showtext.auto&lt;span style=&#34;color: #f8f8f2&#34;&gt;()&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Generate some random numbers&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;set.seed&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;123&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    x &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; rnorm&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1000&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    y &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; rnorm&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1000&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; mean &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Throw them into a data.frame&lt;/span&gt;
+    dat &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;data.frame&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;x&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; y&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Put together out plot&lt;/span&gt;
+    ggOut &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; ggplot&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;dat&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; aes&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;x &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; x&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; y &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; y&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+    ggOut &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; ggOut &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt; geom_point&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;alpha &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0.5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; col &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;red&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    ggOut &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; ggOut &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt; ggtitle&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;An example plot&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; subtitle &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Aren&amp;#39;t these fonts great?&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    ggOut &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; ggOut &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt; theme&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;text &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; element_text&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;family &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Indie Flower&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+    ggOut
+&lt;/pre&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
