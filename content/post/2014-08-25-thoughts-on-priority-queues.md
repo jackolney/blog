@@ -11,9 +11,9 @@ Taking comfort in the fact that I am sure that nobody will read this site except
 ### Original plan for the model.
 The model starts by creating an "individual". This individual has a set of basic characteristics: gender, age, natural death date etc. The individual is then exposed to an annual hazard of developing HIV. If the individual is unfortunate enough to contract HIV, they have the opportunity to enter HIV care and eventually receive treatment. The way the model handles events occurring through time is by a clever little thing called a priority queue. A priority queue can be thought of as an ordered list that as reshuffles as objects are inserted depending on a set of rules. This can be as basic as the priority queue shown below:
 
-{% highlight C++ %}
+```C++
   priority_queue<int, vector<int>, greater<int> > testQ;
-{% endhighlight %}
+```
 
 A priority queue can have objects "pushed" into it that are then ordered according to the compare parameter, which in this case is shown by <code> greater&lt;int&gt; </code>. This means that every object that enters the priority queue, called "testQ" in this instance, is evaluated and placed in order. The current setup shown above orders the integers in the queue from largest to smallest. The "top" of the queue contains the smallest value. There are some cool member functions associated with priority queues. For instance, <code>testQ.push()</code> takes an arguement of the integer that we wish to push into the queue. While, <code>testQ.top()</code> will show us the value at the top of the queue (smallest). <code> testQ.pop()</code> is another useful function that has the effect of "popping" off the top of the queue and removing it. This is particular useful for me as I want to setup a priority queue that I can pass a list of dates to. I want the queue to order the dates with the smallest date, or date closest to the current date, being at the top of the queue. That will allow me to feed my model dates of any size and for it to quickly order them chronologically so I can effectively walk through them "popping" them off as I go.
 
@@ -24,11 +24,11 @@ I currently use something similar to above, in that I pass dates to the queue an
 ### Future setup.
 Looking back at this, while it is simple, it is slightly crude to be checking the top of the priority queue against a "flag". What would be much neater would be to create a <code>class event</code> which has the attributes of <code>time</code> and a function pointer. This would allow me to "push" a time and function into the queue. When an event comes to the top of the queue, I will be able to access a time and a pointer to the appropriate function.
 
-{% highlight C++ %}
+```C++
 class eventClass {
   double time;
   void (*ptr_fun)();
 };
 
 priority_queue<eventClass, vector<eventClass>, timeComparison > testQ;
-{% endhighlight %}
+```

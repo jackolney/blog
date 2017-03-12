@@ -1,6 +1,7 @@
 ---
-date: 2016-06-18T00:11:02+01:00
-title: About Me
+date: "2016-06-18T00:11:02+01:00"
+title: "About Me"
+hidden: true
 weight: 10
 type: [index,page]
 ---

@@ -17,7 +17,7 @@ The first thing to do is it to export the relevant data from 'HealthKit' as a cs
 
 ## Data Cleaning
 
-{% highlight r %}
+```R
 # Set the working directory to the folder containing the exported .csv
 setwd("~/")
 
@@ -29,11 +29,11 @@ require(ggplot2)
 # The data I am importing was exported from my iPhone on 4th September, 2015
 MyCsvData <- read.csv("./HealthData/HealthData_04-09-15.csv")
 MyCsvDataHourly <- read.csv("./HealthData/HealthDataHourly_04-09-15.csv")
-{% endhighlight %}
+```
 
 Probably the most time consuming aspect of any data analysis is cleaning and correctly formatting the data. Here, we must ensure that R can understand the exported date format correctly. To rectify this we define a function `FormatData()` which takes the entire dataframe as an arguement and returns a dataframe containing the correct date format.
 
-{% highlight r %}
+```R
 FormatData <- function(Data) {
 
     # Define the 'Start' and 'End' columns.
@@ -113,20 +113,22 @@ FormatData <- function(Data) {
 # Applying this to our dataset
 DailyData <- FormatData(MyCsvData)
 HourlyData <- FormatData(MyCsvDataHourly)
-{% endhighlight %}
+```
 
 # Analysis
 We first produce a plot of steps against time, with some additional stratification in the form of heart rate using the following script and our hourly dataset (for greater resolution).
-{% highlight r %}
+
+```R
 ggplot(HourlyData, aes(x = StartDate, y = Steps)) +
 geom_point(aes(size = HeartRate, alpha = Steps), col = "Blue") +
 theme_classic()
-{% endhighlight %}
+```
+
 ![Steps-HeartRate](../../images/apple-watch-health/Steps-HeartRate-1.png)
 
 The first thing we see is a considerable amount of 0-step hours in the data. This is because I sleep for about 6 hours per night, or perhaps may have not worn my watch that day. In any case, it is advisable to remove these zero values. However, it is nice to see the colour that including my heart rate from May 2015 adds to the plot. The large points in the upper right of the figure are likely from periods of exercise (as will be discussed later).
 
-{% highlight r %}
+```R
 # Cutting the crap
 NonZero <- filter(HourlyData,Steps != 0)
 
@@ -134,7 +136,8 @@ NonZero <- filter(HourlyData,Steps != 0)
 ggplot(NonZero, aes(x = StartDate, y = Steps)) +
 geom_point(aes(size = HeartRate, alpha = Steps), col = "Blue") +
 theme_classic()
-{% endhighlight %}
+```
+
 ![Steps-HeartRate](../../images/apple-watch-health/Steps-HeartRate-2.png)
 
 That's better! Right, now some for simple regression analysis.
@@ -143,17 +146,19 @@ That's better! Right, now some for simple regression analysis.
 > ___"Irrespective of workouts, has the Apple Watch increased the number of steps I walk each day?"___
 
 To answer this question, we are going to build a simple regression model; but first, we must add a new column informing the data of whether I owned the watch on a particular day.
-{% highlight r %}
+
+```R
 # Cut the zero-step data from the dataset (as before)
 theData <- filter(DailyData,Steps != 0)
 
 # 3rd of May 2015 was the day I bought my Apple Watch
 # Add a column with '1' if date >= 3rd of May 2015, else '0'
 theData <- mutate(theData, Watch = ifelse(StartDate >= "2015-05-03",1,0))
-{% endhighlight %}
+```
 
 If we a create a simple linear model model with 'Steps' as the dependent variable (the outcome whose variation is being studied), and 'Watch' as the independent variable (input or potential reason for variation).
-{% highlight r %}
+
+```R
 fit1 <- lm(Steps ~ Watch, data = theData)
 summary(fit1)
 
@@ -174,14 +179,13 @@ summary(fit1)
 # Residual standard error: 3637 on 339 degrees of freedom
 # Multiple R-squared:  0.04383,   Adjusted R-squared:  0.04101
 # F-statistic: 15.54 on 1 and 339 DF,  p-value: 9.819e-05
-
-{% endhighlight %}
+```
 
 From this simple model, we see that prior to buying the watch, I walked an average of 5,328 steps per day (the intercept of the model); yes, not very many steps. However, after buying the watch, I walked an average of 1,611 _more_ steps per day -- great!
 
 Although the R-squared value, the coefficient of determination, (or in english, how close the data fit to the model), is only 4%. This means that the presence of the watch only explains 4% of the variation in my daily steps. This is because we have yet to control for other factors, such as the day of the week, or whether I was exercising at the time. The model is saying that the presence of the watch in my life is not the sole reason for my movement. However, the value of R-squared should always be taken with a pinch of salt. There is inherent randomness in my daily steps and it would be near impossible to control for all additional covariates. As the F-statistic shows a statistically significant relationship (p < 0.05), we accept that the watch has improved my fitness level. Checks of the residuals increase our confidence in the findings.
 
-{% highlight r %}
+```R
 ggplot(theData, aes(x = StartDate, y = Steps)) +
 geom_point(aes(col = as.factor(Watch)), alpha = 1) +
 theme_classic() +
@@ -191,7 +195,8 @@ labs(title = paste("Linear Regression of presence of Apple Watch against daily a
     " Slope =",signif(fit1$coef[[2]], 5),
     " P =",signif(summary(fit1)$coef[2,4], 5))
 )
-{% endhighlight %}
+```
+
 ![Regression](../../images/apple-watch-health/LinearRegression.png)
 
 # An Aside

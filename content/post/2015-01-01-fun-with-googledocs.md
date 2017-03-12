@@ -11,7 +11,7 @@ I wanted to document some code for accessing documents (only spreadsheets at the
 ### Getting started.
 The R code is fairly self explanatory but involves two little tricks to get it to work: (1) manipulating the GoogleDocs URL to export the document as a csv and (2) changes the privilages on the document such that anyone with the link can edit (done under sharing).
 
-{% highlight r %}
+```R
 # Set working directory.
 setwd("[yourWorkingDirectory]")
 
@@ -38,5 +38,4 @@ print(testCsv)
 flush.console()
 
 # SUCCESS!
-
-{% endhighlight %}
+```

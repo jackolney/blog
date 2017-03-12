@@ -1,71 +1,54 @@
-baseurl = "https://example.org/"
+# Site settings
+baseurl = "https://jackolney.github.io/blog"
+themesDir = "themes"
 languageCode = "en-us"
 title = "Jack Olney"
-theme = "material-theme"
-metadataformat = "yaml"
-canonifyurls = true
-# Enable Google Analytics by entering your tracking id
+theme = "hugo-cactus-theme"
+# Enter your tracking code to enable Google Analytics
 googleAnalytics = "UA-71752366-1"
-pygmentsuseclasses = true
+# Disable comments by leaving disqusShortname empty
+disqusShortname = "jackolney"
 PygmentsCodeFences = true
-pygmentsstyle = "monokai"
 
 [params]
-    # General information
-    author = "Jack Olney"
-    description = "Blog about science and technology"
-    copyright = "Jack Olney"
-    DisqusShortname = "jackolney"
+  name = "Jack Olney"
+  description = "blogging about science and technology"
+  bio = "Science - Technology - Cars"
+  # Enter optionally your twitter account
+  twitter = "OlneyJack"
+  enableRSS = true
 
-    # Repository
-    provider = "github"
-    repo_url = "https://github.com/JesseZhuang/hugo-material-blog"
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  customCSS = []
+  customJS  = []
 
-    version = ""
-    logo = "../images/avatar.png"
-    favicon = ""
+  # The variables below are optionally too and can be used to
+  # translate or customize each string of the theme.
 
-    permalink = "#"
+  # Navigation links
+  home = ""
+  about = "About me"
+  subscribe = ""
+  # Pagination links
+  olderPosts = ""
+  newerPosts = ""
+  readMore = "More..."
+  copyright = ""
+  # Sharing options and author information in posts
+  aboutAuthor = "Please let me know what you think"
+  tweet = ""
+  share = ""
+  # 404 page
+  title404 = ""
+  subtitle404 = ""
 
-    # Custom assets
-    custom_css = []
-    custom_js  = ["https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"]
+  # Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
+  iconFont = "font-awesome"
+  # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
+  socialIconStyle = "circle"
 
-    # Syntax highlighting theme
-    # highlight_css  = ""
-
-
-  [params.palette]
-        primary = "red"
-        accent  = "deep-red"
-
-  [params.font]
-        text = "Avenir Next"
-        code = "Ubuntu Mono"
-
-
+# Add additional social link entries underneath
 [social]
-    twitter = "OlneyJack"
-    github  = "jackolney"
-
-
-[[menu.main]]
-    name   = "Homepage"
-    url    = "/"
-    weight = 0
-
-[[menu.main]]
-    name   = "About Me"
-    url    = "page/about-me"
-    weight = 10
-
-[[menu.main]]
-    name     = "RSS feed"
-    url    = "index.xml"
-    weight = 20
-
-[blackfriday]
-    smartypants = true
-    fractions = true
-    smartDashes = true
-    plainIDAnchors = true
+    twitter  = "https://www.twitter.com/OlneyJack"
+    github   = "https://www.github.com/jackolney"
