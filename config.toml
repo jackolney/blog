@@ -22,7 +22,7 @@ pygmentsstyle = "monokai"
     repo_url = "https://github.com/JesseZhuang/hugo-material-blog"
 
     version = ""
-    logo = "images/avatar.png"
+    logo = "../images/avatar.png"
     favicon = ""
 
     permalink = "#"

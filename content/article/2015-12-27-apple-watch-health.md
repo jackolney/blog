@@ -122,7 +122,7 @@ ggplot(HourlyData, aes(x = StartDate, y = Steps)) +
 geom_point(aes(size = HeartRate, alpha = Steps), col = "Blue") +
 theme_classic()
 {% endhighlight %}
-![Steps-HeartRate](/assets/images/apple-watch-health/Steps-HeartRate-1.png)
+![Steps-HeartRate](../../images/apple-watch-health/Steps-HeartRate-1.png)
 
 The first thing we see is a considerable amount of 0-step hours in the data. This is because I sleep for about 6 hours per night, or perhaps may have not worn my watch that day. In any case, it is advisable to remove these zero values. However, it is nice to see the colour that including my heart rate from May 2015 adds to the plot. The large points in the upper right of the figure are likely from periods of exercise (as will be discussed later).
 
@@ -135,7 +135,7 @@ ggplot(NonZero, aes(x = StartDate, y = Steps)) +
 geom_point(aes(size = HeartRate, alpha = Steps), col = "Blue") +
 theme_classic()
 {% endhighlight %}
-![Steps-HeartRate](/assets/images/apple-watch-health/Steps-HeartRate-2.png)
+![Steps-HeartRate](../../images/apple-watch-health/Steps-HeartRate-2.png)
 
 That's better! Right, now some for simple regression analysis.
 
@@ -192,9 +192,9 @@ labs(title = paste("Linear Regression of presence of Apple Watch against daily a
     " P =",signif(summary(fit1)$coef[2,4], 5))
 )
 {% endhighlight %}
-![Regression](/assets/images/apple-watch-health/LinearRegression.png)
+![Regression](../../images/apple-watch-health/LinearRegression.png)
 
 # An Aside
 As a quick end to this post, I wanted to see what my hourly heart rate looked like over time. Additionally, I was keen to see whether my heart rate ever drops below 40bpm (bradycardia) or above 120bpm (tachycardia). As we see from the figure below, my heart rate doesn't drop below 40bpm and only rarely steps about 120bpm. It should be noted that the outliers ~200bpm are from periods of exercise. As I collect more data, and exercise more, I would hope to look for a downward trend in my heart rate as my maximum heart rate when exercising declines, indicating increased fitness, one would hope.
 
-![Heart-Rate](/assets/images/apple-watch-health/Heart-Rate.png)
+![Heart-Rate](../../images/apple-watch-health/Heart-Rate.png)

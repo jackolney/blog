@@ -16,7 +16,7 @@ The gold-standard library for web developer fonts is [Google Fonts](https://font
 
 After spending some time trawling the web for a better solution, I stumbled across a github package by Yixuan Qiu called [showtext](https://github.com/yixuan/showtext). This neat little package allows users to install fonts directly from Google's Font library with a single line of code. The result is plots that look like this:
 
-<center><img src="/assets/images/fonts.jpg" alt="fonts" style="width: 800px;"/></center>
+<center><img src="../../images/fonts.jpg" alt="fonts" style="width: 800px;"/></center>
 
 I used the following source code to generate the figure above. All credit to Yixuan Qiu's [showtext](https://github.com/yixuan/showtext) package for this.
 
