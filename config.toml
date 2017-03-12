@@ -6,7 +6,7 @@ metadataformat = "yaml"
 canonifyurls = true
 # Enable Google Analytics by entering your tracking id
 googleAnalytics = "UA-71752366-1"
-pygmentsuseclasses = false
+pygmentsuseclasses = true
 PygmentsCodeFences = true
 pygmentsstyle = "monokai"
 
@@ -63,7 +63,6 @@ pygmentsstyle = "monokai"
     name     = "RSS feed"
     url    = "index.xml"
     weight = 20
-
 
 [blackfriday]
     smartypants = true
