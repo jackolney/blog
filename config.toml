@@ -1,11 +1,11 @@
 baseurl = "https://example.org/"
 languageCode = "en-us"
-title = "Jack's Blog"
+title = "Jack Olney"
 theme = "material-theme"
 metadataformat = "yaml"
 canonifyurls = true
 # Enable Google Analytics by entering your tracking id
-googleAnalytics = ""
+googleAnalytics = "UA-71752366-1"
 pygmentsuseclasses = false
 PygmentsCodeFences = true
 pygmentsstyle = "monokai"
@@ -13,16 +13,16 @@ pygmentsstyle = "monokai"
 [params]
     # General information
     author = "Jack Olney"
-    description = "A material design theme for hugo blogs."
+    description = "Blog about science and technology"
     copyright = "Jack Olney"
-    DisqusShortname = ""
+    DisqusShortname = "jackolney"
 
     # Repository
     provider = "github"
     repo_url = "https://github.com/JesseZhuang/hugo-material-blog"
 
-    version = "1.0.0"
-    logo = "images/logo.jpg"
+    version = ""
+    logo = "images/avatar.png"
     favicon = ""
 
     permalink = "#"
@@ -40,14 +40,13 @@ pygmentsstyle = "monokai"
         accent  = "light-blue"
 
   [params.font]
-        text = "Ubuntu"
+        text = "Avenir Next"
         code = "Ubuntu Mono"
 
 
 [social]
-    twitter = "zhzexi"
-    github  = "jessezhuang"
-  linkedin = ""
+    twitter = "OlneyJack"
+    github  = "jackolney"
 
 
 [[menu.main]]

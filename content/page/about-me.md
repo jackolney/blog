@@ -5,20 +5,24 @@ weight: 10
 type: [index,page]
 ---
 
-### Hello People, My Name is
+### Hello my name is
 
-## Zexi Jesse Zhuang,
+## Jack Olney
 
-## a Developer and Learner.
+I'm [Jack](http://www.imperial.ac.uk/people/jack.olney11), a researcher at Imperial College London, where I work for the [HIV Modelling Consortium](http://www.hivmodelling.org/). My research focuses on improving patient outcomes through strengthening HIV care programmes in sub-Saharan Africa. I recently finished my PhD thesis entitled ["Understanding How Health Systems Providing ART in sub-Saharan Africa Can Generate Even Greater Health Benefits for Their Communities"](https://drive.google.com/file/d/0B02uVauBTUwhaU1vSXQzSE9OV0k/preview), click the title to view the thesis in its entirety.
 
-I currently live near Seattle, WA. I love web, mobile, and open source software development. I strive to find simple working solutions to complete tasks or goals and explain the algorithms and solutions concisely.
+Aside from my research, I am also interested in computers, engineering and music. I have a particular fondness for cars and aeroplanes, also guitars and rock music, and most Apple products.
 
-Outside of coding, I love lifting, hiking, and badminton.
+Feel free to contact me on any of the details found below.
 
-## Why Coding Automaton?
+<jack.olney@me.com>
 
-The first time I learned about Automaton was in [Robert Sedgewick](https://www.cs.princeton.edu/~rs/)'s Algorithms class. In [Knuth Morris Pratt](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)'s' substring search algorithm, a crucial step was to build the [deterministic finite state automaton (DFA)](https://en.wikipedia.org/wiki/Deterministic_finite_automaton), which automatically tells about the next skip in substring search as the algorithm walks along the text to search for the pattern. As a programmer, one's primary goal might be to generate automatic tools/products to simplify complicated jobs for other people and himself/herself. In this sense, I would like to get more proficient in coding as I write articles/tutorials and I hope my readers could benefit from the content as well.
+[Github](https://github.com/jackolney)
 
-## The DRY Principle
+[Twitter](https://twitter.com/OlneyJack)
 
-In software engineering, [don't repeat yourself (DRY)](https://en.wikipedia.org/wiki/Don't_repeat_yourself) is a principle aimed at reducing repetition of information of all kinds. I aim to write original contents here that are not easily found by googling. One other comprehension of the word automaton is to let the machine do the boring repeating tasks and free us humans for challenging and creative accomplishments. Whatever brings you here, I hope this blog can make it easier for you and myself to achieve our goals.
+[Google+](https://plus.google.com/+JackOlneyLondon)
+
+[LinkedIn](https://www.linkedin.com/pub/jack-olney/53/615/417)
+
+[Link to CV](https://drive.google.com/file/d/0B02uVauBTUwhMXhNa1h0MzBrd2M/preview)
