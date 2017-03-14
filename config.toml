@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://jackolney.github.io/blog"
+baseurl = "https://jackolney.github.io/blog/"
 themesDir = "themes"
 languageCode = "en-us"
 title = "Jack Olney"
