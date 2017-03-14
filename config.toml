@@ -3,7 +3,7 @@ baseurl = "https://jackolney.github.io/blog"
 themesDir = "themes"
 languageCode = "en-us"
 title = "Jack Olney"
-theme = "hugo-cactus-theme"
+theme = "cactus-theme"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = "UA-71752366-1"
 # Disable comments by leaving disqusShortname empty
