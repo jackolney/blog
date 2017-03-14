@@ -1,6 +1,7 @@
 # Site settings
 baseurl = "https://jackolney.github.io/blog/"
 themesDir = "themes"
+canonifyurls = true
 languageCode = "en-us"
 title = "Jack Olney"
 theme = "cactus-theme"
