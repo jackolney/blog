@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Jack Olney</title>
+    <link>https://jackolney.github.io/blog/post/index.xml</link>
+    <description>Recent content in Posts on Jack Olney</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Feb 2017 09:41:00 +0000</lastBuildDate>
+    <atom:link href="https://jackolney.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CROI 2017</title>
+      <link>https://jackolney.github.io/blog/post/2017-02-21-croi/</link>
+      <pubDate>Tue, 21 Feb 2017 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/post/2017-02-21-croi/</guid>
+      <description>&lt;p&gt;For the second year in a row, I was invited to speak at the annual &lt;a href=&#34;http://www.croiconference.org/&#34;&gt;Conference on Retroviruses and Opportunistic Infections (CROI)&lt;/a&gt;. This year the conference was held in one of my favourite cities, Seattle.&lt;/p&gt;
+
+&lt;p&gt;I spoke about my new web-based modelling tool that enables countries to enter data on their HIV care programmes, estimate the achievement of the &lt;a href=&#34;http://www.unaids.org/en/resources/documents/2014/90-90-90&#34;&gt;UNAIDS 90-90-90&lt;/a&gt; and prioritise strategies to achieve these goals by the target date of 2020.&lt;/p&gt;
+
+&lt;p&gt;The link to my tool is here: &lt;a href=&#34;https://jackolney.shinyapps.io/CascadeDashboard/&#34;&gt;jackolney.shinyapps.io/CascadeDashboard/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The project is hosted on GitHub: &lt;a href=&#34;https://jackolney.github.io/CascadeDashboard/&#34;&gt;jackolney.github.io/CascadeDashboard/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Below is a video of my talk:&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;600&#34; src=&#34;http://www.croiwebcasts.org/console/player/33591?mediaType=slideVideo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Writing a PhD Thesis</title>
+      <link>https://jackolney.github.io/blog/post/2016-11-17-thesis/</link>
+      <pubDate>Thu, 17 Nov 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/post/2016-11-17-thesis/</guid>
+      <description>
+
+&lt;p&gt;Right from the start of my PhD, I was keen to avoid leaving the &amp;ldquo;writing up&amp;rdquo; stage until the last moment. After hearing stories from other students of 24-hour stints in the library and solid weekends spent slaving over their theses in the final months, I figured there must be another way. Sometime during my second year, I devised a plan for writing the thesis:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;h3 id=&#34;for-the-final-year-of-my-phd-i-was-going-to-wake-up-an-hour-earlier-than-usual-and-before-doing-anything-else-write-for-a-solid-couple-of-hours&#34;&gt;For the final year of my PhD I was going to wake up an hour earlier than usual, and before doing anything else, write for a solid couple of hours&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I figured that if I was aiming to submit my thesis in October I had about 10 months, or 40 weeks in order to make a substantial dent in the thesis before having to switch to writing full-time. Excluding weekends, 40 weeks of an hour a day works out at 200 hours.&lt;/p&gt;
+
+&lt;p&gt;To make life even easier, I had also formed some concrete decisions on how I was going to write the thesis. Firstly, it had to be in LaTeX. Secondly, I was going to host my thesis in a private github repository for piece of mind. Lastly, I would identify and adapt a LaTeX thesis template before starting writing so that I had a framework to build upon.&lt;/p&gt;
+
+&lt;h2 id=&#34;outcome&#34;&gt;Outcome&lt;/h2&gt;
+
+&lt;p&gt;I used the great &lt;a href=&#34;http://dissertate.io/&#34;&gt;Dissertate&lt;/a&gt; template by Jordan Suchow, and adapted it to include fancyheaders and to conform with the Imperial College Registry requirements, and also to follow the Imperial College colour scheme.&lt;/p&gt;
+
+&lt;p&gt;After months of work, and very early mornings, I can finally say that this method of writing was a huge success! I wrote the majority of my thesis in the early hours of the morning, baring a month and a half at the end of solid writing. But, in sacrificing an hour of sleep each morning meant that I could write my thesis and not spend every evening and weekend working &amp;ndash; I had time to enjoy life.&lt;/p&gt;
+
+&lt;p&gt;Rather than talk about it, check out the commit history for my thesis repo. Slow steady progress throughout and then a short sharp spike of productivity at the end.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;../../images/thesis/commits.png&#34; alt=&#34;commits&#34; style=&#34;width: 60%;&#34;/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Better yet, check out my punchcard as it evolved over time. You can see how my writing hours accumulate at the begining of the day before exploding across the entire day towards the end of the thesis.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;../../images/thesis/thesis-punchcard.gif&#34; alt=&#34;punchcard&#34; style=&#34;width: 100%;&#34;/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;The code for generating this gif is available &lt;a href=&#34;https://gist.github.com/jackolney/fa824e01e07983d7c978d74dde842bc7&#34;&gt;here&lt;/a&gt;, and I make use of the &lt;a href=&#34;https://github.com/guanqun/git-punchcard-plot&#34;&gt;git-punchcard-plot&lt;/a&gt; tool written by Guanqun Lu.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Webfonts in ggplot2</title>
+      <link>https://jackolney.github.io/blog/post/2016-08-15-ggplot2-font/</link>
+      <pubDate>Mon, 15 Aug 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/post/2016-08-15-ggplot2-font/</guid>
+      <description>
+
+&lt;p&gt;Thanks to Hadley&amp;rsquo;s &lt;a href=&#34;https://github.com/hadley/ggplot2&#34;&gt;ggplot2 package&lt;/a&gt;, we are no longer confined to base graphics plots in &lt;a href=&#34;https://www.r-project.org/&#34;&gt;R&lt;/a&gt;. However, by default all fonts are generated using the &amp;lsquo;Helvetica&amp;rsquo; family. Now this is a great sans serif font, as evidenced by the fact that it is use literally everywhere in everything.&lt;/p&gt;
+
+&lt;p&gt;But now that we have these incredible graphical capabilities, and the ability to produce &lt;a href=&#34;http://fivethirtyeight.com/features/our-47-weirdest-charts-from-2015/&#34;&gt;FiveThirtyEight&lt;/a&gt; quality figures, we should really explore how to enhance our plots further with the use of better fonts.&lt;/p&gt;
+
+&lt;p&gt;The gold-standard library for web developer fonts is &lt;a href=&#34;https://fonts.google.com/&#34;&gt;Google Fonts&lt;/a&gt;. Designed for the web, these can be imported into any page and used to style the content. Unfortunately, as R users we have been confined for a while to using Winston Chang&amp;rsquo;s &lt;a href=&#34;https://github.com/wch/extrafont&#34;&gt;extrafont&lt;/a&gt; package to pull in any TrueType fonts from our local machine and use them to style our figures. While this works pretty well, for anyone with more than a few dozens fonts, the process of importing fonts becomes pretty tedious.&lt;/p&gt;
+
+&lt;h2 id=&#34;showtext&#34;&gt;showtext&lt;/h2&gt;
+
+&lt;p&gt;After spending some time trawling the web for a better solution, I stumbled across a github package by Yixuan Qiu called &lt;a href=&#34;https://github.com/yixuan/showtext&#34;&gt;showtext&lt;/a&gt;. This neat little package allows users to install fonts directly from Google&amp;rsquo;s Font library with a single line of code. The result is plots that look like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;../../images/fonts.jpg&#34; alt=&#34;fonts&#34; style=&#34;width: 800px;&#34;/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;I used the following source code to generate the figure above. All credit to Yixuan Qiu&amp;rsquo;s &lt;a href=&#34;https://github.com/yixuan/showtext&#34;&gt;showtext&lt;/a&gt; package for this.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;    &lt;span style=&#34;color: #75715e&#34;&gt;# Install the package direct from GitHub with devtools&lt;/span&gt;
+    devtools&lt;span style=&#34;color: #f92672&#34;&gt;::&lt;/span&gt;install_github&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;yixuan/showtext&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Load up the package&lt;/span&gt;
+    &lt;span style=&#34;color: #f92672&#34;&gt;require&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;showtext&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #f92672&#34;&gt;require&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;ggplot2&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Download a wefont&lt;/span&gt;
+    font.add.google&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;name &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Indie Flower&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; family &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Indie Flower&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; regular.wt &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;400&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; bold.wt &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;700&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# name = the name of the font in Google&amp;#39;s Library (https://fonts.google.com)&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# family = how you want to refer to the font inside R&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# regular.wt = the weight of font used in axis, labels etc.&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# bolt.wt = the weight of font used in the title&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Perhaps the only tricky bit is remembering to run the following function to enable webfonts&lt;/span&gt;
+    showtext.auto&lt;span style=&#34;color: #f8f8f2&#34;&gt;()&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Generate some random numbers&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;set.seed&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;123&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    x &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; rnorm&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1000&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    y &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; rnorm&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1000&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; mean &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Throw them into a data.frame&lt;/span&gt;
+    dat &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;data.frame&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;x&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; y&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Put together out plot&lt;/span&gt;
+    ggOut &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; ggplot&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;dat&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; aes&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;x &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; x&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; y &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; y&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+    ggOut &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; ggOut &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt; geom_point&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;alpha &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0.5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; col &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;red&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    ggOut &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; ggOut &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt; ggtitle&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;An example plot&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; subtitle &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Aren&amp;#39;t these fonts great?&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    ggOut &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; ggOut &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt; theme&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;text &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; element_text&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;family &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Indie Flower&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+    ggOut
+&lt;/pre&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SACEMA Quarterly</title>
+      <link>https://jackolney.github.io/blog/post/2016-06-21-sacema/</link>
+      <pubDate>Tue, 21 Jun 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/post/2016-06-21-sacema/</guid>
+      <description>&lt;p&gt;I just wanted to post a quick link to an article I was invited to write for SACEMA Quarterly on the current deficiencies in publicly available data for analysis of the HIV Care Cascade. This short article focuses on how countries can improve and consolidate data collection practices to focus on bolstering care to achieve the &lt;a href=&#34;http://www.unaids.org/en/resources/documents/2014/90-90-90&#34;&gt;UNAIDS 90-90-90&lt;/a&gt; targets by 2020.&lt;/p&gt;
+
+&lt;p&gt;Check out the article &lt;a href=&#34;http://sacemaquarterly.com/hiv-treatment/future-needs-characterising-care-cascade.html&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shiny Progress Bars</title>
+      <link>https://jackolney.github.io/blog/post/2016-04-01-shiny/</link>
+      <pubDate>Fri, 01 Apr 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/post/2016-04-01-shiny/</guid>
+      <description>
+
+&lt;p&gt;Lately, I have been working on developing a friendly shiny app around a mathematical model to enable non-modellers to get to grips with the model, play around and perhaps learn something too. This has really been as much about teaching myself Shiny as it has been about enabling others to interact with models.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://shiny.rstudio.com/&#34;&gt;Shiny&lt;/a&gt;, is great package being developed by a handful of developers at RStudio, and it enables anyone to wrap their R code in an HTML front-end that will run on any computer with &lt;a href=&#34;https://www.r-project.org/&#34;&gt;R&lt;/a&gt; installed, and perhaps most importantly, run on &lt;em&gt;any&lt;/em&gt; computer if deployed to a Linux server running &lt;a href=&#34;https://www.rstudio.com/products/shiny/shiny-server2/&#34;&gt;ShinyServer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;One of the things I have been trying to do with my Shiny app (which has yet to reveal itself), is to include progress bars to enable the user to visualise the progress of some background process. There is a great progress bar function in the &lt;a href=&#34;http://shiny.rstudio.com/&#34;&gt;Shiny&lt;/a&gt; package called &lt;a href=&#34;http://shiny.rstudio.com/articles/progress.html&#34;&gt;withProgress&lt;/a&gt;. This allows the user to relatively pull together a progress bar that spans the width of the screen and can include a little message on the top right.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;server &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;input&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; output&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    output&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;myplot &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; renderPlot&lt;span style=&#34;color: #f8f8f2&#34;&gt;({&lt;/span&gt;
+
+        &lt;span style=&#34;color: #75715e&#34;&gt;# The detail to be captured by the progress bar should be contained within this function and its braces&lt;/span&gt;
+        withProgress&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;message &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;Creating plot&amp;#39;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; value &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+
+            &lt;span style=&#34;color: #75715e&#34;&gt;# Create an empty data.frame&lt;/span&gt;
+            dat &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;data.frame&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;x &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;numeric&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt; y &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;numeric&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+
+            &lt;span style=&#34;color: #66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;i &lt;span style=&#34;color: #66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+                &lt;span style=&#34;color: #75715e&#34;&gt;# Add to it&lt;/span&gt;
+                dat &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;rbind&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;dat&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;data.frame&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;x &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; rnorm&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt; y &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; rnorm&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)))&lt;/span&gt;
+
+                &lt;span style=&#34;color: #75715e&#34;&gt;# Incremental Progress Bar (add some more info if neccessary)&lt;/span&gt;
+                incProgress&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;n&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; detail &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;paste0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;i&lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;n&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;%&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+
+                &lt;span style=&#34;color: #75715e&#34;&gt;# Pause&lt;/span&gt;
+                &lt;span style=&#34;color: #66d9ef&#34;&gt;Sys.sleep&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;0.1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+            &lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color: #f8f8f2&#34;&gt;})&lt;/span&gt;
+
+        plot&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;dat&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;x&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; dat&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;y&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;})&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+
+ui &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; shinyUI&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;basicPage&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;plotOutput&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;myplot&amp;#39;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; width &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;300px&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; height &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;300px&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)))&lt;/span&gt;
+
+shinyApp&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;ui &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; ui&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; server &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; server&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This is all great, but in my app, on one particular page, there is a whole model calibration thing going on, and I wanted to be able to relay info on which function was running, whether any errors were encountered, when plots were being generated etc. Having been inspired by the &lt;a href=&#34;https://rstudio.github.io/shinydashboard/&#34;&gt;shinydashboard&lt;/a&gt; package which is based on the incredible &lt;a href=&#34;https://almsaeedstudio.com/preview&#34;&gt;AdminLTE&lt;/a&gt; bootstrap template, I happened across this great script for creating group progress bars on &lt;a href=&#34;https://github.com/rstudio/shinydashboard/issues/119&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;../../images/progress-bars/github-inspiration.png&#34; alt=&#34;AdminLTE Progress Bars in ShinyDashboard&#34; style=&#34;width: 500px;&#34;/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;I decided to try and implement this myself, and figured out, with thanks to &lt;a href=&#34;https://github.com/dmpe&#34;&gt;John Malc&lt;/a&gt;, that I needed to use &lt;a href=&#34;http://shiny.rstudio.com/reference/shiny/latest/renderUI.html&#34;&gt;renderUI&lt;/a&gt; to animate the bars.&lt;/p&gt;
+
+&lt;p&gt;This is my &lt;strong&gt;server.R&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;library&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;shiny&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #f92672&#34;&gt;library&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;shinydashboard&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+prgoressBar &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;value &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; label &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;FALSE&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; color &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;aqua&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; size &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;NULL&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+                        striped &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;FALSE&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; active &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;FALSE&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; vertical &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;FALSE&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;stopifnot&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;is.numeric&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;value&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;value &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;||&lt;/span&gt; value &lt;span style=&#34;color: #f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color: #66d9ef&#34;&gt;stop&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&amp;#39;value&amp;#39; should be in the range from 0 to 100.&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; call. &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;FALSE&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;color &lt;span style=&#34;color: #f92672&#34;&gt;%in%&lt;/span&gt; shinydashboard&lt;span style=&#34;color: #f92672&#34;&gt;:::&lt;/span&gt;validColors &lt;span style=&#34;color: #f92672&#34;&gt;||&lt;/span&gt; color &lt;span style=&#34;color: #f92672&#34;&gt;%in%&lt;/span&gt; shinydashboard&lt;span style=&#34;color: #f92672&#34;&gt;:::&lt;/span&gt;validStatuses&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+        &lt;span style=&#34;color: #66d9ef&#34;&gt;stop&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&amp;#39;color&amp;#39; should be a valid status or color.&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; call. &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;FALSE&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;is.null&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;size&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+        size &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;match.arg&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;size&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;c&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;sm&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;xs&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;xxs&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+    text_value &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;paste0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;value&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;%&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;vertical&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+        style &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; htmltools&lt;span style=&#34;color: #f92672&#34;&gt;::&lt;/span&gt;css&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;height &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; text_value&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;`min-height`&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;2em&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;else&lt;/span&gt;
+        style &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; htmltools&lt;span style=&#34;color: #f92672&#34;&gt;::&lt;/span&gt;css&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;width &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; text_value&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;`min-width`&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;2em&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    tags&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;div&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;
+        class &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;progress&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        class &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;is.null&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;size&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;paste0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;progress-&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; size&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;
+        class &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;vertical&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;vertical&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        class &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;active&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;active&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        tags&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;div&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;
+            class &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;progress-bar&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+            class &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;paste0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;progress-bar-&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; color&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;
+            class &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;striped&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;progress-bar-striped&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+            style &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; style&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+            role &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;progressbar&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color: #e6db74&#34;&gt;`aria-valuenow`&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; value&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color: #e6db74&#34;&gt;`aria-valuemin`&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color: #e6db74&#34;&gt;`aria-valuemax`&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+            tags&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;span&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;class &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;!&lt;/span&gt;label&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;sr-only&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; text_value&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+
+progressGroup &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;text&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; value&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; min &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; max &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; value&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; color &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;aqua&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;stopifnot&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;is.character&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;text&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;stopifnot&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;is.numeric&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;value&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;value &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;&lt;/span&gt; min &lt;span style=&#34;color: #f92672&#34;&gt;||&lt;/span&gt; value &lt;span style=&#34;color: #f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;max&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color: #66d9ef&#34;&gt;stop&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;sprintf&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&amp;#39;value&amp;#39; should be in the range from %d to %d.&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;min&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;max&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt; call. &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;FALSE&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    tags&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;div&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;
+        class &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;progress-group&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        tags&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;span&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;class &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;progress-text&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; text&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;
+        tags&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;span&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;class &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;progress-number&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;sprintf&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;%d / %d&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; value&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;max&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)),&lt;/span&gt;
+        prgoressBar&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;round&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;value &lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt; max &lt;span style=&#34;color: #f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt; color &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; color&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; size &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;sm&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+
+
+shinyServer&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;input&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;output&lt;span style=&#34;color: #f8f8f2&#34;&gt;){&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Create some REACTIVE VALUES&lt;/span&gt;
+    progressValue &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; reactiveValues&lt;span style=&#34;color: #f8f8f2&#34;&gt;()&lt;/span&gt;
+    progressValue&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;one &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;
+    progressValue&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;two &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;
+    progressValue&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;three &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;
+    progressValue&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;four &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Render UI output&lt;/span&gt;
+    output&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;progressOne &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; renderUI&lt;span style=&#34;color: #f8f8f2&#34;&gt;({&lt;/span&gt;
+        progressGroup&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;text &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Sample Parameter Space&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;    value &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; progressValue&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;one&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;   min &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; max &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; color &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;aqua&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;})&lt;/span&gt;
+
+    output&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;progressTwo &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; renderUI&lt;span style=&#34;color: #f8f8f2&#34;&gt;({&lt;/span&gt;
+        progressGroup&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;text &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Evaluate Simulation Error&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; value &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; progressValue&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;two&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;   min &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; max &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; color &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;red&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;})&lt;/span&gt;
+
+    output&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;progressThree &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; renderUI&lt;span style=&#34;color: #f8f8f2&#34;&gt;({&lt;/span&gt;
+        progressGroup&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;text &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Resample top 10%&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;          value &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; progressValue&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;three&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; min &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; max &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; color &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;green&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;})&lt;/span&gt;
+
+    output&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;progressFour &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; renderUI&lt;span style=&#34;color: #f8f8f2&#34;&gt;({&lt;/span&gt;
+        progressGroup&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;text &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Compile Output&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;            value &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; progressValue&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;four&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;  min &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; max &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; color &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;yellow&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;})&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Then on action button, allow bar to move up.&lt;/span&gt;
+    observeEvent&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;input&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;goButton&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+
+        &lt;span style=&#34;color: #66d9ef&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;i &lt;span style=&#34;color: #66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+            progressValue&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;one &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; i
+            progressValue&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;two &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; i
+            progressValue&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;three &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; i
+            progressValue&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;four &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; i
+            &lt;span style=&#34;color: #66d9ef&#34;&gt;Sys.sleep&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;0.1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;})&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;})&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This is my &lt;strong&gt;ui.R&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;library&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;shiny&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #f92672&#34;&gt;library&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;shinydashboard&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+shinyUI&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;
+    dashboardPage&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;
+      dashboardHeader&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;title &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Playground App&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;
+      dashboardSidebar&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;
+            sidebarMenu&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;
+                id &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;sideBar&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+                menuItem&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Progress Bar&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; tabName &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;progress&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; icon &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; icon&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;home&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; class &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;fa-lg fa-fw&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; lib &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;font-awesome&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+            &lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;
+        dashboardBody&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;
+            tabItems&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;
+                tabItem&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;tabName &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;progress&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+                    column&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;width &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;8&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+                        box&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;width &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;NULL&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+                            status &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;primary&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+                            solidHeader &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;TRUE&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+                            collapsible &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;TRUE&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+                            collapsed &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;FALSE&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+                            title &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Calibration&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+                            helpText&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Progress Bar Demo.&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;
+                            p&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;strong&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Goal Completion&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt; class &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;text-center&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;
+                            uiOutput&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;outputId &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;progressOne&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;
+                            uiOutput&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;outputId &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;progressTwo&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;
+                            uiOutput&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;outputId &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;progressThree&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;
+                            uiOutput&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;outputId &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;progressFour&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+                        &lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+                    &lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;
+                    column&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;width &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+                        box&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;width &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;NULL&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+                            status &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;warning&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+                            solidHeader &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;TRUE&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+                            title &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Button&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+                            actionButton&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;goButton&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;HIT ME&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+                        &lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+                    &lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+                &lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+            &lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The above works, if we just use a simple &lt;a href=&#34;http://shiny.rstudio.com/reference/shiny/latest/actionButton.html&#34;&gt;actionButton&lt;/a&gt;, but if I include a loop, then the the progress bars just get &lt;em&gt;grayed out&lt;/em&gt; almost as if the render function can&amp;rsquo;t keep up with the for loop. Luckily, once the loop finishes then the bars update, but they are not of much use beforehand.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-solution&#34;&gt;The Solution&lt;/h3&gt;
+
+&lt;p&gt;I decided, against my better judgement to move away from the group progress bar and rethink my use of &lt;a href=&#34;http://shiny.rstudio.com/articles/progress.html&#34;&gt;withProgress&lt;/a&gt;. In fact, I could make do with this function if I could customise it, so I took the plunge and decided to get my hands dirty with the shiny CSS. After spending some time inspecting the soup of files that are generated and run when a shiny app is active, I located the attributes reponsible for the Shiny Progress Bar. Below are the changes I have made to improve the appearance of the bars.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;/* Make sure the filename doesn&amp;#39;t extend past the bounds of the container */&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;.shiny-input-container&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;input[type=file]&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;overflow&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;hidden;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;max-width&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;100%&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+
+&lt;span style=&#34;color: #a6e22e&#34;&gt;.shiny-progress-container&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;position&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;fixed;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;top&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;width&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;100%&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;z-index&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2000&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+
+&lt;span style=&#34;color: #a6e22e&#34;&gt;.shiny-progress&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;.progress&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;position&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;absolute;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;width&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;100%&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;top&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;/* The default height is only 1px which is find to be TINY */&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;height&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;8px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;margin&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+
+&lt;span style=&#34;color: #a6e22e&#34;&gt;.shiny-progress&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;.bar&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;background-color&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;#FF0000&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;opacity&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;8&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;transition&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;duration&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;250&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;ms;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+
+&lt;span style=&#34;color: #a6e22e&#34;&gt;.shiny-progress&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;.progress-text&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;position&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;absolute;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;right&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;30px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;height&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;30px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;width&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;490px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;background-color&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;#D9534F&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;padding-top&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;padding-right&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;3px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;padding-bottom&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;padding-left&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;3px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;opacity&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;95&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;/* I also wanted to round off the corners of the text box */&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;border&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;radius&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;10px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;webkit&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;border&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;radius&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;10px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;moz&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;border&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;radius&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;10px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+
+&lt;span style=&#34;color: #a6e22e&#34;&gt;.progress-text&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;/* Copy the below to vertically center the progress bar text box in the shiny dashboard header */&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;/* !important is crucial here otherwise it gets overridden by the dreaded element.style */&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;top&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;15px&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;!important&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;color&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;#FFFFFF&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;!important&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;text-align&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;center;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;/* Bold Initial part of message */&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;.shiny-progress&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;.progress-text&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;.progress-message&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;padding-top&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;padding-right&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;3px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;padding-bottom&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;3px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;padding-left&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;10px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;font-weight&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;bold;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;font-size&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;18px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;/* Message detail */&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;.shiny-progress&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;.progress-text&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;.progress-detail&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;padding-top&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;padding-right&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;3px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;padding-bottom&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;3px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;padding-left&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;3px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;font-size&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;17px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;To include this CSS in your Shiny app, you can either write it &lt;a href=&#34;http://shiny.rstudio.com/articles/css.html&#34;&gt;in-line&lt;/a&gt;, but thats a bit naff, so dump it in a .css file and in your &lt;strong&gt;ui.R&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;dashboardPage&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;
+    dashboardBody&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;
+        &lt;span style=&#34;color: #75715e&#34;&gt;# Write the path to your .css file&lt;/span&gt;
+        includeCSS&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;styles.css&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color: #75715e&#34;&gt;# The guts of your app&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;All done, enjoy!&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;images/progress-bars/result.png&#34; alt=&#34;Shiny Progress Bar&#34; style=&#34;width: 1000px;&#34;/&gt;&lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CROI 2016</title>
+      <link>https://jackolney.github.io/blog/post/2016-03-09-croi/</link>
+      <pubDate>Wed, 09 Mar 2016 01:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/post/2016-03-09-croi/</guid>
+      <description>&lt;p&gt;I was recently invited to speak at the annual &lt;a href=&#34;http://www.croiconference.org/&#34;&gt;Conference on Retroviruses and Opportunistic Infections (CROI)&lt;/a&gt;, held this year in Boston. I spoke briefly about some of my work on home-based counselling and testing programmes in western Kenya, particularly with regard to the timing of testing rounds and the scale up of testing programmes to achieve the &lt;a href=&#34;http://www.unaids.org/en/resources/documents/2014/90-90-90&#34;&gt;UNAIDS 90-90-90&lt;/a&gt; targets by 2020.&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;600&#34; src=&#34;http://www.croiwebcasts.org/console/player/29466?mediaType=slideVideo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hubot - a Siri to call my own</title>
+      <link>https://jackolney.github.io/blog/post/2016-01-09-hubot/</link>
+      <pubDate>Sat, 09 Jan 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/post/2016-01-09-hubot/</guid>
+      <description>
+
+&lt;p&gt;I have always been interested in how these &lt;em&gt;automated&lt;/em&gt; personal assistants: Siri, Google Now, Cortana etc. actually function. Aside from the speech recognition algorithms, the meaning of the sentence spoken to these programs must be deciphered and then acted upon pretty quickly. &amp;lsquo;Trigger&amp;rsquo; words are clearly important here e.g. &amp;ldquo;give me &lt;strong&gt;directions&lt;/strong&gt; to&amp;hellip;&amp;rdquo; but the breadth of words that a computer must understand in order to appear &lt;em&gt;human&lt;/em&gt; is simply vast.&lt;/p&gt;
+
+&lt;p&gt;Recently, I have been getting pretty into &lt;a href=&#34;https://slack.com/&#34;&gt;Slack&lt;/a&gt; and stumbled across this bot developed by the guys at &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt; called hubot. Hubot, is a &lt;em&gt;robot&lt;/em&gt; who you talk to and give commands through a chat-interface, such as slack! Hubot can be setup to run locally, or pushed to an online application hosting service such as &lt;a href=&#34;https://dashboard.heroku.com/&#34;&gt;Heroku&lt;/a&gt;. The great thing about hubot is that it is completely open source and can be expanded by writing simple &lt;a href=&#34;http://coffeescript.org/&#34;&gt;CoffeeScripts&lt;/a&gt; (simplified JavaScript). Here I will explain the basic installation and setup of Hubot, before writing basic scripts that can be executed.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;../../images/hubot/hubot.jpg&#34; alt=&#34;hubot&#34; style=&#34;width: 300px;&#34;/&gt;&lt;/center&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;getting-started-with-hubot&#34;&gt;Getting Started With Hubot&lt;/h2&gt;
+
+&lt;p&gt;First things first, install &lt;a href=&#34;https://nodejs.org/en/&#34;&gt;nodejs&lt;/a&gt; and the nodejs package manager &lt;a href=&#34;https://www.npmjs.com/&#34;&gt;npm&lt;/a&gt;. The best way to install these is through &lt;a href=&#34;http://brew.sh/&#34;&gt;HomeBrew&lt;/a&gt;, possiblity the greatest package manager for OS X.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;brew install nodejs
+brew install npm
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;With nodejs and npm installed, we can pull down and install hubot. Running the below command will pull down a hubot installer and run a whole bunch of system tests to ensure that the local system can run a bot.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;npm install -g yo generator-hubot
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now we need to create a directory to hold our bot.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;mkdir my-hubot-directory
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;cd&lt;/span&gt; ./my-hubot-directory
+yo hubot
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, our new hubot will ask a whole bunch of setup questions about who it is and what its purpose is. The best thing to do next is to turn this directory into a git repository so we can track changes, and lets face it, everything should be under version control and pushed to GitHub.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;git init
+git add --all
+git commit -m &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;initial commit&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Here is where the fun starts.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;./bin/hubot
+hello
+&lt;span style=&#34;color: #75715e&#34;&gt;# Well hello there, &amp;lt;name&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;How cool is that!!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;custom-scripts&#34;&gt;Custom Scripts&lt;/h2&gt;
+
+&lt;p&gt;The great thing about hubot is that it is infinitely customizable and dead easy to write new scripts. To begin, as is tradition, lets create a &lt;em&gt;&amp;lsquo;Hello, World!&amp;rsquo;&lt;/em&gt; script. Within the &lt;code&gt;./scripts&lt;/code&gt; directory create a file called &lt;code&gt;hello.coffee&lt;/code&gt; with &lt;code&gt;touch&lt;/code&gt; or a similar function. Edit the file and include the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;# Description:&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;#   Greet the world&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;#&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# Commands:&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;#   hubot greet - Say hello to the world&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;module.exports = &lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;(robot) -&amp;gt;&lt;/span&gt;
+  &lt;span style=&#34;color: #a6e22e&#34;&gt;robot&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;respond&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;/greet/i&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;(msg) -&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color: #a6e22e&#34;&gt;msg&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;send&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Hello, World!&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Restart hubot (&lt;code&gt;./bin/hubot&lt;/code&gt;) and try the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;hubot &lt;span style=&#34;color: #f8f8f2&#34;&gt;help&lt;/span&gt; greet
+&lt;span style=&#34;color: #75715e&#34;&gt;# hubot greet - Say hello to the world&lt;/span&gt;
+hubot greet
+&lt;span style=&#34;color: #75715e&#34;&gt;# Hello, World!&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;For more information on scripts, check out &lt;a href=&#34;https://leanpub.com/automation-and-monitoring-with-hubot/&#34;&gt;Automation and Monitoring with Hubot&lt;/a&gt; by &lt;a href=&#34;https://github.com/spajus&#34;&gt;Tomas Varaneckas&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;remote-bot-hosting&#34;&gt;Remote Bot Hosting&lt;/h2&gt;
+
+&lt;p&gt;So far, I have only discussed implementing hubot locally, but in reality, we don&amp;rsquo;t want to be running our own machine the whole time, we want the bot to be hosted somewhere remotely and interfaced through a chat client like &lt;a href=&#34;https://slack.com/&#34;&gt;slack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;heroku&#34;&gt;Heroku&lt;/h3&gt;
+
+&lt;p&gt;Introducing, &lt;a href=&#34;https://heroku.com/&#34;&gt;Heroku&lt;/a&gt;, the Cloud platform company, that allows you to create, deploy, and manage web applications. What we are going to do is to &amp;lsquo;host&amp;rsquo; our hubot instance on a heroku server so that the bot is always running. Luckily, Heroku has a free tier so this also doesn&amp;rsquo;t cost a penny!&lt;/p&gt;
+
+&lt;p&gt;But, before we deploy to Heroku we need to install some software in the form of the &lt;a href=&#34;https://toolbelt.heroku.com/&#34;&gt;Heroku Toolbelt&lt;/a&gt;. This will allow us to talk to Heroku&amp;rsquo;s servers from the command line of our local machine.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;heroku create my-own-slackbot
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This will create an application on heroku&amp;rsquo;s servers (you may need to alter the name to be unique). With a skeleton application created, we can access the heroku &lt;a href=&#34;https://dashboard.heroku.com/&#34;&gt;dashboard&lt;/a&gt; to find our app&amp;rsquo;s URL and use it to set a config flag in our hubots directory:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;heroku config:add &lt;span style=&#34;color: #f8f8f2&#34;&gt;HEROKU_URL&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;https://my-own-slackbot.herokuapp.com
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;slack-integration&#34;&gt;Slack Integration&lt;/h3&gt;
+
+&lt;p&gt;Now, we need to add a &lt;a href=&#34;http://my.slack.com/services/new/hubot&#34;&gt;hubot &amp;lsquo;integration&amp;rsquo; in slack&lt;/a&gt;. This will generate a &amp;lsquo;SLACK_TOKEN&amp;rsquo; which can be added as a config flag:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;heroku config:add &lt;span style=&#34;color: #f8f8f2&#34;&gt;HUBOT_SLACK_TOKEN&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;abcd-1234-5678-91011-12e4fg
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;deploy&#34;&gt;Deploy&lt;/h3&gt;
+
+&lt;p&gt;The most amazing, and logical, aspect of all of this, is that deployment to Heroku is done entirely through &lt;a href=&#34;https://git-scm.com/&#34;&gt;git&lt;/a&gt;. When we &amp;lsquo;create&amp;rsquo; our heroku app locally, it sets up a remote repository which we can &amp;lsquo;push&amp;rsquo; changes to.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;git remote -v
+&lt;span style=&#34;color: #75715e&#34;&gt;# heroku  https://git.heroku.com/my-own-slackbot.git (fetch)&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# heroku  https://git.heroku.com/my-own-slackbot.git (push)&lt;/span&gt;
+
+git push heroku master
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;That&amp;rsquo;s it! Now, if we login to slack we should see that our very own hubot is online and ready to play. Yes, I called my bot &lt;em&gt;&amp;lsquo;hal&amp;rsquo;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src=&#34;../../images/hubot/hal.jpg&#34; alt=&#34;hal&#34; style=&#34;width: 350px;&#34;/&gt;&lt;/center&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Has the Apple Watch improved my fitness?</title>
+      <link>https://jackolney.github.io/blog/post/2015-12-27-apple-watch-health/</link>
+      <pubDate>Sun, 27 Dec 2015 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/post/2015-12-27-apple-watch-health/</guid>
+      <description>
+
+&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+
+&lt;p&gt;Having owned an Apple Watch since early May, I have built up a substantial amount of data in Apple&amp;rsquo;s &amp;lsquo;HealthKit&amp;rsquo;, detailing my daily steps from in excess of a year prior to owning the watch to at least six months after. Therefore, a simple analysis of whether the watch has improved my fitness should be possible. Additionally, I can pull out heart-rate data, stair-flight data, exercise data and map a whole bunch of other interesting stuff.&lt;/p&gt;
+
+&lt;p&gt;All data is from my iPhone 6+ and my Apple Watch, all analysis was conducted in R and all figures were produced with ggplot2.&lt;/p&gt;
+
+&lt;h1 id=&#34;setup&#34;&gt;Setup&lt;/h1&gt;
+
+&lt;p&gt;The first thing to do is it to export the relevant data from &amp;lsquo;HealthKit&amp;rsquo; as a csv file. We do this using the &lt;a href=&#34;https://itunes.apple.com/gb/app/qs-access/id920297614?mt=8&#34;&gt;QS Access&lt;/a&gt; iOS app from the App Store. The app allows you to define the columns by selecting the relevant data to export (e.g. Steps, Heart Rate etc.) and then define rows as being hourly or daily. The simplest way to transfer the csv from iPhone to Mac is via email. Now we can jump right into R and start cleaning the data.&lt;/p&gt;
+
+&lt;h2 id=&#34;data-cleaning&#34;&gt;Data Cleaning&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;# Set the working directory to the folder containing the exported .csv&lt;/span&gt;
+&lt;span style=&#34;color: #66d9ef&#34;&gt;setwd&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;~/&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Load &amp;#39;dplyr&amp;#39; and &amp;#39;ggplot2&amp;#39; for data analysis and plotting&lt;/span&gt;
+&lt;span style=&#34;color: #f92672&#34;&gt;require&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;dplyr&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #f92672&#34;&gt;require&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;ggplot2&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Load in the exported .csv file&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# The data I am importing was exported from my iPhone on 4th September, 2015&lt;/span&gt;
+MyCsvData &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; read.csv&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;./HealthData/HealthData_04-09-15.csv&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+MyCsvDataHourly &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; read.csv&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;./HealthData/HealthDataHourly_04-09-15.csv&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Probably the most time consuming aspect of any data analysis is cleaning and correctly formatting the data. Here, we must ensure that R can understand the exported date format correctly. To rectify this we define a function &lt;code&gt;FormatData()&lt;/code&gt; which takes the entire dataframe as an arguement and returns a dataframe containing the correct date format.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;FormatData &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;Data&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Define the &amp;#39;Start&amp;#39; and &amp;#39;End&amp;#39; columns.&lt;/span&gt;
+    StartDate &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;as.Date&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;Data&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;Start&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;format&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;%d-%b-%Y %H:%M&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    EndDate &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;as.Date&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;Data&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;Finish&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;format&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;%d-%b-%Y %H:%M&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Turn into a smart dataframe.&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# if you print a tbl_df to screen only the first 10 rows are shown.&lt;/span&gt;
+    MyData &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; tbl_df&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;Data&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Cleanup data.names&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;StartTime&amp;quot;&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;EndTime&amp;quot;&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Calories&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# kcal&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Distance&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# In miles&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Flights&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# count&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;HeartRate&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# bpm&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;7&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Steps&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# count&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Formatting date. #&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;####################&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Code    Value&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# %d  Day of the month (decimal number)&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# %m  Month (decimal number)&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# %b  Month (abbreviated)&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# %B  Month (full name)&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# %y  Year (2 digit)&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# %Y  Year (4 digit)&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Deploy and mutate whole dataFrame&lt;/span&gt;
+    FormatDate &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;x&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color: #66d9ef&#34;&gt;format&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;strptime&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;TestDate&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;%d-%b-%Y %H:%M&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;%d-%m-%Y&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+
+    FormatTime &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;x&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color: #66d9ef&#34;&gt;format&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;strptime&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;x&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;%d-%b-%Y %H:%M&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;%H:%M&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# StartDate &amp;lt;- apply(MyData[1],2,FormatDate)&lt;/span&gt;
+    StartTime &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;apply&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;],&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;FormatTime&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    StartDateTime &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# EndDate &amp;lt;- apply(MyData[2],2,FormatDate)&lt;/span&gt;
+    EndTime &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;apply&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;],&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;FormatTime&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    EndDateTime &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Pull together a new dataframe&lt;/span&gt;
+    MyFormattedData &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; tbl_df&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;data.frame&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;
+        StartDate&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        StartTime&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        EndDate&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        EndTime&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        StartDateTime&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        EndDateTime&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        MyData&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;Calories&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        MyData&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;Distance&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        MyData&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;Flights&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        MyData&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;HeartRate&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        MyData&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;Steps&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Neaten up names&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;StartDate&amp;quot;&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;StartTime&amp;quot;&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;EndDate&amp;quot;&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;EndTime&amp;quot;&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;StartDateTime&amp;quot;&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;EndDateTime&amp;quot;&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;7&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Calories&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# kcal&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;8&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Distance&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# In miles&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;9&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Flights&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# count&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;HeartRate&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# bpm&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Steps&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# count&lt;/span&gt;
+
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Applying this to our dataset&lt;/span&gt;
+DailyData &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; FormatData&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyCsvData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+HourlyData &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; FormatData&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyCsvDataHourly&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1 id=&#34;analysis&#34;&gt;Analysis&lt;/h1&gt;
+
+&lt;p&gt;We first produce a plot of steps against time, with some additional stratification in the form of heart rate using the following script and our hourly dataset (for greater resolution).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;ggplot&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;HourlyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; aes&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;x &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; StartDate&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; y &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; Steps&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;
+geom_point&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;aes&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;size &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; HeartRate&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; alpha &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; Steps&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt; col &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Blue&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;
+theme_classic&lt;span style=&#34;color: #f8f8f2&#34;&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;../../images/apple-watch-health/Steps-HeartRate-1.png&#34; alt=&#34;Steps-HeartRate&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The first thing we see is a considerable amount of 0-step hours in the data. This is because I sleep for about 6 hours per night, or perhaps may have not worn my watch that day. In any case, it is advisable to remove these zero values. However, it is nice to see the colour that including my heart rate from May 2015 adds to the plot. The large points in the upper right of the figure are likely from periods of exercise (as will be discussed later).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;# Cutting the crap&lt;/span&gt;
+NonZero &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; filter&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;HourlyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;Steps &lt;span style=&#34;color: #f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Re-do the previous plot&lt;/span&gt;
+ggplot&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;NonZero&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; aes&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;x &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; StartDate&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; y &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; Steps&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;
+geom_point&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;aes&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;size &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; HeartRate&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; alpha &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; Steps&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt; col &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Blue&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;
+theme_classic&lt;span style=&#34;color: #f8f8f2&#34;&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;../../images/apple-watch-health/Steps-HeartRate-2.png&#34; alt=&#34;Steps-HeartRate&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s better! Right, now some for simple regression analysis.&lt;/p&gt;
+
+&lt;h2 id=&#34;simple-regression&#34;&gt;Simple Regression&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;&amp;ldquo;Irrespective of workouts, has the Apple Watch increased the number of steps I walk each day?&amp;rdquo;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To answer this question, we are going to build a simple regression model; but first, we must add a new column informing the data of whether I owned the watch on a particular day.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;# Cut the zero-step data from the dataset (as before)&lt;/span&gt;
+theData &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; filter&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;DailyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;Steps &lt;span style=&#34;color: #f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# 3rd of May 2015 was the day I bought my Apple Watch&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# Add a column with &amp;#39;1&amp;#39; if date &amp;gt;= 3rd of May 2015, else &amp;#39;0&amp;#39;&lt;/span&gt;
+theData &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; mutate&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;theData&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; Watch &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;ifelse&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;StartDate &lt;span style=&#34;color: #f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;2015-05-03&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If we a create a simple linear model model with &amp;lsquo;Steps&amp;rsquo; as the dependent variable (the outcome whose variation is being studied), and &amp;lsquo;Watch&amp;rsquo; as the independent variable (input or potential reason for variation).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;fit1 &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; lm&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;Steps &lt;span style=&#34;color: #f92672&#34;&gt;~&lt;/span&gt; Watch&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; data &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; theData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #66d9ef&#34;&gt;summary&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;fit1&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Call:&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# lm(formula = Steps ~ Watch, data = theData)&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Residuals:&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;#     Min      1Q  Median      3Q     Max&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# -6849.3 -2993.1   -60.1  2352.2 13485.9&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Coefficients:&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;#             Estimate Std. Error t value Pr(&amp;gt;|t|)&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# (Intercept)   5328.1      247.5  21.531  &amp;lt; 2e-16 ***&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# Watch         1611.2      408.7   3.942 9.82e-05 ***&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# ---&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Residual standard error: 3637 on 339 degrees of freedom&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# Multiple R-squared:  0.04383,   Adjusted R-squared:  0.04101&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# F-statistic: 15.54 on 1 and 339 DF,  p-value: 9.819e-05&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;From this simple model, we see that prior to buying the watch, I walked an average of 5,328 steps per day (the intercept of the model); yes, not very many steps. However, after buying the watch, I walked an average of 1,611 &lt;em&gt;more&lt;/em&gt; steps per day &amp;ndash; great!&lt;/p&gt;
+
+&lt;p&gt;Although the R-squared value, the coefficient of determination, (or in english, how close the data fit to the model), is only 4%. This means that the presence of the watch only explains 4% of the variation in my daily steps. This is because we have yet to control for other factors, such as the day of the week, or whether I was exercising at the time. The model is saying that the presence of the watch in my life is not the sole reason for my movement. However, the value of R-squared should always be taken with a pinch of salt. There is inherent randomness in my daily steps and it would be near impossible to control for all additional covariates. As the F-statistic shows a statistically significant relationship (p &amp;lt; 0.05), we accept that the watch has improved my fitness level. Checks of the residuals increase our confidence in the findings.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;ggplot&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;theData&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; aes&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;x &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; StartDate&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; y &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; Steps&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;
+geom_point&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;aes&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;col &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;as.factor&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;Watch&lt;span style=&#34;color: #f8f8f2&#34;&gt;)),&lt;/span&gt; alpha &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;
+theme_classic&lt;span style=&#34;color: #f8f8f2&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;
+geom_smooth&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;method &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;lm&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; col &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;red&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; fill &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;blue&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;
+labs&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;title &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;paste&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Linear Regression of presence of Apple Watch against daily activity in steps\nAdj R2 = &amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;signif&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;summary&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;fit1&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;adj.r.squared&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;
+    &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Intercept =&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;signif&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;fit1&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;coef&lt;span style=&#34;color: #f8f8f2&#34;&gt;[[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]],&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;
+    &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot; Slope =&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;signif&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;fit1&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;coef&lt;span style=&#34;color: #f8f8f2&#34;&gt;[[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]],&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;
+    &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot; P =&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;signif&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;summary&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;fit1&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;coef&lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;],&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;../../images/apple-watch-health/LinearRegression.png&#34; alt=&#34;Regression&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;an-aside&#34;&gt;An Aside&lt;/h1&gt;
+
+&lt;p&gt;As a quick end to this post, I wanted to see what my hourly heart rate looked like over time. Additionally, I was keen to see whether my heart rate ever drops below 40bpm (bradycardia) or above 120bpm (tachycardia). As we see from the figure below, my heart rate doesn&amp;rsquo;t drop below 40bpm and only rarely steps about 120bpm. It should be noted that the outliers ~200bpm are from periods of exercise. As I collect more data, and exercise more, I would hope to look for a downward trend in my heart rate as my maximum heart rate when exercising declines, indicating increased fitness, one would hope.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;../../images/apple-watch-health/Heart-Rate.png&#34; alt=&#34;Heart-Rate&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interactive Dynamic Models in R</title>
+      <link>https://jackolney.github.io/blog/post/2015-10-16-shiny-cascade/</link>
+      <pubDate>Fri, 16 Oct 2015 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/post/2015-10-16-shiny-cascade/</guid>
+      <description>&lt;p&gt;As part of a new work package I am part of, we needed to develop a dynamic transmission model of HIV care that has a relatively user-friendly interface and that can be run on almost any device.&lt;/p&gt;
+
+&lt;p&gt;The initial choice was to go with an Excel spreadsheet, and have a tab hidden in the background with the model running and a whole bunch of simple stuff at the front for the user to interact with. We then wanted this to develop further into something that had parameter &amp;lsquo;sliders&amp;rsquo; so the model was perhaps a little more intuitive.&lt;/p&gt;
+
+&lt;p&gt;Eventually, I decided that the best course of action was to jump into developing a &lt;a href=&#34;http://shiny.rstudio.com/&#34;&gt;&amp;lsquo;shiny&amp;rsquo;&lt;/a&gt; app again. I initially messed around with this package in 2013 when I had first started developing models of infectious diseases. Back then, I had this idea of publishing a paper and then saying &amp;ldquo;instead of some boring static figure, check out this interactive version so you can get a better feel for the model&amp;rdquo;. Those days soon passed, luckily.&lt;/p&gt;
+
+&lt;p&gt;But now, with this impending project, I felt like now was an opportunity to check it out again. But first, I needed to verify a few things could be done with shiny running either locally or an RStudio server:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Run a reactive dynamic model that can be manipulated in real-time using data input through a series of boxes and sliders.&lt;/li&gt;
+&lt;li&gt;Interact with a GoogleSheet to import data and export results.&lt;/li&gt;
+&lt;li&gt;Run some form of optimisation algorithm that would allow us to simulate a set of interventions to understand, for a given cost, how we can maximise health gains over a period of say five years.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Luckily, none of these issues presented much of a problem and after a day or so of playing around, I had a working (albeit basic) version of the model up and running.&lt;/p&gt;
+
+&lt;p&gt;The latest version can be found &lt;a href=&#34;https://jackolney.shinyapps.io/ShinyCascade&#34;&gt;here&lt;/a&gt;. I would embed the model in an iframe here but, there are limits on the up-time I can use on RStudio&amp;rsquo;s servers given that I only have a free account, and also I think the text width on this site would screw it all up. So head over there to check out my latest toy!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Apple Pencil</title>
+      <link>https://jackolney.github.io/blog/post/2015-09-09-apple-pencil/</link>
+      <pubDate>Wed, 09 Sep 2015 22:24:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/post/2015-09-09-apple-pencil/</guid>
+      <description>&lt;p&gt;Having just watched the latest Apple keynote, I have to admit at being quite impressed at the latest products. Even John Gruber got it wrong! After flat-out claiming there would be no iPadPro announcement, there we have it! But the internet seems rather pre-occupied by the &lt;em&gt;smile&lt;/em&gt; issue, and the &lt;em&gt;pencil&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Regarding the smile, I couldn&amp;rsquo;t care less.&lt;/p&gt;
+
+&lt;p&gt;Regarding the pencil, I kind of think is works. Or at least, it&amp;rsquo;s the right time for a stylus.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;It&amp;rsquo;s like we said on the iPad, if you see a stylus, they blew it.&amp;rdquo; - &lt;em&gt;Steve Jobs, 2010.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Having said that (in my best Seinfeld voice), I think in 2010 Steve&amp;rsquo;s statement was correct. The iPad was a brand new product, it hadn&amp;rsquo;t even entered the market, and all other tablets were beyond terrible.&lt;/p&gt;
+
+&lt;p&gt;However, now, with increasing phone sizes, the difference between and iPhone and an iPad is very small. I myself sold my iPad and bought an iPhone 6+ because I found myself doing everything I wanted to do on an iPad on my phone because it was more convenient (and always on my person). The iPad is great for people who don&amp;rsquo;t need a laptop and love surfing from the couch. But when their phone can do all that and is easier / or at least more convenient, where does that leave the iPad?&lt;/p&gt;
+
+&lt;p&gt;The pencil then is the differentiator. Not just between the iPhone and the iPad but between the iPad and the Surface and the Macbook One. The Pencil opens up the iPad to all those people who wonder why we aren&amp;rsquo;t all taking notes by hand using tablets in 2015, all the people who want to sketch out changes to a document yet find themselves having to print a hard copy in order to do so, and all the people who want to create images / art or whatever without using some archaic touch pad.&lt;/p&gt;
+
+&lt;p&gt;The only thing I am wondering, is whether the iPadPro is able to effectively ignore hand inputs when using the stylus, as drawing/writing with your hand elevated from the screen for an extended period of time would quickly become a pain. If the software, or the hardware I&amp;rsquo;m guessing can effectively ignore hand input while the Pencil is on the screen then this could be a really neat tool.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Calling R from a Python instance</title>
+      <link>https://jackolney.github.io/blog/post/2015-07-01-calling-R-from-Python/</link>
+      <pubDate>Wed, 01 Jul 2015 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/post/2015-07-01-calling-R-from-Python/</guid>
+      <description>
+
+&lt;p&gt;After spending several hours today trying to figure out how to call R from an instance of Python running on the departmental cluster, I figured that I better document this.&lt;/p&gt;
+
+&lt;h3 id=&#34;why-bother&#34;&gt;Why bother?&lt;/h3&gt;
+
+&lt;p&gt;Some background on my problem. I have an individual-based model written in C++ that describes the HIV epidemic in Kenya over time from 1970 to &lt;sup&gt;2036&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2056&lt;/sub&gt;. This model is called through R which supplies a whole bunch of arguments allowing me to simulate a whole bunch of different scenarios. For some time now I have been using Python as a high-level manager for these simulations. I simple stick some python script in a directory, it creates all the directories, writes the R scripts, writes the .bat files and submits the jobs to the cluster.&lt;/p&gt;
+
+&lt;p&gt;Recently, I have been running a set of scenarios that involve learning from experience. I run some simulations and depending on the results, make some changes to the next set of simulations. A simple method for doing this was by running an R script across all the results and computing the changes that needed to be made. This was okay but if you want to run several hundred scenarios at once, it quickly becomes boring, and rather tedious.&lt;/p&gt;
+
+&lt;p&gt;I figured that I would write some python code that would deploy the simulations, wait for them to complete then run some analysis in R and then deploy the next set of simulations. Actually, rather than have my instance of Python sleep for a while and take up resources I kill it off and allow each simulation to check if the others are done, create a lock-file if they have finished and run some analysis.&lt;/p&gt;
+
+&lt;p&gt;This actually turned out better than my original plan, but I was still keen to know how to call R directly from my instance of python. The way I was submitting jobs and generally accessing the command line was by using the os module and calling:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;os&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;os&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;system(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;job submit /scheduler:somewhere /numcores:lots &lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\\&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;somecomputer\somewhere&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Yet, interestingly if I tried:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;os&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;system(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Rscript &lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\\&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;somescript\somewhere&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I got nowhere. I then tried the absolute path to Rscript.exe (windows cluster), but to no avail. The solution turned out to be clunky.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;# Two methods:&lt;/span&gt;
+&lt;span style=&#34;color: #f92672&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;subprocess&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Either with \\ double backslash.&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;subprocess&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;call([&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;C:&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\\&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;Program Files&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\\&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;R&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\\&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;R-3.0.1&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\\&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;bin&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\\&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;Rscript.exe&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\\\\&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;somecomputer&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\\&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;someplace&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\\&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;mydir&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\\&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;Test&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\\&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;Python&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\\&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;test.R&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]);&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# or using the ignore escape character &amp;#39;r&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;subprocess&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;call([&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;r&amp;quot;C:\Program Files\R\R-3.0.1\bin\Rscript.exe&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;r&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\\&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;somecomputer\someplace\mydir\Test\Python\test.R&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]);&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# It turns out that using os.system is odd.&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# It needs to be in double-quotes then wrapped in single-quotes&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# Then where to arguments go? Within the single-quotes but not the double-quotes. WTF!?&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;os&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;system(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;&amp;quot;C:&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\\&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;Program Files&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\\&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;R\R-3.0.1&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\\&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;bin\Rscript.exe&amp;quot; --version&amp;#39;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Anyway, now we have the solution.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fun with GoogleDocs API</title>
+      <link>https://jackolney.github.io/blog/post/2015-01-01-fun-with-googledocs/</link>
+      <pubDate>Thu, 01 Jan 2015 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/post/2015-01-01-fun-with-googledocs/</guid>
+      <description>
+
+&lt;p&gt;I wanted to document some code for accessing documents (only spreadsheets at the moment) through GoogleDocs using the DIDE cluster and R.&lt;/p&gt;
+
+&lt;h3 id=&#34;getting-started&#34;&gt;Getting started.&lt;/h3&gt;
+
+&lt;p&gt;The R code is fairly self explanatory but involves two little tricks to get it to work: (1) manipulating the GoogleDocs URL to export the document as a csv and (2) changes the privilages on the document such that anyone with the link can edit (done under sharing).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;# Set working directory.&lt;/span&gt;
+&lt;span style=&#34;color: #66d9ef&#34;&gt;setwd&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;[yourWorkingDirectory]&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Install RCurl on cluster.&lt;/span&gt;
+install.packages&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;RCurl&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;repos&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;http://cran.ma.imperial.ac.uk&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;lib&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;[yourLibraryDirectory]&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Now, with the desired GoogleSpreadsheet open in your browser copy the &amp;quot;Key&amp;quot; (the series of numbers and letters after /d/...) from the URL and insert it where [yourDocumentKey] is.&lt;/span&gt;
+url &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;https://docs.google.com/spreadsheets/d/[yourDocumentKey]/export?format=csv&amp;quot;&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# In your browser, go to &amp;quot;Share&amp;quot; and alter the document privilages so &amp;quot;anyone with a link can view&amp;quot;.&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Load up RCurl (bitops is required by RCurl so best to load that too.)&lt;/span&gt;
+&lt;span style=&#34;color: #f92672&#34;&gt;require&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;bitops&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;lib.loc&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;[yourLibraryDirectory]&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #f92672&#34;&gt;require&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;RCurl&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;lib.loc&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;[yourLibraryDirectory]&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Set ssl.verifypeer to FALSE.&lt;/span&gt;
+myCsv &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; getURL&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;url&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;.&lt;/span&gt;opts&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;list&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;ssl.verifypeer&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;FALSE&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Parse csv data.&lt;/span&gt;
+testCsv &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; read.csv&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;textConnection&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;myCsv&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Print out result.&lt;/span&gt;
+&lt;span style=&#34;color: #66d9ef&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;testCsv&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+flush.console&lt;span style=&#34;color: #f8f8f2&#34;&gt;()&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# SUCCESS!&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on priority queues in C&#43;&#43;</title>
+      <link>https://jackolney.github.io/blog/post/2014-08-25-thoughts-on-priority-queues/</link>
+      <pubDate>Mon, 25 Aug 2014 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/post/2014-08-25-thoughts-on-priority-queues/</guid>
+      <description>
+
+&lt;p&gt;Taking comfort in the fact that I am sure that nobody will read this site except me, I have decided to procrastinate by writing something about a problem, or perhaps I should say challange that I am currently facing. To add some background, I have written an individual-based time-to-event model that describes a series of events that make up HIV care. I have written this model purely in C++, but as it was my first &amp;ldquo;big&amp;rdquo; model and I was still learning C++ at the time, I have since thought about revisiting the source code and changing the fundamentals of the model.&lt;/p&gt;
+
+&lt;h3 id=&#34;original-plan-for-the-model&#34;&gt;Original plan for the model.&lt;/h3&gt;
+
+&lt;p&gt;The model starts by creating an &amp;ldquo;individual&amp;rdquo;. This individual has a set of basic characteristics: gender, age, natural death date etc. The individual is then exposed to an annual hazard of developing HIV. If the individual is unfortunate enough to contract HIV, they have the opportunity to enter HIV care and eventually receive treatment. The way the model handles events occurring through time is by a clever little thing called a priority queue. A priority queue can be thought of as an ordered list that as reshuffles as objects are inserted depending on a set of rules. This can be as basic as the priority queue shown below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;  &lt;span style=&#34;color: #f8f8f2&#34;&gt;priority_queue&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;vector&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;greater&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;testQ;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;A priority queue can have objects &amp;ldquo;pushed&amp;rdquo; into it that are then ordered according to the compare parameter, which in this case is shown by &lt;code&gt; greater&amp;lt;int&amp;gt; &lt;/code&gt;. This means that every object that enters the priority queue, called &amp;ldquo;testQ&amp;rdquo; in this instance, is evaluated and placed in order. The current setup shown above orders the integers in the queue from largest to smallest. The &amp;ldquo;top&amp;rdquo; of the queue contains the smallest value. There are some cool member functions associated with priority queues. For instance, &lt;code&gt;testQ.push()&lt;/code&gt; takes an arguement of the integer that we wish to push into the queue. While, &lt;code&gt;testQ.top()&lt;/code&gt; will show us the value at the top of the queue (smallest). &lt;code&gt; testQ.pop()&lt;/code&gt; is another useful function that has the effect of &amp;ldquo;popping&amp;rdquo; off the top of the queue and removing it. This is particular useful for me as I want to setup a priority queue that I can pass a list of dates to. I want the queue to order the dates with the smallest date, or date closest to the current date, being at the top of the queue. That will allow me to feed my model dates of any size and for it to quickly order them chronologically so I can effectively walk through them &amp;ldquo;popping&amp;rdquo; them off as I go.&lt;/p&gt;
+
+&lt;h3 id=&#34;old-setup&#34;&gt;Old setup.&lt;/h3&gt;
+
+&lt;p&gt;I currently use something similar to above, in that I pass dates to the queue and then &amp;ldquo;pop&amp;rdquo; them off. The slight problem with this approach is that when the date of an event comes to the top of the priority queue, I need to be able to call a specific function that is due to occur on that specific date. For example, if I wanted to perform an HIV-test on an individual in 2010, I pass the date 2010 to the priority queue and when &lt;code&gt;testQ.top() == 2010&lt;/code&gt; I compare an HIV-test &amp;ldquo;flag&amp;rdquo; (which holds the date 2010) to the top of the queue. If the two agree, then we proceed and call the HIV-test function.&lt;/p&gt;
+
+&lt;h3 id=&#34;future-setup&#34;&gt;Future setup.&lt;/h3&gt;
+
+&lt;p&gt;Looking back at this, while it is simple, it is slightly crude to be checking the top of the priority queue against a &amp;ldquo;flag&amp;rdquo;. What would be much neater would be to create a &lt;code&gt;class event&lt;/code&gt; which has the attributes of &lt;code&gt;time&lt;/code&gt; and a function pointer. This would allow me to &amp;ldquo;push&amp;rdquo; a time and function into the queue. When an event comes to the top of the queue, I will be able to access a time and a pointer to the appropriate function.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;eventClass&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color: #66d9ef&#34;&gt;double&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;time;&lt;/span&gt;
+  &lt;span style=&#34;color: #66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;ptr_fun)();&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;};&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;priority_queue&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;eventClass,&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;vector&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;eventClass&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;timeComparison&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;testQ;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

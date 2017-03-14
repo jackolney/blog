@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apple Watch on Jack Olney</title>
+    <link>https://jackolney.github.io/blog/tags/apple-watch/index.xml</link>
+    <description>Recent content in Apple Watch on Jack Olney</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://jackolney.github.io/blog/tags/apple-watch/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Has the Apple Watch improved my fitness?</title>
+      <link>https://jackolney.github.io/blog/post/2015-12-27-apple-watch-health/</link>
+      <pubDate>Sun, 27 Dec 2015 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/post/2015-12-27-apple-watch-health/</guid>
+      <description>
+
+&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+
+&lt;p&gt;Having owned an Apple Watch since early May, I have built up a substantial amount of data in Apple&amp;rsquo;s &amp;lsquo;HealthKit&amp;rsquo;, detailing my daily steps from in excess of a year prior to owning the watch to at least six months after. Therefore, a simple analysis of whether the watch has improved my fitness should be possible. Additionally, I can pull out heart-rate data, stair-flight data, exercise data and map a whole bunch of other interesting stuff.&lt;/p&gt;
+
+&lt;p&gt;All data is from my iPhone 6+ and my Apple Watch, all analysis was conducted in R and all figures were produced with ggplot2.&lt;/p&gt;
+
+&lt;h1 id=&#34;setup&#34;&gt;Setup&lt;/h1&gt;
+
+&lt;p&gt;The first thing to do is it to export the relevant data from &amp;lsquo;HealthKit&amp;rsquo; as a csv file. We do this using the &lt;a href=&#34;https://itunes.apple.com/gb/app/qs-access/id920297614?mt=8&#34;&gt;QS Access&lt;/a&gt; iOS app from the App Store. The app allows you to define the columns by selecting the relevant data to export (e.g. Steps, Heart Rate etc.) and then define rows as being hourly or daily. The simplest way to transfer the csv from iPhone to Mac is via email. Now we can jump right into R and start cleaning the data.&lt;/p&gt;
+
+&lt;h2 id=&#34;data-cleaning&#34;&gt;Data Cleaning&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;# Set the working directory to the folder containing the exported .csv&lt;/span&gt;
+&lt;span style=&#34;color: #66d9ef&#34;&gt;setwd&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;~/&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Load &amp;#39;dplyr&amp;#39; and &amp;#39;ggplot2&amp;#39; for data analysis and plotting&lt;/span&gt;
+&lt;span style=&#34;color: #f92672&#34;&gt;require&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;dplyr&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #f92672&#34;&gt;require&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;ggplot2&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Load in the exported .csv file&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# The data I am importing was exported from my iPhone on 4th September, 2015&lt;/span&gt;
+MyCsvData &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; read.csv&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;./HealthData/HealthData_04-09-15.csv&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+MyCsvDataHourly &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; read.csv&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;./HealthData/HealthDataHourly_04-09-15.csv&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Probably the most time consuming aspect of any data analysis is cleaning and correctly formatting the data. Here, we must ensure that R can understand the exported date format correctly. To rectify this we define a function &lt;code&gt;FormatData()&lt;/code&gt; which takes the entire dataframe as an arguement and returns a dataframe containing the correct date format.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;FormatData &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;Data&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Define the &amp;#39;Start&amp;#39; and &amp;#39;End&amp;#39; columns.&lt;/span&gt;
+    StartDate &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;as.Date&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;Data&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;Start&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;format&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;%d-%b-%Y %H:%M&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    EndDate &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;as.Date&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;Data&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;Finish&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;format&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;%d-%b-%Y %H:%M&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Turn into a smart dataframe.&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# if you print a tbl_df to screen only the first 10 rows are shown.&lt;/span&gt;
+    MyData &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; tbl_df&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;Data&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Cleanup data.names&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;StartTime&amp;quot;&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;EndTime&amp;quot;&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Calories&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# kcal&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Distance&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# In miles&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Flights&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# count&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;HeartRate&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# bpm&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;7&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Steps&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# count&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Formatting date. #&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;####################&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Code    Value&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# %d  Day of the month (decimal number)&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# %m  Month (decimal number)&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# %b  Month (abbreviated)&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# %B  Month (full name)&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# %y  Year (2 digit)&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;# %Y  Year (4 digit)&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Deploy and mutate whole dataFrame&lt;/span&gt;
+    FormatDate &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;x&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color: #66d9ef&#34;&gt;format&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;strptime&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;TestDate&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;%d-%b-%Y %H:%M&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;%d-%m-%Y&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+
+    FormatTime &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;function&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;x&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color: #66d9ef&#34;&gt;format&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;strptime&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;x&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;%d-%b-%Y %H:%M&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;%H:%M&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# StartDate &amp;lt;- apply(MyData[1],2,FormatDate)&lt;/span&gt;
+    StartTime &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;apply&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;],&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;FormatTime&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    StartDateTime &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# EndDate &amp;lt;- apply(MyData[2],2,FormatDate)&lt;/span&gt;
+    EndTime &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;apply&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;],&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;FormatTime&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+    EndDateTime &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; MyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Pull together a new dataframe&lt;/span&gt;
+    MyFormattedData &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; tbl_df&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;data.frame&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;
+        StartDate&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        StartTime&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        EndDate&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        EndTime&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        StartDateTime&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        EndDateTime&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        MyData&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;Calories&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        MyData&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;Distance&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        MyData&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;Flights&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        MyData&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;HeartRate&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;
+        MyData&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;Steps&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+
+    &lt;span style=&#34;color: #75715e&#34;&gt;# Neaten up names&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;StartDate&amp;quot;&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;StartTime&amp;quot;&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;EndDate&amp;quot;&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;EndTime&amp;quot;&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;StartDateTime&amp;quot;&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;EndDateTime&amp;quot;&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;7&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Calories&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# kcal&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;8&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Distance&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# In miles&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;9&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Flights&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# count&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;HeartRate&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# bpm&lt;/span&gt;
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;names&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Steps&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# count&lt;/span&gt;
+
+    &lt;span style=&#34;color: #66d9ef&#34;&gt;return&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyFormattedData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Applying this to our dataset&lt;/span&gt;
+DailyData &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; FormatData&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyCsvData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+HourlyData &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; FormatData&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;MyCsvDataHourly&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1 id=&#34;analysis&#34;&gt;Analysis&lt;/h1&gt;
+
+&lt;p&gt;We first produce a plot of steps against time, with some additional stratification in the form of heart rate using the following script and our hourly dataset (for greater resolution).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;ggplot&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;HourlyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; aes&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;x &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; StartDate&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; y &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; Steps&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;
+geom_point&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;aes&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;size &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; HeartRate&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; alpha &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; Steps&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt; col &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Blue&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;
+theme_classic&lt;span style=&#34;color: #f8f8f2&#34;&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;../../images/apple-watch-health/Steps-HeartRate-1.png&#34; alt=&#34;Steps-HeartRate&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The first thing we see is a considerable amount of 0-step hours in the data. This is because I sleep for about 6 hours per night, or perhaps may have not worn my watch that day. In any case, it is advisable to remove these zero values. However, it is nice to see the colour that including my heart rate from May 2015 adds to the plot. The large points in the upper right of the figure are likely from periods of exercise (as will be discussed later).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;# Cutting the crap&lt;/span&gt;
+NonZero &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; filter&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;HourlyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;Steps &lt;span style=&#34;color: #f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Re-do the previous plot&lt;/span&gt;
+ggplot&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;NonZero&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; aes&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;x &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; StartDate&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; y &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; Steps&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;
+geom_point&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;aes&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;size &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; HeartRate&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; alpha &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; Steps&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt; col &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Blue&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;
+theme_classic&lt;span style=&#34;color: #f8f8f2&#34;&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;../../images/apple-watch-health/Steps-HeartRate-2.png&#34; alt=&#34;Steps-HeartRate&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s better! Right, now some for simple regression analysis.&lt;/p&gt;
+
+&lt;h2 id=&#34;simple-regression&#34;&gt;Simple Regression&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;&amp;ldquo;Irrespective of workouts, has the Apple Watch increased the number of steps I walk each day?&amp;rdquo;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To answer this question, we are going to build a simple regression model; but first, we must add a new column informing the data of whether I owned the watch on a particular day.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;# Cut the zero-step data from the dataset (as before)&lt;/span&gt;
+theData &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; filter&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;DailyData&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;Steps &lt;span style=&#34;color: #f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# 3rd of May 2015 was the day I bought my Apple Watch&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# Add a column with &amp;#39;1&amp;#39; if date &amp;gt;= 3rd of May 2015, else &amp;#39;0&amp;#39;&lt;/span&gt;
+theData &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; mutate&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;theData&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; Watch &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;ifelse&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;StartDate &lt;span style=&#34;color: #f92672&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;2015-05-03&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If we a create a simple linear model model with &amp;lsquo;Steps&amp;rsquo; as the dependent variable (the outcome whose variation is being studied), and &amp;lsquo;Watch&amp;rsquo; as the independent variable (input or potential reason for variation).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;fit1 &lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;-&lt;/span&gt; lm&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;Steps &lt;span style=&#34;color: #f92672&#34;&gt;~&lt;/span&gt; Watch&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; data &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; theData&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #66d9ef&#34;&gt;summary&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;fit1&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Call:&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# lm(formula = Steps ~ Watch, data = theData)&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Residuals:&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;#     Min      1Q  Median      3Q     Max&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# -6849.3 -2993.1   -60.1  2352.2 13485.9&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Coefficients:&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;#             Estimate Std. Error t value Pr(&amp;gt;|t|)&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# (Intercept)   5328.1      247.5  21.531  &amp;lt; 2e-16 ***&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# Watch         1611.2      408.7   3.942 9.82e-05 ***&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# ---&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# Signif. codes:  0 &amp;#39;***&amp;#39; 0.001 &amp;#39;**&amp;#39; 0.01 &amp;#39;*&amp;#39; 0.05 &amp;#39;.&amp;#39; 0.1 &amp;#39; &amp;#39; 1&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;# Residual standard error: 3637 on 339 degrees of freedom&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# Multiple R-squared:  0.04383,   Adjusted R-squared:  0.04101&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;# F-statistic: 15.54 on 1 and 339 DF,  p-value: 9.819e-05&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;From this simple model, we see that prior to buying the watch, I walked an average of 5,328 steps per day (the intercept of the model); yes, not very many steps. However, after buying the watch, I walked an average of 1,611 &lt;em&gt;more&lt;/em&gt; steps per day &amp;ndash; great!&lt;/p&gt;
+
+&lt;p&gt;Although the R-squared value, the coefficient of determination, (or in english, how close the data fit to the model), is only 4%. This means that the presence of the watch only explains 4% of the variation in my daily steps. This is because we have yet to control for other factors, such as the day of the week, or whether I was exercising at the time. The model is saying that the presence of the watch in my life is not the sole reason for my movement. However, the value of R-squared should always be taken with a pinch of salt. There is inherent randomness in my daily steps and it would be near impossible to control for all additional covariates. As the F-statistic shows a statistically significant relationship (p &amp;lt; 0.05), we accept that the watch has improved my fitness level. Checks of the residuals increase our confidence in the findings.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;ggplot&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;theData&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; aes&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;x &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; StartDate&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; y &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; Steps&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;
+geom_point&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;aes&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;col &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;as.factor&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;Watch&lt;span style=&#34;color: #f8f8f2&#34;&gt;)),&lt;/span&gt; alpha &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;
+theme_classic&lt;span style=&#34;color: #f8f8f2&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;
+geom_smooth&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;method &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;lm&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; col &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;red&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; fill &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;blue&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;
+labs&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;title &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;paste&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Linear Regression of presence of Apple Watch against daily activity in steps\nAdj R2 = &amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;signif&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;summary&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;fit1&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;adj.r.squared&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;
+    &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Intercept =&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;signif&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;fit1&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;coef&lt;span style=&#34;color: #f8f8f2&#34;&gt;[[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]],&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;
+    &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot; Slope =&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;signif&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;fit1&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;coef&lt;span style=&#34;color: #f8f8f2&#34;&gt;[[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]],&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;),&lt;/span&gt;
+    &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot; P =&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;signif&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;summary&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;fit1&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;$&lt;/span&gt;coef&lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;],&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&#34;../../images/apple-watch-health/LinearRegression.png&#34; alt=&#34;Regression&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;an-aside&#34;&gt;An Aside&lt;/h1&gt;
+
+&lt;p&gt;As a quick end to this post, I wanted to see what my hourly heart rate looked like over time. Additionally, I was keen to see whether my heart rate ever drops below 40bpm (bradycardia) or above 120bpm (tachycardia). As we see from the figure below, my heart rate doesn&amp;rsquo;t drop below 40bpm and only rarely steps about 120bpm. It should be noted that the outliers ~200bpm are from periods of exercise. As I collect more data, and exercise more, I would hope to look for a downward trend in my heart rate as my maximum heart rate when exercising declines, indicating increased fitness, one would hope.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;../../images/apple-watch-health/Heart-Rate.png&#34; alt=&#34;Heart-Rate&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
