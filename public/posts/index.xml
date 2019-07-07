@@ -1,0 +1,881 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on Jack Olney</title>
+		<link>https://jackolney.github.io/blog/posts/</link>
+		<description>Recent content in Posts on Jack Olney</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+		<lastBuildDate>Tue, 21 Feb 2017 09:41:00 +0000</lastBuildDate>
+		<atom:link href="https://jackolney.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>CROI 2017</title>
+			<link>https://jackolney.github.io/blog/posts/2017-02-21-croi/</link>
+			<pubDate>Tue, 21 Feb 2017 09:41:00 +0000</pubDate>
+			
+			<guid>https://jackolney.github.io/blog/posts/2017-02-21-croi/</guid>
+			<description>For the second year in a row, I was invited to speak at the annual Conference on Retroviruses and Opportunistic Infections (CROI). This year the conference was held in one of my favourite cities, Seattle.
+I spoke about my new web-based modelling tool that enables countries to enter data on their HIV care programmes, estimate the achievement of the UNAIDS 90-90-90 and prioritise strategies to achieve these goals by the target date of 2020.</description>
+			<content type="html"><![CDATA[<p>For the second year in a row, I was invited to speak at the annual <a href="http://www.croiconference.org/">Conference on Retroviruses and Opportunistic Infections (CROI)</a>. This year the conference was held in one of my favourite cities, Seattle.</p>
+
+<p>I spoke about my new web-based modelling tool that enables countries to enter data on their HIV care programmes, estimate the achievement of the <a href="http://www.unaids.org/en/resources/documents/2014/90-90-90">UNAIDS 90-90-90</a> and prioritise strategies to achieve these goals by the target date of 2020.</p>
+
+<p>The link to my tool is here: <a href="https://jackolney.shinyapps.io/CascadeDashboard/">jackolney.shinyapps.io/CascadeDashboard/</a></p>
+
+<p>The project is hosted on GitHub: <a href="https://jackolney.github.io/CascadeDashboard/">jackolney.github.io/CascadeDashboard/</a></p>
+
+<p>Below is a video of my talk:</p>
+
+<iframe width="100%" height="600" src="http://www.croiwebcasts.org/console/player/33591?mediaType=slideVideo" frameborder="0" allowfullscreen></iframe>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Writing a PhD Thesis</title>
+			<link>https://jackolney.github.io/blog/posts/2016-11-17-thesis/</link>
+			<pubDate>Thu, 17 Nov 2016 09:41:00 +0000</pubDate>
+			
+			<guid>https://jackolney.github.io/blog/posts/2016-11-17-thesis/</guid>
+			<description>Right from the start of my PhD, I was keen to avoid leaving the &amp;ldquo;writing up&amp;rdquo; stage until the last moment. After hearing stories from other students of 24-hour stints in the library and solid weekends spent slaving over their theses in the final months, I figured there must be another way. Sometime during my second year, I devised a plan for writing the thesis:
+ For the final year of my PhD I was going to wake up an hour earlier than usual, and before doing anything else, write for a solid couple of hours  I figured that if I was aiming to submit my thesis in October I had about 10 months, or 40 weeks in order to make a substantial dent in the thesis before having to switch to writing full-time.</description>
+			<content type="html"><![CDATA[
+
+<p>Right from the start of my PhD, I was keen to avoid leaving the &ldquo;writing up&rdquo; stage until the last moment. After hearing stories from other students of 24-hour stints in the library and solid weekends spent slaving over their theses in the final months, I figured there must be another way. Sometime during my second year, I devised a plan for writing the thesis:</p>
+
+<blockquote>
+<h3 id="for-the-final-year-of-my-phd-i-was-going-to-wake-up-an-hour-earlier-than-usual-and-before-doing-anything-else-write-for-a-solid-couple-of-hours">For the final year of my PhD I was going to wake up an hour earlier than usual, and before doing anything else, write for a solid couple of hours</h3>
+</blockquote>
+
+<p>I figured that if I was aiming to submit my thesis in October I had about 10 months, or 40 weeks in order to make a substantial dent in the thesis before having to switch to writing full-time. Excluding weekends, 40 weeks of an hour a day works out at 200 hours.</p>
+
+<p>To make life even easier, I had also formed some concrete decisions on how I was going to write the thesis. Firstly, it had to be in LaTeX. Secondly, I was going to host my thesis in a private github repository for piece of mind. Lastly, I would identify and adapt a LaTeX thesis template before starting writing so that I had a framework to build upon.</p>
+
+<h2 id="outcome">Outcome</h2>
+
+<p>I used the great <a href="http://dissertate.io/">Dissertate</a> template by Jordan Suchow, and adapted it to include fancyheaders and to conform with the Imperial College Registry requirements, and also to follow the Imperial College colour scheme.</p>
+
+<p>After months of work, and very early mornings, I can finally say that this method of writing was a huge success! I wrote the majority of my thesis in the early hours of the morning, baring a month and a half at the end of solid writing. But, in sacrificing an hour of sleep each morning meant that I could write my thesis and not spend every evening and weekend working &ndash; I had time to enjoy life.</p>
+
+<p>Rather than talk about it, check out the commit history for my thesis repo. Slow steady progress throughout and then a short sharp spike of productivity at the end.</p>
+
+<p><center><img src="../../images/thesis/commits.png" alt="commits" style="width: 60%;"/></center></p>
+
+<p>Better yet, check out my punchcard as it evolved over time. You can see how my writing hours accumulate at the begining of the day before exploding across the entire day towards the end of the thesis.</p>
+
+<p><center><img src="../../images/thesis/thesis-punchcard.gif" alt="punchcard" style="width: 100%;"/></center></p>
+
+<p>The code for generating this gif is available <a href="https://gist.github.com/jackolney/fa824e01e07983d7c978d74dde842bc7">here</a>, and I make use of the <a href="https://github.com/guanqun/git-punchcard-plot">git-punchcard-plot</a> tool written by Guanqun Lu.</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Webfonts in ggplot2</title>
+			<link>https://jackolney.github.io/blog/posts/2016-08-15-ggplot2-font/</link>
+			<pubDate>Mon, 15 Aug 2016 09:41:00 +0000</pubDate>
+			
+			<guid>https://jackolney.github.io/blog/posts/2016-08-15-ggplot2-font/</guid>
+			<description>Thanks to Hadley&amp;rsquo;s ggplot2 package, we are no longer confined to base graphics plots in R. However, by default all fonts are generated using the &amp;lsquo;Helvetica&amp;rsquo; family. Now this is a great sans serif font, as evidenced by the fact that it is use literally everywhere in everything.
+But now that we have these incredible graphical capabilities, and the ability to produce FiveThirtyEight quality figures, we should really explore how to enhance our plots further with the use of better fonts.</description>
+			<content type="html"><![CDATA[
+
+<p>Thanks to Hadley&rsquo;s <a href="https://github.com/hadley/ggplot2">ggplot2 package</a>, we are no longer confined to base graphics plots in <a href="https://www.r-project.org/">R</a>. However, by default all fonts are generated using the &lsquo;Helvetica&rsquo; family. Now this is a great sans serif font, as evidenced by the fact that it is use literally everywhere in everything.</p>
+
+<p>But now that we have these incredible graphical capabilities, and the ability to produce <a href="http://fivethirtyeight.com/features/our-47-weirdest-charts-from-2015/">FiveThirtyEight</a> quality figures, we should really explore how to enhance our plots further with the use of better fonts.</p>
+
+<p>The gold-standard library for web developer fonts is <a href="https://fonts.google.com/">Google Fonts</a>. Designed for the web, these can be imported into any page and used to style the content. Unfortunately, as R users we have been confined for a while to using Winston Chang&rsquo;s <a href="https://github.com/wch/extrafont">extrafont</a> package to pull in any TrueType fonts from our local machine and use them to style our figures. While this works pretty well, for anyone with more than a few dozens fonts, the process of importing fonts becomes pretty tedious.</p>
+
+<h2 id="showtext">showtext</h2>
+
+<p>After spending some time trawling the web for a better solution, I stumbled across a github package by Yixuan Qiu called <a href="https://github.com/yixuan/showtext">showtext</a>. This neat little package allows users to install fonts directly from Google&rsquo;s Font library with a single line of code. The result is plots that look like this:</p>
+
+<p><center><img src="../../images/fonts.jpg" alt="fonts" style="width: 800px;"/></center></p>
+
+<p>I used the following source code to generate the figure above. All credit to Yixuan Qiu&rsquo;s <a href="https://github.com/yixuan/showtext">showtext</a> package for this.</p>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r">    <span class="c1"># Install the package direct from GitHub with devtools</span>
+    devtools<span class="o">::</span>install_github<span class="p">(</span><span class="s">&#34;yixuan/showtext&#34;</span><span class="p">)</span>
+
+    <span class="c1"># Load up the package</span>
+    <span class="kn">require</span><span class="p">(</span>showtext<span class="p">)</span>
+    <span class="kn">require</span><span class="p">(</span>ggplot2<span class="p">)</span>
+
+    <span class="c1"># Download a wefont</span>
+    font.add.google<span class="p">(</span>name <span class="o">=</span> <span class="s">&#34;Indie Flower&#34;</span><span class="p">,</span> family <span class="o">=</span> <span class="s">&#34;Indie Flower&#34;</span><span class="p">,</span> regular.wt <span class="o">=</span> <span class="m">400</span><span class="p">,</span> bold.wt <span class="o">=</span> <span class="m">700</span><span class="p">)</span>
+
+    <span class="c1"># name = the name of the font in Google&#39;s Library (https://fonts.google.com)</span>
+    <span class="c1"># family = how you want to refer to the font inside R</span>
+    <span class="c1"># regular.wt = the weight of font used in axis, labels etc.</span>
+    <span class="c1"># bolt.wt = the weight of font used in the title</span>
+
+    <span class="c1"># Perhaps the only tricky bit is remembering to run the following function to enable webfonts</span>
+    showtext.auto<span class="p">()</span>
+
+    <span class="c1"># Generate some random numbers</span>
+    <span class="kp">set.seed</span><span class="p">(</span><span class="m">123</span><span class="p">)</span>
+    x <span class="o">=</span> rnorm<span class="p">(</span><span class="m">1000</span><span class="p">)</span>
+    y <span class="o">=</span> rnorm<span class="p">(</span><span class="m">1000</span><span class="p">,</span> mean <span class="o">=</span> <span class="m">1</span><span class="p">)</span>
+
+    <span class="c1"># Throw them into a data.frame</span>
+    dat <span class="o">&lt;-</span> <span class="kt">data.frame</span><span class="p">(</span>x<span class="p">,</span> y<span class="p">)</span>
+
+    <span class="c1"># Put together out plot</span>
+    ggOut <span class="o">&lt;-</span> ggplot<span class="p">(</span>dat<span class="p">,</span> aes<span class="p">(</span>x <span class="o">=</span> x<span class="p">,</span> y <span class="o">=</span> y<span class="p">))</span>
+    ggOut <span class="o">&lt;-</span> ggOut <span class="o">+</span> geom_point<span class="p">(</span>alpha <span class="o">=</span> <span class="m">0.5</span><span class="p">,</span> col <span class="o">=</span> <span class="s">&#34;red&#34;</span><span class="p">)</span>
+    ggOut <span class="o">&lt;-</span> ggOut <span class="o">+</span> ggtitle<span class="p">(</span><span class="s">&#34;An example plot&#34;</span><span class="p">,</span> subtitle <span class="o">=</span> <span class="s">&#34;Aren&#39;t these fonts great?&#34;</span><span class="p">)</span>
+    ggOut <span class="o">&lt;-</span> ggOut <span class="o">+</span> theme<span class="p">(</span>text <span class="o">=</span> element_text<span class="p">(</span>family <span class="o">=</span> <span class="s">&#34;Indie Flower&#34;</span><span class="p">))</span>
+    ggOut</code></pre></div>]]></content>
+		</item>
+		
+		<item>
+			<title>SACEMA Quarterly</title>
+			<link>https://jackolney.github.io/blog/posts/2016-06-21-sacema/</link>
+			<pubDate>Tue, 21 Jun 2016 09:41:00 +0000</pubDate>
+			
+			<guid>https://jackolney.github.io/blog/posts/2016-06-21-sacema/</guid>
+			<description>I just wanted to post a quick link to an article I was invited to write for SACEMA Quarterly on the current deficiencies in publicly available data for analysis of the HIV Care Cascade. This short article focuses on how countries can improve and consolidate data collection practices to focus on bolstering care to achieve the UNAIDS 90-90-90 targets by 2020.
+Check out the article here.</description>
+			<content type="html"><![CDATA[<p>I just wanted to post a quick link to an article I was invited to write for SACEMA Quarterly on the current deficiencies in publicly available data for analysis of the HIV Care Cascade. This short article focuses on how countries can improve and consolidate data collection practices to focus on bolstering care to achieve the <a href="http://www.unaids.org/en/resources/documents/2014/90-90-90">UNAIDS 90-90-90</a> targets by 2020.</p>
+
+<p>Check out the article <a href="http://sacemaquarterly.com/hiv-treatment/future-needs-characterising-care-cascade.html">here</a>.</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Shiny Progress Bars</title>
+			<link>https://jackolney.github.io/blog/posts/2016-04-01-shiny/</link>
+			<pubDate>Fri, 01 Apr 2016 09:41:00 +0000</pubDate>
+			
+			<guid>https://jackolney.github.io/blog/posts/2016-04-01-shiny/</guid>
+			<description>Lately, I have been working on developing a friendly shiny app around a mathematical model to enable non-modellers to get to grips with the model, play around and perhaps learn something too. This has really been as much about teaching myself Shiny as it has been about enabling others to interact with models.
+Shiny, is great package being developed by a handful of developers at RStudio, and it enables anyone to wrap their R code in an HTML front-end that will run on any computer with R installed, and perhaps most importantly, run on any computer if deployed to a Linux server running ShinyServer.</description>
+			<content type="html"><![CDATA[
+
+<p>Lately, I have been working on developing a friendly shiny app around a mathematical model to enable non-modellers to get to grips with the model, play around and perhaps learn something too. This has really been as much about teaching myself Shiny as it has been about enabling others to interact with models.</p>
+
+<p><a href="http://shiny.rstudio.com/">Shiny</a>, is great package being developed by a handful of developers at RStudio, and it enables anyone to wrap their R code in an HTML front-end that will run on any computer with <a href="https://www.r-project.org/">R</a> installed, and perhaps most importantly, run on <em>any</em> computer if deployed to a Linux server running <a href="https://www.rstudio.com/products/shiny/shiny-server2/">ShinyServer</a>.</p>
+
+<p>One of the things I have been trying to do with my Shiny app (which has yet to reveal itself), is to include progress bars to enable the user to visualise the progress of some background process. There is a great progress bar function in the <a href="http://shiny.rstudio.com/">Shiny</a> package called <a href="http://shiny.rstudio.com/articles/progress.html">withProgress</a>. This allows the user to relatively pull together a progress bar that spans the width of the screen and can include a little message on the top right.</p>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r">server <span class="o">&lt;-</span> <span class="kr">function</span><span class="p">(</span>input<span class="p">,</span> output<span class="p">)</span> <span class="p">{</span>
+    output<span class="o">$</span>myplot <span class="o">&lt;-</span> renderPlot<span class="p">({</span>
+
+        <span class="c1"># The detail to be captured by the progress bar should be contained within this function and its braces</span>
+        withProgress<span class="p">(</span>message <span class="o">=</span> <span class="s">&#39;Creating plot&#39;</span><span class="p">,</span> value <span class="o">=</span> <span class="m">0</span><span class="p">,</span> <span class="p">{</span>
+
+            <span class="c1"># Create an empty data.frame</span>
+            dat <span class="o">&lt;-</span> <span class="kt">data.frame</span><span class="p">(</span>x <span class="o">=</span> <span class="kt">numeric</span><span class="p">(</span><span class="m">0</span><span class="p">),</span> y <span class="o">=</span> <span class="kt">numeric</span><span class="p">(</span><span class="m">0</span><span class="p">))</span>
+
+            <span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> <span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">)</span> <span class="p">{</span>
+                <span class="c1"># Add to it</span>
+                dat <span class="o">&lt;-</span> <span class="kp">rbind</span><span class="p">(</span>dat<span class="p">,</span> <span class="kt">data.frame</span><span class="p">(</span>x <span class="o">=</span> rnorm<span class="p">(</span><span class="m">1</span><span class="p">),</span> y <span class="o">=</span> rnorm<span class="p">(</span><span class="m">1</span><span class="p">)))</span>
+
+                <span class="c1"># Incremental Progress Bar (add some more info if neccessary)</span>
+                incProgress<span class="p">(</span><span class="m">1</span><span class="o">/</span>n<span class="p">,</span> detail <span class="o">=</span> <span class="kp">paste0</span><span class="p">(</span>i<span class="o">/</span>n<span class="p">,</span> <span class="s">&#34;%&#34;</span><span class="p">))</span>
+
+                <span class="c1"># Pause</span>
+                <span class="kp">Sys.sleep</span><span class="p">(</span><span class="m">0.1</span><span class="p">)</span>
+            <span class="p">}</span>
+        <span class="p">})</span>
+
+        plot<span class="p">(</span>dat<span class="o">$</span>x<span class="p">,</span> dat<span class="o">$</span>y<span class="p">)</span>
+    <span class="p">})</span>
+<span class="p">}</span>
+
+ui <span class="o">&lt;-</span> shinyUI<span class="p">(</span>basicPage<span class="p">(</span>plotOutput<span class="p">(</span><span class="s">&#39;myplot&#39;</span><span class="p">,</span> width <span class="o">=</span> <span class="s">&#34;300px&#34;</span><span class="p">,</span> height <span class="o">=</span> <span class="s">&#34;300px&#34;</span><span class="p">)))</span>
+
+shinyApp<span class="p">(</span>ui <span class="o">=</span> ui<span class="p">,</span> server <span class="o">=</span> server<span class="p">)</span></code></pre></div>
+<p>This is all great, but in my app, on one particular page, there is a whole model calibration thing going on, and I wanted to be able to relay info on which function was running, whether any errors were encountered, when plots were being generated etc. Having been inspired by the <a href="https://rstudio.github.io/shinydashboard/">shinydashboard</a> package which is based on the incredible <a href="https://almsaeedstudio.com/preview">AdminLTE</a> bootstrap template, I happened across this great script for creating group progress bars on <a href="https://github.com/rstudio/shinydashboard/issues/119">GitHub</a>.</p>
+
+<p><center><img src="../../images/progress-bars/github-inspiration.png" alt="AdminLTE Progress Bars in ShinyDashboard" style="width: 500px;"/></center></p>
+
+<p>I decided to try and implement this myself, and figured out, with thanks to <a href="https://github.com/dmpe">John Malc</a>, that I needed to use <a href="http://shiny.rstudio.com/reference/shiny/latest/renderUI.html">renderUI</a> to animate the bars.</p>
+
+<p>This is my <strong>server.R</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="kn">library</span><span class="p">(</span>shiny<span class="p">)</span>
+<span class="kn">library</span><span class="p">(</span>shinydashboard<span class="p">)</span>
+
+prgoressBar <span class="o">&lt;-</span> <span class="kr">function</span><span class="p">(</span>value <span class="o">=</span> <span class="m">0</span><span class="p">,</span> label <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> color <span class="o">=</span> <span class="s">&#34;aqua&#34;</span><span class="p">,</span> size <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span>
+                        striped <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> active <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> vertical <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kp">stopifnot</span><span class="p">(</span><span class="kp">is.numeric</span><span class="p">(</span>value<span class="p">))</span>
+    <span class="kr">if</span> <span class="p">(</span>value <span class="o">&lt;</span> <span class="m">0</span> <span class="o">||</span> value <span class="o">&gt;</span> <span class="m">100</span><span class="p">)</span>
+        <span class="kp">stop</span><span class="p">(</span><span class="s">&#34;&#39;value&#39; should be in the range from 0 to 100.&#34;</span><span class="p">,</span> call. <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
+    <span class="kr">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span>color <span class="o">%in%</span> shinydashboard<span class="o">:::</span>validColors <span class="o">||</span> color <span class="o">%in%</span> shinydashboard<span class="o">:::</span>validStatuses<span class="p">))</span>
+        <span class="kp">stop</span><span class="p">(</span><span class="s">&#34;&#39;color&#39; should be a valid status or color.&#34;</span><span class="p">,</span> call. <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
+    <span class="kr">if</span> <span class="p">(</span><span class="o">!</span><span class="kp">is.null</span><span class="p">(</span>size<span class="p">))</span>
+        size <span class="o">&lt;-</span> <span class="kp">match.arg</span><span class="p">(</span>size<span class="p">,</span> <span class="kt">c</span><span class="p">(</span><span class="s">&#34;sm&#34;</span><span class="p">,</span> <span class="s">&#34;xs&#34;</span><span class="p">,</span> <span class="s">&#34;xxs&#34;</span><span class="p">))</span>
+    text_value <span class="o">&lt;-</span> <span class="kp">paste0</span><span class="p">(</span>value<span class="p">,</span> <span class="s">&#34;%&#34;</span><span class="p">)</span>
+    <span class="kr">if</span> <span class="p">(</span>vertical<span class="p">)</span>
+        style <span class="o">&lt;-</span> htmltools<span class="o">::</span>css<span class="p">(</span>height <span class="o">=</span> text_value<span class="p">,</span> <span class="sb">`min-height`</span> <span class="o">=</span> <span class="s">&#34;2em&#34;</span><span class="p">)</span>
+    <span class="kp">else</span>
+        style <span class="o">&lt;-</span> htmltools<span class="o">::</span>css<span class="p">(</span>width <span class="o">=</span> text_value<span class="p">,</span> <span class="sb">`min-width`</span> <span class="o">=</span> <span class="s">&#34;2em&#34;</span><span class="p">)</span>
+    tags<span class="o">$</span>div<span class="p">(</span>
+        class <span class="o">=</span> <span class="s">&#34;progress&#34;</span><span class="p">,</span>
+        class <span class="o">=</span> <span class="kr">if</span> <span class="p">(</span><span class="o">!</span><span class="kp">is.null</span><span class="p">(</span>size<span class="p">))</span> <span class="kp">paste0</span><span class="p">(</span><span class="s">&#34;progress-&#34;</span><span class="p">,</span> size<span class="p">),</span>
+        class <span class="o">=</span> <span class="kr">if</span> <span class="p">(</span>vertical<span class="p">)</span> <span class="s">&#34;vertical&#34;</span><span class="p">,</span>
+        class <span class="o">=</span> <span class="kr">if</span> <span class="p">(</span>active<span class="p">)</span> <span class="s">&#34;active&#34;</span><span class="p">,</span>
+        tags<span class="o">$</span>div<span class="p">(</span>
+            class <span class="o">=</span> <span class="s">&#34;progress-bar&#34;</span><span class="p">,</span>
+            class <span class="o">=</span> <span class="kp">paste0</span><span class="p">(</span><span class="s">&#34;progress-bar-&#34;</span><span class="p">,</span> color<span class="p">),</span>
+            class <span class="o">=</span> <span class="kr">if</span> <span class="p">(</span>striped<span class="p">)</span> <span class="s">&#34;progress-bar-striped&#34;</span><span class="p">,</span>
+            style <span class="o">=</span> style<span class="p">,</span>
+            role <span class="o">=</span> <span class="s">&#34;progressbar&#34;</span><span class="p">,</span>
+            <span class="sb">`aria-valuenow`</span> <span class="o">=</span> value<span class="p">,</span>
+            <span class="sb">`aria-valuemin`</span> <span class="o">=</span> <span class="m">0</span><span class="p">,</span>
+            <span class="sb">`aria-valuemax`</span> <span class="o">=</span> <span class="m">100</span><span class="p">,</span>
+            tags<span class="o">$</span>span<span class="p">(</span>class <span class="o">=</span> <span class="kr">if</span> <span class="p">(</span><span class="o">!</span>label<span class="p">)</span> <span class="s">&#34;sr-only&#34;</span><span class="p">,</span> text_value<span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">}</span>
+
+progressGroup <span class="o">&lt;-</span> <span class="kr">function</span><span class="p">(</span>text<span class="p">,</span> value<span class="p">,</span> min <span class="o">=</span> <span class="m">0</span><span class="p">,</span> max <span class="o">=</span> value<span class="p">,</span> color <span class="o">=</span> <span class="s">&#34;aqua&#34;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kp">stopifnot</span><span class="p">(</span><span class="kp">is.character</span><span class="p">(</span>text<span class="p">))</span>
+    <span class="kp">stopifnot</span><span class="p">(</span><span class="kp">is.numeric</span><span class="p">(</span>value<span class="p">))</span>
+    <span class="kr">if</span> <span class="p">(</span>value <span class="o">&lt;</span> min <span class="o">||</span> value <span class="o">&gt;</span> <span class="kp">max</span><span class="p">)</span>
+        <span class="kp">stop</span><span class="p">(</span><span class="kp">sprintf</span><span class="p">(</span><span class="s">&#34;&#39;value&#39; should be in the range from %d to %d.&#34;</span><span class="p">,</span> <span class="kp">min</span><span class="p">,</span> <span class="kp">max</span><span class="p">),</span> call. <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
+    tags<span class="o">$</span>div<span class="p">(</span>
+        class <span class="o">=</span> <span class="s">&#34;progress-group&#34;</span><span class="p">,</span>
+        tags<span class="o">$</span>span<span class="p">(</span>class <span class="o">=</span> <span class="s">&#34;progress-text&#34;</span><span class="p">,</span> text<span class="p">),</span>
+        tags<span class="o">$</span>span<span class="p">(</span>class <span class="o">=</span> <span class="s">&#34;progress-number&#34;</span><span class="p">,</span> <span class="kp">sprintf</span><span class="p">(</span><span class="s">&#34;%d / %d&#34;</span><span class="p">,</span> value<span class="p">,</span> <span class="kp">max</span><span class="p">)),</span>
+        prgoressBar<span class="p">(</span><span class="kp">round</span><span class="p">(</span>value <span class="o">/</span> max <span class="o">*</span> <span class="m">100</span><span class="p">),</span> color <span class="o">=</span> color<span class="p">,</span> size <span class="o">=</span> <span class="s">&#34;sm&#34;</span><span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">}</span>
+
+
+shinyServer<span class="p">(</span><span class="kr">function</span><span class="p">(</span>input<span class="p">,</span>output<span class="p">){</span>
+
+    <span class="c1"># Create some REACTIVE VALUES</span>
+    progressValue <span class="o">&lt;-</span> reactiveValues<span class="p">()</span>
+    progressValue<span class="o">$</span>one <span class="o">&lt;-</span> <span class="m">0</span>
+    progressValue<span class="o">$</span>two <span class="o">&lt;-</span> <span class="m">0</span>
+    progressValue<span class="o">$</span>three <span class="o">&lt;-</span> <span class="m">0</span>
+    progressValue<span class="o">$</span>four <span class="o">&lt;-</span> <span class="m">0</span>
+
+    <span class="c1"># Render UI output</span>
+    output<span class="o">$</span>progressOne <span class="o">&lt;-</span> renderUI<span class="p">({</span>
+        progressGroup<span class="p">(</span>text <span class="o">=</span> <span class="s">&#34;Sample Parameter Space&#34;</span><span class="p">,</span>    value <span class="o">=</span> progressValue<span class="o">$</span>one<span class="p">,</span>   min <span class="o">=</span> <span class="m">0</span><span class="p">,</span> max <span class="o">=</span> <span class="m">100</span><span class="p">,</span> color <span class="o">=</span> <span class="s">&#34;aqua&#34;</span><span class="p">)</span>
+    <span class="p">})</span>
+
+    output<span class="o">$</span>progressTwo <span class="o">&lt;-</span> renderUI<span class="p">({</span>
+        progressGroup<span class="p">(</span>text <span class="o">=</span> <span class="s">&#34;Evaluate Simulation Error&#34;</span><span class="p">,</span> value <span class="o">=</span> progressValue<span class="o">$</span>two<span class="p">,</span>   min <span class="o">=</span> <span class="m">0</span><span class="p">,</span> max <span class="o">=</span> <span class="m">100</span><span class="p">,</span> color <span class="o">=</span> <span class="s">&#34;red&#34;</span><span class="p">)</span>
+    <span class="p">})</span>
+
+    output<span class="o">$</span>progressThree <span class="o">&lt;-</span> renderUI<span class="p">({</span>
+        progressGroup<span class="p">(</span>text <span class="o">=</span> <span class="s">&#34;Resample top 10%&#34;</span><span class="p">,</span>          value <span class="o">=</span> progressValue<span class="o">$</span>three<span class="p">,</span> min <span class="o">=</span> <span class="m">0</span><span class="p">,</span> max <span class="o">=</span> <span class="m">100</span><span class="p">,</span> color <span class="o">=</span> <span class="s">&#34;green&#34;</span><span class="p">)</span>
+    <span class="p">})</span>
+
+    output<span class="o">$</span>progressFour <span class="o">&lt;-</span> renderUI<span class="p">({</span>
+        progressGroup<span class="p">(</span>text <span class="o">=</span> <span class="s">&#34;Compile Output&#34;</span><span class="p">,</span>            value <span class="o">=</span> progressValue<span class="o">$</span>four<span class="p">,</span>  min <span class="o">=</span> <span class="m">0</span><span class="p">,</span> max <span class="o">=</span> <span class="m">100</span><span class="p">,</span> color <span class="o">=</span> <span class="s">&#34;yellow&#34;</span><span class="p">)</span>
+    <span class="p">})</span>
+
+    <span class="c1"># Then on action button, allow bar to move up.</span>
+    observeEvent<span class="p">(</span>input<span class="o">$</span>goButton<span class="p">,</span> <span class="p">{</span>
+
+        <span class="kr">for</span><span class="p">(</span>i <span class="kr">in</span> <span class="m">1</span><span class="o">:</span><span class="m">100</span><span class="p">)</span> <span class="p">{</span>
+            progressValue<span class="o">$</span>one <span class="o">&lt;-</span> i
+            progressValue<span class="o">$</span>two <span class="o">&lt;-</span> i
+            progressValue<span class="o">$</span>three <span class="o">&lt;-</span> i
+            progressValue<span class="o">$</span>four <span class="o">&lt;-</span> i
+            <span class="kp">Sys.sleep</span><span class="p">(</span><span class="m">0.1</span><span class="p">)</span>
+        <span class="p">}</span>
+
+    <span class="p">})</span>
+
+<span class="p">})</span></code></pre></div>
+<p>This is my <strong>ui.R</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="kn">library</span><span class="p">(</span>shiny<span class="p">)</span>
+<span class="kn">library</span><span class="p">(</span>shinydashboard<span class="p">)</span>
+
+shinyUI<span class="p">(</span>
+    dashboardPage<span class="p">(</span>
+      dashboardHeader<span class="p">(</span>title <span class="o">=</span> <span class="s">&#34;Playground App&#34;</span><span class="p">),</span>
+      dashboardSidebar<span class="p">(</span>
+            sidebarMenu<span class="p">(</span>
+                id <span class="o">=</span> <span class="s">&#34;sideBar&#34;</span><span class="p">,</span>
+                menuItem<span class="p">(</span><span class="s">&#34;Progress Bar&#34;</span><span class="p">,</span> tabName <span class="o">=</span> <span class="s">&#34;progress&#34;</span><span class="p">,</span> icon <span class="o">=</span> icon<span class="p">(</span><span class="s">&#34;home&#34;</span><span class="p">,</span> class <span class="o">=</span> <span class="s">&#34;fa-lg fa-fw&#34;</span><span class="p">,</span> lib <span class="o">=</span> <span class="s">&#34;font-awesome&#34;</span><span class="p">))</span>
+            <span class="p">)</span>
+        <span class="p">),</span>
+        dashboardBody<span class="p">(</span>
+            tabItems<span class="p">(</span>
+                tabItem<span class="p">(</span>tabName <span class="o">=</span> <span class="s">&#34;progress&#34;</span><span class="p">,</span>
+                    column<span class="p">(</span>width <span class="o">=</span> <span class="m">8</span><span class="p">,</span>
+                        box<span class="p">(</span>width <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span>
+                            status <span class="o">=</span> <span class="s">&#34;primary&#34;</span><span class="p">,</span>
+                            solidHeader <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+                            collapsible <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+                            collapsed <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span>
+                            title <span class="o">=</span> <span class="s">&#34;Calibration&#34;</span><span class="p">,</span>
+                            helpText<span class="p">(</span><span class="s">&#34;Progress Bar Demo.&#34;</span><span class="p">),</span>
+                            p<span class="p">(</span>strong<span class="p">(</span><span class="s">&#34;Goal Completion&#34;</span><span class="p">),</span> class <span class="o">=</span> <span class="s">&#34;text-center&#34;</span><span class="p">),</span>
+                            uiOutput<span class="p">(</span>outputId <span class="o">=</span> <span class="s">&#34;progressOne&#34;</span><span class="p">),</span>
+                            uiOutput<span class="p">(</span>outputId <span class="o">=</span> <span class="s">&#34;progressTwo&#34;</span><span class="p">),</span>
+                            uiOutput<span class="p">(</span>outputId <span class="o">=</span> <span class="s">&#34;progressThree&#34;</span><span class="p">),</span>
+                            uiOutput<span class="p">(</span>outputId <span class="o">=</span> <span class="s">&#34;progressFour&#34;</span><span class="p">)</span>
+                        <span class="p">)</span>
+                    <span class="p">),</span>
+                    column<span class="p">(</span>width <span class="o">=</span> <span class="m">4</span><span class="p">,</span>
+                        box<span class="p">(</span>width <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span>
+                            status <span class="o">=</span> <span class="s">&#34;warning&#34;</span><span class="p">,</span>
+                            solidHeader <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+                            title <span class="o">=</span> <span class="s">&#34;Button&#34;</span><span class="p">,</span>
+                            actionButton<span class="p">(</span><span class="s">&#34;goButton&#34;</span><span class="p">,</span> <span class="s">&#34;HIT ME&#34;</span><span class="p">)</span>
+                        <span class="p">)</span>
+                    <span class="p">)</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">)</span></code></pre></div>
+<p>The above works, if we just use a simple <a href="http://shiny.rstudio.com/reference/shiny/latest/actionButton.html">actionButton</a>, but if I include a loop, then the the progress bars just get <em>grayed out</em> almost as if the render function can&rsquo;t keep up with the for loop. Luckily, once the loop finishes then the bars update, but they are not of much use beforehand.</p>
+
+<h3 id="the-solution">The Solution</h3>
+
+<p>I decided, against my better judgement to move away from the group progress bar and rethink my use of <a href="http://shiny.rstudio.com/articles/progress.html">withProgress</a>. In fact, I could make do with this function if I could customise it, so I took the plunge and decided to get my hands dirty with the shiny CSS. After spending some time inspecting the soup of files that are generated and run when a shiny app is active, I located the attributes reponsible for the Shiny Progress Bar. Below are the changes I have made to improve the appearance of the bars.</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/* Make sure the filename doesn&#39;t extend past the bounds of the container */</span>
+<span class="p">.</span><span class="nc">shiny-input-container</span> <span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">file</span><span class="o">]</span> <span class="p">{</span>
+    <span class="k">overflow</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
+    <span class="k">max-width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">shiny-progress-container</span> <span class="p">{</span>
+    <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
+    <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+    <span class="k">z-index</span><span class="p">:</span> <span class="mi">2000</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">shiny-progress</span> <span class="p">.</span><span class="nc">progress</span> <span class="p">{</span>
+    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+    <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+    <span class="c">/* The default height is only 1px which is find to be TINY */</span>
+    <span class="k">height</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">shiny-progress</span> <span class="p">.</span><span class="nc">bar</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="mh">#FF0000</span><span class="p">;</span>
+    <span class="err">.opacity</span> <span class="err">=</span> <span class="err">0.8</span><span class="p">;</span>
+    <span class="k">transition-duration</span><span class="p">:</span> <span class="mi">250</span><span class="kt">ms</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">shiny-progress</span> <span class="p">.</span><span class="nc">progress-text</span> <span class="p">{</span>
+    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+    <span class="k">right</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">height</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">490</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="mh">#D9534F</span><span class="p">;</span>
+    <span class="k">padding-top</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-right</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-bottom</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-left</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">opacity</span><span class="p">:</span> <span class="mf">0.95</span><span class="p">;</span>
+    <span class="c">/* I also wanted to round off the corners of the text box */</span>
+    <span class="k">border-radius</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+    <span class="kp">-webkit-</span><span class="k">border-radius</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+    <span class="kp">-moz-</span><span class="k">border-radius</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">progress-text</span> <span class="p">{</span>
+    <span class="c">/* Copy the below to vertically center the progress bar text box in the shiny dashboard header */</span>
+    <span class="c">/* !important is crucial here otherwise it gets overridden by the dreaded element.style */</span>
+    <span class="k">top</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="k">color</span><span class="p">:</span> <span class="mh">#FFFFFF</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Bold Initial part of message */</span>
+<span class="p">.</span><span class="nc">shiny-progress</span> <span class="p">.</span><span class="nc">progress-text</span> <span class="p">.</span><span class="nc">progress-message</span> <span class="p">{</span>
+    <span class="k">padding-top</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-right</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-bottom</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-left</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">18</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Message detail */</span>
+<span class="p">.</span><span class="nc">shiny-progress</span> <span class="p">.</span><span class="nc">progress-text</span> <span class="p">.</span><span class="nc">progress-detail</span> <span class="p">{</span>
+    <span class="k">padding-top</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-right</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-bottom</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-left</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">17</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+<p>To include this CSS in your Shiny app, you can either write it <a href="http://shiny.rstudio.com/articles/css.html">in-line</a>, but thats a bit naff, so dump it in a .css file and in your <strong>ui.R</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r">dashboardPage<span class="p">(</span>
+    dashboardBody<span class="p">(</span>
+        <span class="c1"># Write the path to your .css file</span>
+        includeCSS<span class="p">(</span><span class="s">&#34;styles.css&#34;</span><span class="p">)</span>
+        <span class="c1"># The guts of your app</span>
+    <span class="p">)</span>
+<span class="p">)</span></code></pre></div>
+<p>All done, enjoy!</p>
+
+<p><center><img src="../../images/progress-bars/result.png" alt="Shiny Progress Bar" style="width: 1000px;"/></center></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>CROI 2016</title>
+			<link>https://jackolney.github.io/blog/posts/2016-03-09-croi/</link>
+			<pubDate>Wed, 09 Mar 2016 01:41:00 +0000</pubDate>
+			
+			<guid>https://jackolney.github.io/blog/posts/2016-03-09-croi/</guid>
+			<description>I was recently invited to speak at the annual Conference on Retroviruses and Opportunistic Infections (CROI), held this year in Boston. I spoke briefly about some of my work on home-based counselling and testing programmes in western Kenya, particularly with regard to the timing of testing rounds and the scale up of testing programmes to achieve the UNAIDS 90-90-90 targets by 2020.
+ </description>
+			<content type="html"><![CDATA[<p>I was recently invited to speak at the annual <a href="http://www.croiconference.org/">Conference on Retroviruses and Opportunistic Infections (CROI)</a>, held this year in Boston. I spoke briefly about some of my work on home-based counselling and testing programmes in western Kenya, particularly with regard to the timing of testing rounds and the scale up of testing programmes to achieve the <a href="http://www.unaids.org/en/resources/documents/2014/90-90-90">UNAIDS 90-90-90</a> targets by 2020.</p>
+
+<iframe width="100%" height="600" src="http://www.croiwebcasts.org/console/player/29466?mediaType=slideVideo" frameborder="0" allowfullscreen></iframe>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Hubot - a Siri to call my own</title>
+			<link>https://jackolney.github.io/blog/posts/2016-01-09-hubot/</link>
+			<pubDate>Sat, 09 Jan 2016 09:41:00 +0000</pubDate>
+			
+			<guid>https://jackolney.github.io/blog/posts/2016-01-09-hubot/</guid>
+			<description>I have always been interested in how these automated personal assistants: Siri, Google Now, Cortana etc. actually function. Aside from the speech recognition algorithms, the meaning of the sentence spoken to these programs must be deciphered and then acted upon pretty quickly. &amp;lsquo;Trigger&amp;rsquo; words are clearly important here e.g. &amp;ldquo;give me directions to&amp;hellip;&amp;rdquo; but the breadth of words that a computer must understand in order to appear human is simply vast.</description>
+			<content type="html"><![CDATA[
+
+<p>I have always been interested in how these <em>automated</em> personal assistants: Siri, Google Now, Cortana etc. actually function. Aside from the speech recognition algorithms, the meaning of the sentence spoken to these programs must be deciphered and then acted upon pretty quickly. &lsquo;Trigger&rsquo; words are clearly important here e.g. &ldquo;give me <strong>directions</strong> to&hellip;&rdquo; but the breadth of words that a computer must understand in order to appear <em>human</em> is simply vast.</p>
+
+<p>Recently, I have been getting pretty into <a href="https://slack.com/">Slack</a> and stumbled across this bot developed by the guys at <a href="https://github.com/">GitHub</a> called hubot. Hubot, is a <em>robot</em> who you talk to and give commands through a chat-interface, such as slack! Hubot can be setup to run locally, or pushed to an online application hosting service such as <a href="https://dashboard.heroku.com/">Heroku</a>. The great thing about hubot is that it is completely open source and can be expanded by writing simple <a href="http://coffeescript.org/">CoffeeScripts</a> (simplified JavaScript). Here I will explain the basic installation and setup of Hubot, before writing basic scripts that can be executed.</p>
+
+<p><center><img src="../../images/hubot/hubot.jpg" alt="hubot" style="width: 300px;"/></center></p>
+
+<h2 id="getting-started-with-hubot">Getting Started With Hubot</h2>
+
+<p>First things first, install <a href="https://nodejs.org/en/">nodejs</a> and the nodejs package manager <a href="https://www.npmjs.com/">npm</a>. The best way to install these is through <a href="http://brew.sh/">HomeBrew</a>, possiblity the greatest package manager for OS X.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">brew install nodejs
+brew install npm</code></pre></div>
+<p>With nodejs and npm installed, we can pull down and install hubot. Running the below command will pull down a hubot installer and run a whole bunch of system tests to ensure that the local system can run a bot.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">npm install -g yo generator-hubot</code></pre></div>
+<p>Now we need to create a directory to hold our bot.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">mkdir my-hubot-directory
+<span class="nb">cd</span> ./my-hubot-directory
+yo hubot</code></pre></div>
+<p>Now, our new hubot will ask a whole bunch of setup questions about who it is and what its purpose is. The best thing to do next is to turn this directory into a git repository so we can track changes, and lets face it, everything should be under version control and pushed to GitHub.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git init
+git add --all
+git commit -m <span class="s1">&#39;initial commit&#39;</span></code></pre></div>
+<p>Here is where the fun starts.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">./bin/hubot
+hello
+<span class="c1"># Well hello there, &lt;name&gt;</span></code></pre></div>
+<p><strong><em>How cool is that!!</em></strong></p>
+
+<h2 id="custom-scripts">Custom Scripts</h2>
+
+<p>The great thing about hubot is that it is infinitely customizable and dead easy to write new scripts. To begin, as is tradition, lets create a <em>&lsquo;Hello, World!&rsquo;</em> script. Within the <code>./scripts</code> directory create a file called <code>hello.coffee</code> with <code>touch</code> or a similar function. Edit the file and include the following:</p>
+<div class="highlight"><pre class="chroma"><code class="language-CoffeeScript" data-lang="CoffeeScript"><span class="c1"># Description:
+</span><span class="c1">#   Greet the world
+</span><span class="c1">#
+</span><span class="c1"># Commands:
+</span><span class="c1">#   hubot greet - Say hello to the world
+</span><span class="c1"></span>
+<span class="nv">module.exports = </span><span class="nf">(robot) -&gt;</span>
+  <span class="nx">robot</span><span class="p">.</span><span class="nx">respond</span> <span class="sr">/greet/i</span><span class="p">,</span> <span class="nf">(msg) -&gt;</span>
+    <span class="nx">msg</span><span class="p">.</span><span class="nx">send</span> <span class="s">&#34;Hello, World!&#34;</span></code></pre></div>
+<p>Restart hubot (<code>./bin/hubot</code>) and try the following:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hubot <span class="nb">help</span> greet
+<span class="c1"># hubot greet - Say hello to the world</span>
+hubot greet
+<span class="c1"># Hello, World!</span></code></pre></div>
+<p>For more information on scripts, check out <a href="https://leanpub.com/automation-and-monitoring-with-hubot/">Automation and Monitoring with Hubot</a> by <a href="https://github.com/spajus">Tomas Varaneckas</a>.</p>
+
+<h2 id="remote-bot-hosting">Remote Bot Hosting</h2>
+
+<p>So far, I have only discussed implementing hubot locally, but in reality, we don&rsquo;t want to be running our own machine the whole time, we want the bot to be hosted somewhere remotely and interfaced through a chat client like <a href="https://slack.com/">slack</a>.</p>
+
+<h3 id="heroku">Heroku</h3>
+
+<p>Introducing, <a href="https://heroku.com/">Heroku</a>, the Cloud platform company, that allows you to create, deploy, and manage web applications. What we are going to do is to &lsquo;host&rsquo; our hubot instance on a heroku server so that the bot is always running. Luckily, Heroku has a free tier so this also doesn&rsquo;t cost a penny!</p>
+
+<p>But, before we deploy to Heroku we need to install some software in the form of the <a href="https://toolbelt.heroku.com/">Heroku Toolbelt</a>. This will allow us to talk to Heroku&rsquo;s servers from the command line of our local machine.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">heroku create my-own-slackbot</code></pre></div>
+<p>This will create an application on heroku&rsquo;s servers (you may need to alter the name to be unique). With a skeleton application created, we can access the heroku <a href="https://dashboard.heroku.com/">dashboard</a> to find our app&rsquo;s URL and use it to set a config flag in our hubots directory:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">heroku config:add <span class="nv">HEROKU_URL</span><span class="o">=</span>https://my-own-slackbot.herokuapp.com</code></pre></div>
+<h3 id="slack-integration">Slack Integration</h3>
+
+<p>Now, we need to add a <a href="http://my.slack.com/services/new/hubot">hubot &lsquo;integration&rsquo; in slack</a>. This will generate a &lsquo;SLACK_TOKEN&rsquo; which can be added as a config flag:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">heroku config:add <span class="nv">HUBOT_SLACK_TOKEN</span><span class="o">=</span>abcd-1234-5678-91011-12e4fg</code></pre></div>
+<h3 id="deploy">Deploy</h3>
+
+<p>The most amazing, and logical, aspect of all of this, is that deployment to Heroku is done entirely through <a href="https://git-scm.com/">git</a>. When we &lsquo;create&rsquo; our heroku app locally, it sets up a remote repository which we can &lsquo;push&rsquo; changes to.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git remote -v
+<span class="c1"># heroku  https://git.heroku.com/my-own-slackbot.git (fetch)</span>
+<span class="c1"># heroku  https://git.heroku.com/my-own-slackbot.git (push)</span>
+
+git push heroku master</code></pre></div>
+<p>That&rsquo;s it! Now, if we login to slack we should see that our very own hubot is online and ready to play. Yes, I called my bot <em>&lsquo;hal&rsquo;</em>.</p>
+
+<p><center><img src="../../images/hubot/hal.jpg" alt="hal" style="width: 350px;"/></center></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Has the Apple Watch improved my fitness?</title>
+			<link>https://jackolney.github.io/blog/posts/2015-12-27-apple-watch-health/</link>
+			<pubDate>Sun, 27 Dec 2015 09:41:00 +0000</pubDate>
+			
+			<guid>https://jackolney.github.io/blog/posts/2015-12-27-apple-watch-health/</guid>
+			<description>Overview Having owned an Apple Watch since early May, I have built up a substantial amount of data in Apple&amp;rsquo;s &amp;lsquo;HealthKit&amp;rsquo;, detailing my daily steps from in excess of a year prior to owning the watch to at least six months after. Therefore, a simple analysis of whether the watch has improved my fitness should be possible. Additionally, I can pull out heart-rate data, stair-flight data, exercise data and map a whole bunch of other interesting stuff.</description>
+			<content type="html"><![CDATA[
+
+<h1 id="overview">Overview</h1>
+
+<p>Having owned an Apple Watch since early May, I have built up a substantial amount of data in Apple&rsquo;s &lsquo;HealthKit&rsquo;, detailing my daily steps from in excess of a year prior to owning the watch to at least six months after. Therefore, a simple analysis of whether the watch has improved my fitness should be possible. Additionally, I can pull out heart-rate data, stair-flight data, exercise data and map a whole bunch of other interesting stuff.</p>
+
+<p>All data is from my iPhone 6+ and my Apple Watch, all analysis was conducted in R and all figures were produced with ggplot2.</p>
+
+<h1 id="setup">Setup</h1>
+
+<p>The first thing to do is it to export the relevant data from &lsquo;HealthKit&rsquo; as a csv file. We do this using the <a href="https://itunes.apple.com/gb/app/qs-access/id920297614?mt=8">QS Access</a> iOS app from the App Store. The app allows you to define the columns by selecting the relevant data to export (e.g. Steps, Heart Rate etc.) and then define rows as being hourly or daily. The simplest way to transfer the csv from iPhone to Mac is via email. Now we can jump right into R and start cleaning the data.</p>
+
+<h2 id="data-cleaning">Data Cleaning</h2>
+<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R"><span class="c1"># Set the working directory to the folder containing the exported .csv</span>
+<span class="kp">setwd</span><span class="p">(</span><span class="s">&#34;~/&#34;</span><span class="p">)</span>
+
+<span class="c1"># Load &#39;dplyr&#39; and &#39;ggplot2&#39; for data analysis and plotting</span>
+<span class="kn">require</span><span class="p">(</span>dplyr<span class="p">)</span>
+<span class="kn">require</span><span class="p">(</span>ggplot2<span class="p">)</span>
+
+<span class="c1"># Load in the exported .csv file</span>
+<span class="c1"># The data I am importing was exported from my iPhone on 4th September, 2015</span>
+MyCsvData <span class="o">&lt;-</span> read.csv<span class="p">(</span><span class="s">&#34;./HealthData/HealthData_04-09-15.csv&#34;</span><span class="p">)</span>
+MyCsvDataHourly <span class="o">&lt;-</span> read.csv<span class="p">(</span><span class="s">&#34;./HealthData/HealthDataHourly_04-09-15.csv&#34;</span><span class="p">)</span></code></pre></div>
+<p>Probably the most time consuming aspect of any data analysis is cleaning and correctly formatting the data. Here, we must ensure that R can understand the exported date format correctly. To rectify this we define a function <code>FormatData()</code> which takes the entire dataframe as an arguement and returns a dataframe containing the correct date format.</p>
+<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R">FormatData <span class="o">&lt;-</span> <span class="kr">function</span><span class="p">(</span>Data<span class="p">)</span> <span class="p">{</span>
+
+    <span class="c1"># Define the &#39;Start&#39; and &#39;End&#39; columns.</span>
+    StartDate <span class="o">&lt;-</span> <span class="kp">as.Date</span><span class="p">(</span>Data<span class="o">$</span>Start<span class="p">,</span>format<span class="o">=</span><span class="s">&#34;%d-%b-%Y %H:%M&#34;</span><span class="p">)</span>
+    EndDate <span class="o">&lt;-</span> <span class="kp">as.Date</span><span class="p">(</span>Data<span class="o">$</span>Finish<span class="p">,</span>format<span class="o">=</span><span class="s">&#34;%d-%b-%Y %H:%M&#34;</span><span class="p">)</span>
+
+    <span class="c1"># Turn into a smart dataframe.</span>
+    <span class="c1"># if you print a tbl_df to screen only the first 10 rows are shown.</span>
+    MyData <span class="o">&lt;-</span> tbl_df<span class="p">(</span>Data<span class="p">)</span>
+
+    <span class="c1"># Cleanup data.names</span>
+    <span class="kp">names</span><span class="p">(</span>MyData<span class="p">)[</span><span class="m">1</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="s">&#34;StartTime&#34;</span>
+    <span class="kp">names</span><span class="p">(</span>MyData<span class="p">)[</span><span class="m">2</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="s">&#34;EndTime&#34;</span>
+    <span class="kp">names</span><span class="p">(</span>MyData<span class="p">)[</span><span class="m">3</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="s">&#34;Calories&#34;</span> <span class="c1"># kcal</span>
+    <span class="kp">names</span><span class="p">(</span>MyData<span class="p">)[</span><span class="m">4</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="s">&#34;Distance&#34;</span> <span class="c1"># In miles</span>
+    <span class="kp">names</span><span class="p">(</span>MyData<span class="p">)[</span><span class="m">5</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="s">&#34;Flights&#34;</span> <span class="c1"># count</span>
+    <span class="kp">names</span><span class="p">(</span>MyData<span class="p">)[</span><span class="m">6</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="s">&#34;HeartRate&#34;</span> <span class="c1"># bpm</span>
+    <span class="kp">names</span><span class="p">(</span>MyData<span class="p">)[</span><span class="m">7</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="s">&#34;Steps&#34;</span> <span class="c1"># count</span>
+
+    <span class="c1"># Formatting date. #</span>
+    <span class="c1">####################</span>
+    <span class="c1"># Code    Value</span>
+    <span class="c1"># %d  Day of the month (decimal number)</span>
+    <span class="c1"># %m  Month (decimal number)</span>
+    <span class="c1"># %b  Month (abbreviated)</span>
+    <span class="c1"># %B  Month (full name)</span>
+    <span class="c1"># %y  Year (2 digit)</span>
+    <span class="c1"># %Y  Year (4 digit)</span>
+
+    <span class="c1"># Deploy and mutate whole dataFrame</span>
+    FormatDate <span class="o">&lt;-</span> <span class="kr">function</span><span class="p">(</span>x<span class="p">)</span> <span class="p">{</span>
+        <span class="kp">format</span><span class="p">(</span><span class="kp">strptime</span><span class="p">(</span>TestDate<span class="p">,</span><span class="s">&#34;%d-%b-%Y %H:%M&#34;</span><span class="p">),</span><span class="s">&#34;%d-%m-%Y&#34;</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    FormatTime <span class="o">&lt;-</span> <span class="kr">function</span><span class="p">(</span>x<span class="p">)</span> <span class="p">{</span>
+        <span class="kp">format</span><span class="p">(</span><span class="kp">strptime</span><span class="p">(</span>x<span class="p">,</span><span class="s">&#34;%d-%b-%Y %H:%M&#34;</span><span class="p">),</span><span class="s">&#34;%H:%M&#34;</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="c1"># StartDate &lt;- apply(MyData[1],2,FormatDate)</span>
+    StartTime <span class="o">&lt;-</span> <span class="kp">apply</span><span class="p">(</span>MyData<span class="p">[</span><span class="m">1</span><span class="p">],</span><span class="m">2</span><span class="p">,</span>FormatTime<span class="p">)</span>
+    StartDateTime <span class="o">&lt;-</span> MyData<span class="p">[</span><span class="m">1</span><span class="p">]</span>
+
+    <span class="c1"># EndDate &lt;- apply(MyData[2],2,FormatDate)</span>
+    EndTime <span class="o">&lt;-</span> <span class="kp">apply</span><span class="p">(</span>MyData<span class="p">[</span><span class="m">2</span><span class="p">],</span><span class="m">2</span><span class="p">,</span>FormatTime<span class="p">)</span>
+    EndDateTime <span class="o">&lt;-</span> MyData<span class="p">[</span><span class="m">2</span><span class="p">]</span>
+
+    <span class="c1"># Pull together a new dataframe</span>
+    MyFormattedData <span class="o">&lt;-</span> tbl_df<span class="p">(</span><span class="kt">data.frame</span><span class="p">(</span>
+        StartDate<span class="p">,</span>
+        StartTime<span class="p">,</span>
+        EndDate<span class="p">,</span>
+        EndTime<span class="p">,</span>
+        StartDateTime<span class="p">,</span>
+        EndDateTime<span class="p">,</span>
+        MyData<span class="o">$</span>Calories<span class="p">,</span>
+        MyData<span class="o">$</span>Distance<span class="p">,</span>
+        MyData<span class="o">$</span>Flights<span class="p">,</span>
+        MyData<span class="o">$</span>HeartRate<span class="p">,</span>
+        MyData<span class="o">$</span>Steps<span class="p">))</span>
+
+    <span class="c1"># Neaten up names</span>
+    <span class="kp">names</span><span class="p">(</span>MyFormattedData<span class="p">)[</span><span class="m">1</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="s">&#34;StartDate&#34;</span>
+    <span class="kp">names</span><span class="p">(</span>MyFormattedData<span class="p">)[</span><span class="m">2</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="s">&#34;StartTime&#34;</span>
+    <span class="kp">names</span><span class="p">(</span>MyFormattedData<span class="p">)[</span><span class="m">3</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="s">&#34;EndDate&#34;</span>
+    <span class="kp">names</span><span class="p">(</span>MyFormattedData<span class="p">)[</span><span class="m">4</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="s">&#34;EndTime&#34;</span>
+    <span class="kp">names</span><span class="p">(</span>MyFormattedData<span class="p">)[</span><span class="m">5</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="s">&#34;StartDateTime&#34;</span>
+    <span class="kp">names</span><span class="p">(</span>MyFormattedData<span class="p">)[</span><span class="m">6</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="s">&#34;EndDateTime&#34;</span>
+    <span class="kp">names</span><span class="p">(</span>MyFormattedData<span class="p">)[</span><span class="m">7</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="s">&#34;Calories&#34;</span> <span class="c1"># kcal</span>
+    <span class="kp">names</span><span class="p">(</span>MyFormattedData<span class="p">)[</span><span class="m">8</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="s">&#34;Distance&#34;</span> <span class="c1"># In miles</span>
+    <span class="kp">names</span><span class="p">(</span>MyFormattedData<span class="p">)[</span><span class="m">9</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="s">&#34;Flights&#34;</span> <span class="c1"># count</span>
+    <span class="kp">names</span><span class="p">(</span>MyFormattedData<span class="p">)[</span><span class="m">10</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="s">&#34;HeartRate&#34;</span> <span class="c1"># bpm</span>
+    <span class="kp">names</span><span class="p">(</span>MyFormattedData<span class="p">)[</span><span class="m">11</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="s">&#34;Steps&#34;</span> <span class="c1"># count</span>
+
+    <span class="kr">return</span><span class="p">(</span>MyFormattedData<span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1"># Applying this to our dataset</span>
+DailyData <span class="o">&lt;-</span> FormatData<span class="p">(</span>MyCsvData<span class="p">)</span>
+HourlyData <span class="o">&lt;-</span> FormatData<span class="p">(</span>MyCsvDataHourly<span class="p">)</span></code></pre></div>
+<h1 id="analysis">Analysis</h1>
+
+<p>We first produce a plot of steps against time, with some additional stratification in the form of heart rate using the following script and our hourly dataset (for greater resolution).</p>
+<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R">ggplot<span class="p">(</span>HourlyData<span class="p">,</span> aes<span class="p">(</span>x <span class="o">=</span> StartDate<span class="p">,</span> y <span class="o">=</span> Steps<span class="p">))</span> <span class="o">+</span>
+geom_point<span class="p">(</span>aes<span class="p">(</span>size <span class="o">=</span> HeartRate<span class="p">,</span> alpha <span class="o">=</span> Steps<span class="p">),</span> col <span class="o">=</span> <span class="s">&#34;Blue&#34;</span><span class="p">)</span> <span class="o">+</span>
+theme_classic<span class="p">()</span></code></pre></div>
+<p><img src="../../images/apple-watch-health/Steps-HeartRate-1.png" alt="Steps-HeartRate" /></p>
+
+<p>The first thing we see is a considerable amount of 0-step hours in the data. This is because I sleep for about 6 hours per night, or perhaps may have not worn my watch that day. In any case, it is advisable to remove these zero values. However, it is nice to see the colour that including my heart rate from May 2015 adds to the plot. The large points in the upper right of the figure are likely from periods of exercise (as will be discussed later).</p>
+<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R"><span class="c1"># Cutting the crap</span>
+NonZero <span class="o">&lt;-</span> filter<span class="p">(</span>HourlyData<span class="p">,</span>Steps <span class="o">!=</span> <span class="m">0</span><span class="p">)</span>
+
+<span class="c1"># Re-do the previous plot</span>
+ggplot<span class="p">(</span>NonZero<span class="p">,</span> aes<span class="p">(</span>x <span class="o">=</span> StartDate<span class="p">,</span> y <span class="o">=</span> Steps<span class="p">))</span> <span class="o">+</span>
+geom_point<span class="p">(</span>aes<span class="p">(</span>size <span class="o">=</span> HeartRate<span class="p">,</span> alpha <span class="o">=</span> Steps<span class="p">),</span> col <span class="o">=</span> <span class="s">&#34;Blue&#34;</span><span class="p">)</span> <span class="o">+</span>
+theme_classic<span class="p">()</span></code></pre></div>
+<p><img src="../../images/apple-watch-health/Steps-HeartRate-2.png" alt="Steps-HeartRate" /></p>
+
+<p>That&rsquo;s better! Right, now some for simple regression analysis.</p>
+
+<h2 id="simple-regression">Simple Regression</h2>
+
+<blockquote>
+<p><strong><em>&ldquo;Irrespective of workouts, has the Apple Watch increased the number of steps I walk each day?&rdquo;</em></strong></p>
+</blockquote>
+
+<p>To answer this question, we are going to build a simple regression model; but first, we must add a new column informing the data of whether I owned the watch on a particular day.</p>
+<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R"><span class="c1"># Cut the zero-step data from the dataset (as before)</span>
+theData <span class="o">&lt;-</span> filter<span class="p">(</span>DailyData<span class="p">,</span>Steps <span class="o">!=</span> <span class="m">0</span><span class="p">)</span>
+
+<span class="c1"># 3rd of May 2015 was the day I bought my Apple Watch</span>
+<span class="c1"># Add a column with &#39;1&#39; if date &gt;= 3rd of May 2015, else &#39;0&#39;</span>
+theData <span class="o">&lt;-</span> mutate<span class="p">(</span>theData<span class="p">,</span> Watch <span class="o">=</span> <span class="kp">ifelse</span><span class="p">(</span>StartDate <span class="o">&gt;=</span> <span class="s">&#34;2015-05-03&#34;</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">0</span><span class="p">))</span></code></pre></div>
+<p>If we a create a simple linear model model with &lsquo;Steps&rsquo; as the dependent variable (the outcome whose variation is being studied), and &lsquo;Watch&rsquo; as the independent variable (input or potential reason for variation).</p>
+<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R">fit1 <span class="o">&lt;-</span> lm<span class="p">(</span>Steps <span class="o">~</span> Watch<span class="p">,</span> data <span class="o">=</span> theData<span class="p">)</span>
+<span class="kp">summary</span><span class="p">(</span>fit1<span class="p">)</span>
+
+<span class="c1"># Call:</span>
+<span class="c1"># lm(formula = Steps ~ Watch, data = theData)</span>
+
+<span class="c1"># Residuals:</span>
+<span class="c1">#     Min      1Q  Median      3Q     Max</span>
+<span class="c1"># -6849.3 -2993.1   -60.1  2352.2 13485.9</span>
+
+<span class="c1"># Coefficients:</span>
+<span class="c1">#             Estimate Std. Error t value Pr(&gt;|t|)</span>
+<span class="c1"># (Intercept)   5328.1      247.5  21.531  &lt; 2e-16 ***</span>
+<span class="c1"># Watch         1611.2      408.7   3.942 9.82e-05 ***</span>
+<span class="c1"># ---</span>
+<span class="c1"># Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</span>
+
+<span class="c1"># Residual standard error: 3637 on 339 degrees of freedom</span>
+<span class="c1"># Multiple R-squared:  0.04383,   Adjusted R-squared:  0.04101</span>
+<span class="c1"># F-statistic: 15.54 on 1 and 339 DF,  p-value: 9.819e-05</span></code></pre></div>
+<p>From this simple model, we see that prior to buying the watch, I walked an average of 5,328 steps per day (the intercept of the model); yes, not very many steps. However, after buying the watch, I walked an average of 1,611 <em>more</em> steps per day &ndash; great!</p>
+
+<p>Although the R-squared value, the coefficient of determination, (or in english, how close the data fit to the model), is only 4%. This means that the presence of the watch only explains 4% of the variation in my daily steps. This is because we have yet to control for other factors, such as the day of the week, or whether I was exercising at the time. The model is saying that the presence of the watch in my life is not the sole reason for my movement. However, the value of R-squared should always be taken with a pinch of salt. There is inherent randomness in my daily steps and it would be near impossible to control for all additional covariates. As the F-statistic shows a statistically significant relationship (p &lt; 0.05), we accept that the watch has improved my fitness level. Checks of the residuals increase our confidence in the findings.</p>
+<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R">ggplot<span class="p">(</span>theData<span class="p">,</span> aes<span class="p">(</span>x <span class="o">=</span> StartDate<span class="p">,</span> y <span class="o">=</span> Steps<span class="p">))</span> <span class="o">+</span>
+geom_point<span class="p">(</span>aes<span class="p">(</span>col <span class="o">=</span> <span class="kp">as.factor</span><span class="p">(</span>Watch<span class="p">)),</span> alpha <span class="o">=</span> <span class="m">1</span><span class="p">)</span> <span class="o">+</span>
+theme_classic<span class="p">()</span> <span class="o">+</span>
+geom_smooth<span class="p">(</span>method <span class="o">=</span> <span class="s">&#34;lm&#34;</span><span class="p">,</span> col <span class="o">=</span> <span class="s">&#34;red&#34;</span><span class="p">,</span> fill <span class="o">=</span> <span class="s">&#34;blue&#34;</span><span class="p">)</span> <span class="o">+</span>
+labs<span class="p">(</span>title <span class="o">=</span> <span class="kp">paste</span><span class="p">(</span><span class="s">&#34;Linear Regression of presence of Apple Watch against daily activity in steps\nAdj R2 = &#34;</span><span class="p">,</span><span class="kp">signif</span><span class="p">(</span><span class="kp">summary</span><span class="p">(</span>fit1<span class="p">)</span><span class="o">$</span>adj.r.squared<span class="p">,</span> <span class="m">5</span><span class="p">),</span>
+    <span class="s">&#34;Intercept =&#34;</span><span class="p">,</span><span class="kp">signif</span><span class="p">(</span>fit1<span class="o">$</span>coef<span class="p">[[</span><span class="m">1</span><span class="p">]],</span><span class="m">5</span> <span class="p">),</span>
+    <span class="s">&#34; Slope =&#34;</span><span class="p">,</span><span class="kp">signif</span><span class="p">(</span>fit1<span class="o">$</span>coef<span class="p">[[</span><span class="m">2</span><span class="p">]],</span> <span class="m">5</span><span class="p">),</span>
+    <span class="s">&#34; P =&#34;</span><span class="p">,</span><span class="kp">signif</span><span class="p">(</span><span class="kp">summary</span><span class="p">(</span>fit1<span class="p">)</span><span class="o">$</span>coef<span class="p">[</span><span class="m">2</span><span class="p">,</span><span class="m">4</span><span class="p">],</span> <span class="m">5</span><span class="p">))</span>
+<span class="p">)</span></code></pre></div>
+<p><img src="../../images/apple-watch-health/LinearRegression.png" alt="Regression" /></p>
+
+<h1 id="an-aside">An Aside</h1>
+
+<p>As a quick end to this post, I wanted to see what my hourly heart rate looked like over time. Additionally, I was keen to see whether my heart rate ever drops below 40bpm (bradycardia) or above 120bpm (tachycardia). As we see from the figure below, my heart rate doesn&rsquo;t drop below 40bpm and only rarely steps about 120bpm. It should be noted that the outliers ~200bpm are from periods of exercise. As I collect more data, and exercise more, I would hope to look for a downward trend in my heart rate as my maximum heart rate when exercising declines, indicating increased fitness, one would hope.</p>
+
+<p><img src="../../images/apple-watch-health/Heart-Rate.png" alt="Heart-Rate" /></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Interactive Dynamic Models in R</title>
+			<link>https://jackolney.github.io/blog/posts/2015-10-16-shiny-cascade/</link>
+			<pubDate>Fri, 16 Oct 2015 09:41:00 +0000</pubDate>
+			
+			<guid>https://jackolney.github.io/blog/posts/2015-10-16-shiny-cascade/</guid>
+			<description>As part of a new work package I am part of, we needed to develop a dynamic transmission model of HIV care that has a relatively user-friendly interface and that can be run on almost any device.
+The initial choice was to go with an Excel spreadsheet, and have a tab hidden in the background with the model running and a whole bunch of simple stuff at the front for the user to interact with.</description>
+			<content type="html"><![CDATA[<p>As part of a new work package I am part of, we needed to develop a dynamic transmission model of HIV care that has a relatively user-friendly interface and that can be run on almost any device.</p>
+
+<p>The initial choice was to go with an Excel spreadsheet, and have a tab hidden in the background with the model running and a whole bunch of simple stuff at the front for the user to interact with. We then wanted this to develop further into something that had parameter &lsquo;sliders&rsquo; so the model was perhaps a little more intuitive.</p>
+
+<p>Eventually, I decided that the best course of action was to jump into developing a <a href="http://shiny.rstudio.com/">&lsquo;shiny&rsquo;</a> app again. I initially messed around with this package in 2013 when I had first started developing models of infectious diseases. Back then, I had this idea of publishing a paper and then saying &ldquo;instead of some boring static figure, check out this interactive version so you can get a better feel for the model&rdquo;. Those days soon passed, luckily.</p>
+
+<p>But now, with this impending project, I felt like now was an opportunity to check it out again. But first, I needed to verify a few things could be done with shiny running either locally or an RStudio server:</p>
+
+<ul>
+<li>Run a reactive dynamic model that can be manipulated in real-time using data input through a series of boxes and sliders.</li>
+<li>Interact with a GoogleSheet to import data and export results.</li>
+<li>Run some form of optimisation algorithm that would allow us to simulate a set of interventions to understand, for a given cost, how we can maximise health gains over a period of say five years.</li>
+</ul>
+
+<p>Luckily, none of these issues presented much of a problem and after a day or so of playing around, I had a working (albeit basic) version of the model up and running.</p>
+
+<p>The latest version can be found <a href="https://jackolney.shinyapps.io/ShinyCascade">here</a>. I would embed the model in an iframe here but, there are limits on the up-time I can use on RStudio&rsquo;s servers given that I only have a free account, and also I think the text width on this site would screw it all up. So head over there to check out my latest toy!</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Apple Pencil</title>
+			<link>https://jackolney.github.io/blog/posts/2015-09-09-apple-pencil/</link>
+			<pubDate>Wed, 09 Sep 2015 22:24:00 +0000</pubDate>
+			
+			<guid>https://jackolney.github.io/blog/posts/2015-09-09-apple-pencil/</guid>
+			<description>Having just watched the latest Apple keynote, I have to admit at being quite impressed at the latest products. Even John Gruber got it wrong! After flat-out claiming there would be no iPadPro announcement, there we have it! But the internet seems rather pre-occupied by the smile issue, and the pencil.
+Regarding the smile, I couldn&amp;rsquo;t care less.
+Regarding the pencil, I kind of think is works. Or at least, it&amp;rsquo;s the right time for a stylus.</description>
+			<content type="html"><![CDATA[<p>Having just watched the latest Apple keynote, I have to admit at being quite impressed at the latest products. Even John Gruber got it wrong! After flat-out claiming there would be no iPadPro announcement, there we have it! But the internet seems rather pre-occupied by the <em>smile</em> issue, and the <em>pencil</em>.</p>
+
+<p>Regarding the smile, I couldn&rsquo;t care less.</p>
+
+<p>Regarding the pencil, I kind of think is works. Or at least, it&rsquo;s the right time for a stylus.</p>
+
+<blockquote>
+<p>&ldquo;It&rsquo;s like we said on the iPad, if you see a stylus, they blew it.&rdquo; - <em>Steve Jobs, 2010.</em></p>
+</blockquote>
+
+<p>Having said that (in my best Seinfeld voice), I think in 2010 Steve&rsquo;s statement was correct. The iPad was a brand new product, it hadn&rsquo;t even entered the market, and all other tablets were beyond terrible.</p>
+
+<p>However, now, with increasing phone sizes, the difference between and iPhone and an iPad is very small. I myself sold my iPad and bought an iPhone 6+ because I found myself doing everything I wanted to do on an iPad on my phone because it was more convenient (and always on my person). The iPad is great for people who don&rsquo;t need a laptop and love surfing from the couch. But when their phone can do all that and is easier / or at least more convenient, where does that leave the iPad?</p>
+
+<p>The pencil then is the differentiator. Not just between the iPhone and the iPad but between the iPad and the Surface and the Macbook One. The Pencil opens up the iPad to all those people who wonder why we aren&rsquo;t all taking notes by hand using tablets in 2015, all the people who want to sketch out changes to a document yet find themselves having to print a hard copy in order to do so, and all the people who want to create images / art or whatever without using some archaic touch pad.</p>
+
+<p>The only thing I am wondering, is whether the iPadPro is able to effectively ignore hand inputs when using the stylus, as drawing/writing with your hand elevated from the screen for an extended period of time would quickly become a pain. If the software, or the hardware I&rsquo;m guessing can effectively ignore hand input while the Pencil is on the screen then this could be a really neat tool.</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Calling R from a Python instance</title>
+			<link>https://jackolney.github.io/blog/posts/2015-07-01-calling-r-from-python/</link>
+			<pubDate>Wed, 01 Jul 2015 09:41:00 +0000</pubDate>
+			
+			<guid>https://jackolney.github.io/blog/posts/2015-07-01-calling-r-from-python/</guid>
+			<description>After spending several hours today trying to figure out how to call R from an instance of Python running on the departmental cluster, I figured that I better document this.
+Why bother? Some background on my problem. I have an individual-based model written in C++ that describes the HIV epidemic in Kenya over time from 1970 to 2036&amp;frasl;2056. This model is called through R which supplies a whole bunch of arguments allowing me to simulate a whole bunch of different scenarios.</description>
+			<content type="html"><![CDATA[
+
+<p>After spending several hours today trying to figure out how to call R from an instance of Python running on the departmental cluster, I figured that I better document this.</p>
+
+<h3 id="why-bother">Why bother?</h3>
+
+<p>Some background on my problem. I have an individual-based model written in C++ that describes the HIV epidemic in Kenya over time from 1970 to <sup>2036</sup>&frasl;<sub>2056</sub>. This model is called through R which supplies a whole bunch of arguments allowing me to simulate a whole bunch of different scenarios. For some time now I have been using Python as a high-level manager for these simulations. I simple stick some python script in a directory, it creates all the directories, writes the R scripts, writes the .bat files and submits the jobs to the cluster.</p>
+
+<p>Recently, I have been running a set of scenarios that involve learning from experience. I run some simulations and depending on the results, make some changes to the next set of simulations. A simple method for doing this was by running an R script across all the results and computing the changes that needed to be made. This was okay but if you want to run several hundred scenarios at once, it quickly becomes boring, and rather tedious.</p>
+
+<p>I figured that I would write some python code that would deploy the simulations, wait for them to complete then run some analysis in R and then deploy the next set of simulations. Actually, rather than have my instance of Python sleep for a while and take up resources I kill it off and allow each simulation to check if the others are done, create a lock-file if they have finished and run some analysis.</p>
+
+<p>This actually turned out better than my original plan, but I was still keen to know how to call R directly from my instance of python. The way I was submitting jobs and generally accessing the command line was by using the os module and calling:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&#34;job submit /scheduler:somewhere /numcores:lots </span><span class="se">\\</span><span class="s2">somecomputer\somewhere</span><span class="se">\&#34;</span><span class="s2">)</span></code></pre></div>
+<p>Yet, interestingly if I tried:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&#34;Rscript </span><span class="se">\\</span><span class="s2">somescript\somewhere&#34;</span><span class="p">)</span></code></pre></div>
+<p>I got nowhere. I then tried the absolute path to Rscript.exe (windows cluster), but to no avail. The solution turned out to be clunky.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Two methods:</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
+
+<span class="c1"># Either with \\ double backslash.</span>
+<span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">([</span><span class="s2">&#34;C:</span><span class="se">\\</span><span class="s2">Program Files</span><span class="se">\\</span><span class="s2">R</span><span class="se">\\</span><span class="s2">R-3.0.1</span><span class="se">\\</span><span class="s2">bin</span><span class="se">\\</span><span class="s2">Rscript.exe&#34;</span><span class="p">,</span><span class="s2">&#34;</span><span class="se">\\\\</span><span class="s2">somecomputer</span><span class="se">\\</span><span class="s2">someplace</span><span class="se">\\</span><span class="s2">mydir</span><span class="se">\\</span><span class="s2">Test</span><span class="se">\\</span><span class="s2">Python</span><span class="se">\\</span><span class="s2">test.R&#34;</span><span class="p">]);</span>
+
+<span class="c1"># or using the ignore escape character &#39;r&#39;</span>
+<span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">([</span><span class="sa">r</span><span class="s2">&#34;C:\Program Files\R\R-3.0.1\bin\Rscript.exe&#34;</span><span class="p">,</span><span class="sa">r</span><span class="s2">&#34;</span><span class="se">\\</span><span class="s2">somecomputer\someplace\mydir\Test\Python\test.R&#34;</span><span class="p">]);</span>
+
+<span class="c1"># It turns out that using os.system is odd.</span>
+<span class="c1"># It needs to be in double-quotes then wrapped in single-quotes</span>
+<span class="c1"># Then where to arguments go? Within the single-quotes but not the double-quotes. WTF!?</span>
+<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;&#34;C:</span><span class="se">\\</span><span class="s1">Program Files</span><span class="se">\\</span><span class="s1">R\R-3.0.1</span><span class="se">\\</span><span class="s1">bin\Rscript.exe&#34; --version&#39;</span><span class="p">)</span></code></pre></div>
+<p>Anyway, now we have the solution.</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Fun with GoogleDocs API</title>
+			<link>https://jackolney.github.io/blog/posts/2015-01-01-fun-with-googledocs/</link>
+			<pubDate>Thu, 01 Jan 2015 09:41:00 +0000</pubDate>
+			
+			<guid>https://jackolney.github.io/blog/posts/2015-01-01-fun-with-googledocs/</guid>
+			<description>I wanted to document some code for accessing documents (only spreadsheets at the moment) through GoogleDocs using the DIDE cluster and R.
+Getting started. The R code is fairly self explanatory but involves two little tricks to get it to work: (1) manipulating the GoogleDocs URL to export the document as a csv and (2) changes the privilages on the document such that anyone with the link can edit (done under sharing).</description>
+			<content type="html"><![CDATA[
+
+<p>I wanted to document some code for accessing documents (only spreadsheets at the moment) through GoogleDocs using the DIDE cluster and R.</p>
+
+<h3 id="getting-started">Getting started.</h3>
+
+<p>The R code is fairly self explanatory but involves two little tricks to get it to work: (1) manipulating the GoogleDocs URL to export the document as a csv and (2) changes the privilages on the document such that anyone with the link can edit (done under sharing).</p>
+<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R"><span class="c1"># Set working directory.</span>
+<span class="kp">setwd</span><span class="p">(</span><span class="s">&#34;[yourWorkingDirectory]&#34;</span><span class="p">)</span>
+
+<span class="c1"># Install RCurl on cluster.</span>
+install.packages<span class="p">(</span><span class="s">&#34;RCurl&#34;</span><span class="p">,</span>repos<span class="o">=</span><span class="s">&#34;http://cran.ma.imperial.ac.uk&#34;</span><span class="p">,</span>lib<span class="o">=</span><span class="s">&#34;[yourLibraryDirectory]&#34;</span><span class="p">)</span>
+
+<span class="c1"># Now, with the desired GoogleSpreadsheet open in your browser copy the &#34;Key&#34; (the series of numbers and letters after /d/...) from the URL and insert it where [yourDocumentKey] is.</span>
+url <span class="o">&lt;-</span> <span class="s">&#34;https://docs.google.com/spreadsheets/d/[yourDocumentKey]/export?format=csv&#34;</span>
+
+<span class="c1"># In your browser, go to &#34;Share&#34; and alter the document privilages so &#34;anyone with a link can view&#34;.</span>
+
+<span class="c1"># Load up RCurl (bitops is required by RCurl so best to load that too.)</span>
+<span class="kn">require</span><span class="p">(</span>bitops<span class="p">,</span>lib.loc<span class="o">=</span><span class="s">&#34;[yourLibraryDirectory]&#34;</span><span class="p">)</span>
+<span class="kn">require</span><span class="p">(</span>RCurl<span class="p">,</span>lib.loc<span class="o">=</span><span class="s">&#34;[yourLibraryDirectory]&#34;</span><span class="p">)</span>
+
+<span class="c1"># Set ssl.verifypeer to FALSE.</span>
+myCsv <span class="o">&lt;-</span> getURL<span class="p">(</span><span class="kp">url</span><span class="p">,</span><span class="m">.</span>opts<span class="o">=</span><span class="kt">list</span><span class="p">(</span>ssl.verifypeer<span class="o">=</span><span class="kc">FALSE</span><span class="p">))</span>
+
+<span class="c1"># Parse csv data.</span>
+testCsv <span class="o">&lt;-</span> read.csv<span class="p">(</span><span class="kp">textConnection</span><span class="p">(</span>myCsv<span class="p">))</span>
+
+<span class="c1"># Print out result.</span>
+<span class="kp">print</span><span class="p">(</span>testCsv<span class="p">)</span>
+flush.console<span class="p">()</span>
+
+<span class="c1"># SUCCESS!</span></code></pre></div>]]></content>
+		</item>
+		
+		<item>
+			<title>Thoughts on priority queues in C&#43;&#43;</title>
+			<link>https://jackolney.github.io/blog/posts/2014-08-25-thoughts-on-priority-queues/</link>
+			<pubDate>Mon, 25 Aug 2014 09:41:00 +0000</pubDate>
+			
+			<guid>https://jackolney.github.io/blog/posts/2014-08-25-thoughts-on-priority-queues/</guid>
+			<description>Taking comfort in the fact that I am sure that nobody will read this site except me, I have decided to procrastinate by writing something about a problem, or perhaps I should say challange that I am currently facing. To add some background, I have written an individual-based time-to-event model that describes a series of events that make up HIV care. I have written this model purely in C++, but as it was my first &amp;ldquo;big&amp;rdquo; model and I was still learning C++ at the time, I have since thought about revisiting the source code and changing the fundamentals of the model.</description>
+			<content type="html"><![CDATA[
+
+<p>Taking comfort in the fact that I am sure that nobody will read this site except me, I have decided to procrastinate by writing something about a problem, or perhaps I should say challange that I am currently facing. To add some background, I have written an individual-based time-to-event model that describes a series of events that make up HIV care. I have written this model purely in C++, but as it was my first &ldquo;big&rdquo; model and I was still learning C++ at the time, I have since thought about revisiting the source code and changing the fundamentals of the model.</p>
+
+<h3 id="original-plan-for-the-model">Original plan for the model.</h3>
+
+<p>The model starts by creating an &ldquo;individual&rdquo;. This individual has a set of basic characteristics: gender, age, natural death date etc. The individual is then exposed to an annual hazard of developing HIV. If the individual is unfortunate enough to contract HIV, they have the opportunity to enter HIV care and eventually receive treatment. The way the model handles events occurring through time is by a clever little thing called a priority queue. A priority queue can be thought of as an ordered list that as reshuffles as objects are inserted depending on a set of rules. This can be as basic as the priority queue shown below:</p>
+<div class="highlight"><pre class="chroma"><code class="language-C++" data-lang="C++">  <span class="n">priority_queue</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">greater</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="n">testQ</span><span class="p">;</span>
+</code></pre></div>
+<p>A priority queue can have objects &ldquo;pushed&rdquo; into it that are then ordered according to the compare parameter, which in this case is shown by <code> greater&lt;int&gt; </code>. This means that every object that enters the priority queue, called &ldquo;testQ&rdquo; in this instance, is evaluated and placed in order. The current setup shown above orders the integers in the queue from largest to smallest. The &ldquo;top&rdquo; of the queue contains the smallest value. There are some cool member functions associated with priority queues. For instance, <code>testQ.push()</code> takes an arguement of the integer that we wish to push into the queue. While, <code>testQ.top()</code> will show us the value at the top of the queue (smallest). <code> testQ.pop()</code> is another useful function that has the effect of &ldquo;popping&rdquo; off the top of the queue and removing it. This is particular useful for me as I want to setup a priority queue that I can pass a list of dates to. I want the queue to order the dates with the smallest date, or date closest to the current date, being at the top of the queue. That will allow me to feed my model dates of any size and for it to quickly order them chronologically so I can effectively walk through them &ldquo;popping&rdquo; them off as I go.</p>
+
+<h3 id="old-setup">Old setup.</h3>
+
+<p>I currently use something similar to above, in that I pass dates to the queue and then &ldquo;pop&rdquo; them off. The slight problem with this approach is that when the date of an event comes to the top of the priority queue, I need to be able to call a specific function that is due to occur on that specific date. For example, if I wanted to perform an HIV-test on an individual in 2010, I pass the date 2010 to the priority queue and when <code>testQ.top() == 2010</code> I compare an HIV-test &ldquo;flag&rdquo; (which holds the date 2010) to the top of the queue. If the two agree, then we proceed and call the HIV-test function.</p>
+
+<h3 id="future-setup">Future setup.</h3>
+
+<p>Looking back at this, while it is simple, it is slightly crude to be checking the top of the priority queue against a &ldquo;flag&rdquo;. What would be much neater would be to create a <code>class event</code> which has the attributes of <code>time</code> and a function pointer. This would allow me to &ldquo;push&rdquo; a time and function into the queue. When an event comes to the top of the queue, I will be able to access a time and a pointer to the appropriate function.</p>
+<div class="highlight"><pre class="chroma"><code class="language-C++" data-lang="C++"><span class="k">class</span><span class="err"> </span><span class="nc">eventClass</span> <span class="p">{</span>
+  <span class="kt">double</span> <span class="n">time</span><span class="p">;</span>
+  <span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">ptr_fun</span><span class="p">)();</span>
+<span class="p">};</span>
+
+<span class="n">priority_queue</span><span class="o">&lt;</span><span class="n">eventClass</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="n">eventClass</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">timeComparison</span> <span class="o">&gt;</span> <span class="n">testQ</span><span class="p">;</span>
+</code></pre></div>]]></content>
+		</item>
+		
+	</channel>
+</rss>

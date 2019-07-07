@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Jack Olney</title>
+    <link>https://jackolney.github.io/blog/tags/</link>
+    <description>Recent content in Tags on Jack Olney</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 21 Feb 2017 09:41:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jackolney.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CROI</title>
+      <link>https://jackolney.github.io/blog/tags/croi/</link>
+      <pubDate>Tue, 21 Feb 2017 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/tags/croi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HIV</title>
+      <link>https://jackolney.github.io/blog/tags/hiv/</link>
+      <pubDate>Tue, 21 Feb 2017 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/tags/hiv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>keynote</title>
+      <link>https://jackolney.github.io/blog/tags/keynote/</link>
+      <pubDate>Tue, 21 Feb 2017 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/tags/keynote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LaTeX</title>
+      <link>https://jackolney.github.io/blog/tags/latex/</link>
+      <pubDate>Thu, 17 Nov 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PhD</title>
+      <link>https://jackolney.github.io/blog/tags/phd/</link>
+      <pubDate>Thu, 17 Nov 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/tags/phd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thesis</title>
+      <link>https://jackolney.github.io/blog/tags/thesis/</link>
+      <pubDate>Thu, 17 Nov 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/tags/thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>writing</title>
+      <link>https://jackolney.github.io/blog/tags/writing/</link>
+      <pubDate>Thu, 17 Nov 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/tags/writing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://jackolney.github.io/blog/tags/r/</link>
+      <pubDate>Mon, 15 Aug 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TrueType</title>
+      <link>https://jackolney.github.io/blog/tags/truetype/</link>
+      <pubDate>Mon, 15 Aug 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/tags/truetype/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ggplot2</title>
+      <link>https://jackolney.github.io/blog/tags/ggplot2/</link>
+      <pubDate>Mon, 15 Aug 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/tags/ggplot2/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

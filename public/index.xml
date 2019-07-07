@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jack Olney</title>
+    <link>https://jackolney.github.io/blog/</link>
+    <description>Recent content on Jack Olney</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 07 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jackolney.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://jackolney.github.io/blog/about/</link>
+      <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/about/</guid>
+      <description>Hello, I&amp;rsquo;m Jack.
+I manage the Centre for Health Economics &amp;amp; Policy Innovation at Imperial College Business School.
+I am in charge of all aspects of Research Support for the Centre, including:
+Core Centre Management  Development and implementation of Centre&amp;rsquo;s research and financial sustainability strategy Managing all research projects both pre and post-award Managing all highly sensitive datasets containing personal data for research purposes Managing the Centre&amp;rsquo;s communication strategy, the Centre website and media communications Negotiating and managing office space and central resources Leading the recruitment of new Academic and Professional Support Staff  Financial Management  Management of Centre budget and reporting routines Leading fund raising efforts with relevant Business School and College offices Ensuring compliance with all internal, funder-specific and national reporting requirements, audit requirements, contracts, costing, approvals, procurement and employment Overseeing preparation of research content and financial reports as per funder requirements Identifying suitable funding opportunities from Research Councils, Charities, Governments, Industry and other external bodies for our academics tailored to their research interests, while facilitating cross-faculty and cross-discipline collaborations on bids  Information Governance  As Information Governance lead for the Centre, ensuring compliance with all appropriate Information Governance legislation including GDPR, DPA and FoI among others In collaboration with the Data Protection Officer, ensuring all IG policies for the Centre are up to date and all breach reporting procedures are followed  Research Management  Leading, in collaboration with Centre Faculty, the development of grant and fellowship applications, including writing content; all administrative matters including costing staff and resources, ensuring compliance with funder requirements, achieving appropriate sign off; and the submission of bids Leading the management of active Centre research projects, including hiring staff, data negotiation and acquisition, data storage and processing, data manipulation and technical research issues, funder compliance, budget planning, communication, event management, dissemination, progress reports and resolving any project-related issues  Data Management  Management of the Centre’s data assets, including identifying needs for key datasets; leading applications for data; establishing relationships with data providers and negotiating access to data; identifying and ensuring researchers store and process data in an appropriately compliant and suitable environment for research; obtaining ethics clearance where necessary; managing arrangements for preserving data security and confidentiality; ensuring users are compliant with the relevant data regulations;  External Relations  Developing links with external organisations and across College, including academic partners in teaching and research; potential users of the Centre’s work in health systems, government and relevant industries  Events  Management of all Centre events, including conferences, project meetings, dissemination and networking events; Promoting activities internally and externally via networks, social networking, online media and other marketing channels  Curriculum vitae</description>
+    </item>
+    
+    <item>
+      <title>CROI 2017</title>
+      <link>https://jackolney.github.io/blog/posts/2017-02-21-croi/</link>
+      <pubDate>Tue, 21 Feb 2017 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/posts/2017-02-21-croi/</guid>
+      <description>For the second year in a row, I was invited to speak at the annual Conference on Retroviruses and Opportunistic Infections (CROI). This year the conference was held in one of my favourite cities, Seattle.
+I spoke about my new web-based modelling tool that enables countries to enter data on their HIV care programmes, estimate the achievement of the UNAIDS 90-90-90 and prioritise strategies to achieve these goals by the target date of 2020.</description>
+    </item>
+    
+    <item>
+      <title>Writing a PhD Thesis</title>
+      <link>https://jackolney.github.io/blog/posts/2016-11-17-thesis/</link>
+      <pubDate>Thu, 17 Nov 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/posts/2016-11-17-thesis/</guid>
+      <description>Right from the start of my PhD, I was keen to avoid leaving the &amp;ldquo;writing up&amp;rdquo; stage until the last moment. After hearing stories from other students of 24-hour stints in the library and solid weekends spent slaving over their theses in the final months, I figured there must be another way. Sometime during my second year, I devised a plan for writing the thesis:
+ For the final year of my PhD I was going to wake up an hour earlier than usual, and before doing anything else, write for a solid couple of hours  I figured that if I was aiming to submit my thesis in October I had about 10 months, or 40 weeks in order to make a substantial dent in the thesis before having to switch to writing full-time.</description>
+    </item>
+    
+    <item>
+      <title>Webfonts in ggplot2</title>
+      <link>https://jackolney.github.io/blog/posts/2016-08-15-ggplot2-font/</link>
+      <pubDate>Mon, 15 Aug 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/posts/2016-08-15-ggplot2-font/</guid>
+      <description>Thanks to Hadley&amp;rsquo;s ggplot2 package, we are no longer confined to base graphics plots in R. However, by default all fonts are generated using the &amp;lsquo;Helvetica&amp;rsquo; family. Now this is a great sans serif font, as evidenced by the fact that it is use literally everywhere in everything.
+But now that we have these incredible graphical capabilities, and the ability to produce FiveThirtyEight quality figures, we should really explore how to enhance our plots further with the use of better fonts.</description>
+    </item>
+    
+    <item>
+      <title>SACEMA Quarterly</title>
+      <link>https://jackolney.github.io/blog/posts/2016-06-21-sacema/</link>
+      <pubDate>Tue, 21 Jun 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/posts/2016-06-21-sacema/</guid>
+      <description>I just wanted to post a quick link to an article I was invited to write for SACEMA Quarterly on the current deficiencies in publicly available data for analysis of the HIV Care Cascade. This short article focuses on how countries can improve and consolidate data collection practices to focus on bolstering care to achieve the UNAIDS 90-90-90 targets by 2020.
+Check out the article here.</description>
+    </item>
+    
+    <item>
+      <title>Shiny Progress Bars</title>
+      <link>https://jackolney.github.io/blog/posts/2016-04-01-shiny/</link>
+      <pubDate>Fri, 01 Apr 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/posts/2016-04-01-shiny/</guid>
+      <description>Lately, I have been working on developing a friendly shiny app around a mathematical model to enable non-modellers to get to grips with the model, play around and perhaps learn something too. This has really been as much about teaching myself Shiny as it has been about enabling others to interact with models.
+Shiny, is great package being developed by a handful of developers at RStudio, and it enables anyone to wrap their R code in an HTML front-end that will run on any computer with R installed, and perhaps most importantly, run on any computer if deployed to a Linux server running ShinyServer.</description>
+    </item>
+    
+    <item>
+      <title>CROI 2016</title>
+      <link>https://jackolney.github.io/blog/posts/2016-03-09-croi/</link>
+      <pubDate>Wed, 09 Mar 2016 01:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/posts/2016-03-09-croi/</guid>
+      <description>I was recently invited to speak at the annual Conference on Retroviruses and Opportunistic Infections (CROI), held this year in Boston. I spoke briefly about some of my work on home-based counselling and testing programmes in western Kenya, particularly with regard to the timing of testing rounds and the scale up of testing programmes to achieve the UNAIDS 90-90-90 targets by 2020.
+ </description>
+    </item>
+    
+    <item>
+      <title>Hubot - a Siri to call my own</title>
+      <link>https://jackolney.github.io/blog/posts/2016-01-09-hubot/</link>
+      <pubDate>Sat, 09 Jan 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/posts/2016-01-09-hubot/</guid>
+      <description>I have always been interested in how these automated personal assistants: Siri, Google Now, Cortana etc. actually function. Aside from the speech recognition algorithms, the meaning of the sentence spoken to these programs must be deciphered and then acted upon pretty quickly. &amp;lsquo;Trigger&amp;rsquo; words are clearly important here e.g. &amp;ldquo;give me directions to&amp;hellip;&amp;rdquo; but the breadth of words that a computer must understand in order to appear human is simply vast.</description>
+    </item>
+    
+    <item>
+      <title>Has the Apple Watch improved my fitness?</title>
+      <link>https://jackolney.github.io/blog/posts/2015-12-27-apple-watch-health/</link>
+      <pubDate>Sun, 27 Dec 2015 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/posts/2015-12-27-apple-watch-health/</guid>
+      <description>Overview Having owned an Apple Watch since early May, I have built up a substantial amount of data in Apple&amp;rsquo;s &amp;lsquo;HealthKit&amp;rsquo;, detailing my daily steps from in excess of a year prior to owning the watch to at least six months after. Therefore, a simple analysis of whether the watch has improved my fitness should be possible. Additionally, I can pull out heart-rate data, stair-flight data, exercise data and map a whole bunch of other interesting stuff.</description>
+    </item>
+    
+    <item>
+      <title>Interactive Dynamic Models in R</title>
+      <link>https://jackolney.github.io/blog/posts/2015-10-16-shiny-cascade/</link>
+      <pubDate>Fri, 16 Oct 2015 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/blog/posts/2015-10-16-shiny-cascade/</guid>
+      <description>As part of a new work package I am part of, we needed to develop a dynamic transmission model of HIV care that has a relatively user-friendly interface and that can be run on almost any device.
+The initial choice was to go with an Excel spreadsheet, and have a tab hidden in the background with the model running and a whole bunch of simple stuff at the front for the user to interact with.</description>
+    </item>
+    
+  </channel>
+</rss>
