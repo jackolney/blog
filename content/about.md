@@ -58,8 +58,8 @@ reports and resolving any project-related issues
 applications for data; establishing relationships with data providers and negotiating access to
 data; identifying and ensuring researchers store and process data in an appropriately compliant and
 suitable environment for research; obtaining ethics clearance where necessary; managing arrangements
-for preserving data security and confidentiality; ensuring users are compliant with the relevant
-data regulations;
+for preserving data security and confidentiality; and ensuring users are compliant with the relevant
+data regulations
 
 ### External Relations
 
