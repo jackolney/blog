@@ -1,5 +1,6 @@
 baseURL = "https://jackolney.github.io/blog/"
 themesDir = "themes"
+publishDir = "docs"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Jack Olney"
