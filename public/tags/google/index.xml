@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google on Jack Olney</title>
+    <link>https://jackolney.github.io/tags/google/</link>
+    <description>Recent content in Google on Jack Olney</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 01 Jan 2015 09:41:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jackolney.github.io/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fun with GoogleDocs API</title>
+      <link>https://jackolney.github.io/posts/2015-01-01-fun-with-googledocs/</link>
+      <pubDate>Thu, 01 Jan 2015 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/posts/2015-01-01-fun-with-googledocs/</guid>
+      <description>I wanted to document some code for accessing documents (only spreadsheets at the moment) through GoogleDocs using the DIDE cluster and R.
+Getting started. The R code is fairly self explanatory but involves two little tricks to get it to work: (1) manipulating the GoogleDocs URL to export the document as a csv and (2) changes the privilages on the document such that anyone with the link can edit (done under sharing).</description>
+    </item>
+    
+  </channel>
+</rss>

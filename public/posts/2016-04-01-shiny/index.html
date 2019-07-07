@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+
+<meta itemprop="name" content="Shiny Progress Bars">
+<meta itemprop="description" content="How to hack them to do what you want">
+
+
+<meta itemprop="datePublished" content="2016-04-01T09:41:00&#43;00:00" />
+<meta itemprop="dateModified" content="2016-04-01T09:41:00&#43;00:00" />
+<meta itemprop="wordCount" content="1267">
+
+
+
+<meta itemprop="keywords" content="shiny,R,CSS," />
+<meta property="og:title" content="Shiny Progress Bars" />
+<meta property="og:description" content="How to hack them to do what you want" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jackolney.github.io/posts/2016-04-01-shiny/" />
+<meta property="article:published_time" content="2016-04-01T09:41:00&#43;00:00"/>
+<meta property="article:modified_time" content="2016-04-01T09:41:00&#43;00:00"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Shiny Progress Bars"/>
+<meta name="twitter:description" content="How to hack them to do what you want"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Shiny Progress Bars</title>
+	<link rel="stylesheet" href="https://jackolney.github.io/css/style.min.568c54a56780af2a70c45272522247710b69dbfc080b315211fb98381e3796f8.css" integrity="sha256-VoxUpWeArypwxFJyUiJHcQtp2/wICzFSEfuYOB43lvg=">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://jackolney.github.io/">Jack Olney</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://jackolney.github.io/posts/">Posts</a>
+				<a href="https://jackolney.github.io/about/">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="mailto:olney.jack@gmail.com" target="_blank" rel="noopener me" title="Email"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a><a href="https://github.com/jackolney" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://www.linkedin.com/in/jack-olney/" target="_blank" rel="noopener me" title="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="https://twitter.com/OlneyJack" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://jackolney.github.io/posts/">Posts</a></li>
+			<li><a href="https://jackolney.github.io/about/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Apr 1, 2016</span></div>
+				<h1>Shiny Progress Bars</h1>
+			</header>
+			<div class="content">
+				
+
+<p>Lately, I have been working on developing a friendly shiny app around a mathematical model to enable non-modellers to get to grips with the model, play around and perhaps learn something too. This has really been as much about teaching myself Shiny as it has been about enabling others to interact with models.</p>
+
+<p><a href="http://shiny.rstudio.com/">Shiny</a>, is great package being developed by a handful of developers at RStudio, and it enables anyone to wrap their R code in an HTML front-end that will run on any computer with <a href="https://www.r-project.org/">R</a> installed, and perhaps most importantly, run on <em>any</em> computer if deployed to a Linux server running <a href="https://www.rstudio.com/products/shiny/shiny-server2/">ShinyServer</a>.</p>
+
+<p>One of the things I have been trying to do with my Shiny app (which has yet to reveal itself), is to include progress bars to enable the user to visualise the progress of some background process. There is a great progress bar function in the <a href="http://shiny.rstudio.com/">Shiny</a> package called <a href="http://shiny.rstudio.com/articles/progress.html">withProgress</a>. This allows the user to relatively pull together a progress bar that spans the width of the screen and can include a little message on the top right.</p>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r">server <span class="o">&lt;-</span> <span class="kr">function</span><span class="p">(</span>input<span class="p">,</span> output<span class="p">)</span> <span class="p">{</span>
+    output<span class="o">$</span>myplot <span class="o">&lt;-</span> renderPlot<span class="p">({</span>
+
+        <span class="c1"># The detail to be captured by the progress bar should be contained within this function and its braces</span>
+        withProgress<span class="p">(</span>message <span class="o">=</span> <span class="s">&#39;Creating plot&#39;</span><span class="p">,</span> value <span class="o">=</span> <span class="m">0</span><span class="p">,</span> <span class="p">{</span>
+
+            <span class="c1"># Create an empty data.frame</span>
+            dat <span class="o">&lt;-</span> <span class="kt">data.frame</span><span class="p">(</span>x <span class="o">=</span> <span class="kt">numeric</span><span class="p">(</span><span class="m">0</span><span class="p">),</span> y <span class="o">=</span> <span class="kt">numeric</span><span class="p">(</span><span class="m">0</span><span class="p">))</span>
+
+            <span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> <span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">)</span> <span class="p">{</span>
+                <span class="c1"># Add to it</span>
+                dat <span class="o">&lt;-</span> <span class="kp">rbind</span><span class="p">(</span>dat<span class="p">,</span> <span class="kt">data.frame</span><span class="p">(</span>x <span class="o">=</span> rnorm<span class="p">(</span><span class="m">1</span><span class="p">),</span> y <span class="o">=</span> rnorm<span class="p">(</span><span class="m">1</span><span class="p">)))</span>
+
+                <span class="c1"># Incremental Progress Bar (add some more info if neccessary)</span>
+                incProgress<span class="p">(</span><span class="m">1</span><span class="o">/</span>n<span class="p">,</span> detail <span class="o">=</span> <span class="kp">paste0</span><span class="p">(</span>i<span class="o">/</span>n<span class="p">,</span> <span class="s">&#34;%&#34;</span><span class="p">))</span>
+
+                <span class="c1"># Pause</span>
+                <span class="kp">Sys.sleep</span><span class="p">(</span><span class="m">0.1</span><span class="p">)</span>
+            <span class="p">}</span>
+        <span class="p">})</span>
+
+        plot<span class="p">(</span>dat<span class="o">$</span>x<span class="p">,</span> dat<span class="o">$</span>y<span class="p">)</span>
+    <span class="p">})</span>
+<span class="p">}</span>
+
+ui <span class="o">&lt;-</span> shinyUI<span class="p">(</span>basicPage<span class="p">(</span>plotOutput<span class="p">(</span><span class="s">&#39;myplot&#39;</span><span class="p">,</span> width <span class="o">=</span> <span class="s">&#34;300px&#34;</span><span class="p">,</span> height <span class="o">=</span> <span class="s">&#34;300px&#34;</span><span class="p">)))</span>
+
+shinyApp<span class="p">(</span>ui <span class="o">=</span> ui<span class="p">,</span> server <span class="o">=</span> server<span class="p">)</span></code></pre></div>
+<p>This is all great, but in my app, on one particular page, there is a whole model calibration thing going on, and I wanted to be able to relay info on which function was running, whether any errors were encountered, when plots were being generated etc. Having been inspired by the <a href="https://rstudio.github.io/shinydashboard/">shinydashboard</a> package which is based on the incredible <a href="https://almsaeedstudio.com/preview">AdminLTE</a> bootstrap template, I happened across this great script for creating group progress bars on <a href="https://github.com/rstudio/shinydashboard/issues/119">GitHub</a>.</p>
+
+<p><center><img src="../../images/progress-bars/github-inspiration.png" alt="AdminLTE Progress Bars in ShinyDashboard" style="width: 500px;"/></center></p>
+
+<p>I decided to try and implement this myself, and figured out, with thanks to <a href="https://github.com/dmpe">John Malc</a>, that I needed to use <a href="http://shiny.rstudio.com/reference/shiny/latest/renderUI.html">renderUI</a> to animate the bars.</p>
+
+<p>This is my <strong>server.R</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="kn">library</span><span class="p">(</span>shiny<span class="p">)</span>
+<span class="kn">library</span><span class="p">(</span>shinydashboard<span class="p">)</span>
+
+prgoressBar <span class="o">&lt;-</span> <span class="kr">function</span><span class="p">(</span>value <span class="o">=</span> <span class="m">0</span><span class="p">,</span> label <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> color <span class="o">=</span> <span class="s">&#34;aqua&#34;</span><span class="p">,</span> size <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span>
+                        striped <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> active <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> vertical <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kp">stopifnot</span><span class="p">(</span><span class="kp">is.numeric</span><span class="p">(</span>value<span class="p">))</span>
+    <span class="kr">if</span> <span class="p">(</span>value <span class="o">&lt;</span> <span class="m">0</span> <span class="o">||</span> value <span class="o">&gt;</span> <span class="m">100</span><span class="p">)</span>
+        <span class="kp">stop</span><span class="p">(</span><span class="s">&#34;&#39;value&#39; should be in the range from 0 to 100.&#34;</span><span class="p">,</span> call. <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
+    <span class="kr">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span>color <span class="o">%in%</span> shinydashboard<span class="o">:::</span>validColors <span class="o">||</span> color <span class="o">%in%</span> shinydashboard<span class="o">:::</span>validStatuses<span class="p">))</span>
+        <span class="kp">stop</span><span class="p">(</span><span class="s">&#34;&#39;color&#39; should be a valid status or color.&#34;</span><span class="p">,</span> call. <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
+    <span class="kr">if</span> <span class="p">(</span><span class="o">!</span><span class="kp">is.null</span><span class="p">(</span>size<span class="p">))</span>
+        size <span class="o">&lt;-</span> <span class="kp">match.arg</span><span class="p">(</span>size<span class="p">,</span> <span class="kt">c</span><span class="p">(</span><span class="s">&#34;sm&#34;</span><span class="p">,</span> <span class="s">&#34;xs&#34;</span><span class="p">,</span> <span class="s">&#34;xxs&#34;</span><span class="p">))</span>
+    text_value <span class="o">&lt;-</span> <span class="kp">paste0</span><span class="p">(</span>value<span class="p">,</span> <span class="s">&#34;%&#34;</span><span class="p">)</span>
+    <span class="kr">if</span> <span class="p">(</span>vertical<span class="p">)</span>
+        style <span class="o">&lt;-</span> htmltools<span class="o">::</span>css<span class="p">(</span>height <span class="o">=</span> text_value<span class="p">,</span> <span class="sb">`min-height`</span> <span class="o">=</span> <span class="s">&#34;2em&#34;</span><span class="p">)</span>
+    <span class="kp">else</span>
+        style <span class="o">&lt;-</span> htmltools<span class="o">::</span>css<span class="p">(</span>width <span class="o">=</span> text_value<span class="p">,</span> <span class="sb">`min-width`</span> <span class="o">=</span> <span class="s">&#34;2em&#34;</span><span class="p">)</span>
+    tags<span class="o">$</span>div<span class="p">(</span>
+        class <span class="o">=</span> <span class="s">&#34;progress&#34;</span><span class="p">,</span>
+        class <span class="o">=</span> <span class="kr">if</span> <span class="p">(</span><span class="o">!</span><span class="kp">is.null</span><span class="p">(</span>size<span class="p">))</span> <span class="kp">paste0</span><span class="p">(</span><span class="s">&#34;progress-&#34;</span><span class="p">,</span> size<span class="p">),</span>
+        class <span class="o">=</span> <span class="kr">if</span> <span class="p">(</span>vertical<span class="p">)</span> <span class="s">&#34;vertical&#34;</span><span class="p">,</span>
+        class <span class="o">=</span> <span class="kr">if</span> <span class="p">(</span>active<span class="p">)</span> <span class="s">&#34;active&#34;</span><span class="p">,</span>
+        tags<span class="o">$</span>div<span class="p">(</span>
+            class <span class="o">=</span> <span class="s">&#34;progress-bar&#34;</span><span class="p">,</span>
+            class <span class="o">=</span> <span class="kp">paste0</span><span class="p">(</span><span class="s">&#34;progress-bar-&#34;</span><span class="p">,</span> color<span class="p">),</span>
+            class <span class="o">=</span> <span class="kr">if</span> <span class="p">(</span>striped<span class="p">)</span> <span class="s">&#34;progress-bar-striped&#34;</span><span class="p">,</span>
+            style <span class="o">=</span> style<span class="p">,</span>
+            role <span class="o">=</span> <span class="s">&#34;progressbar&#34;</span><span class="p">,</span>
+            <span class="sb">`aria-valuenow`</span> <span class="o">=</span> value<span class="p">,</span>
+            <span class="sb">`aria-valuemin`</span> <span class="o">=</span> <span class="m">0</span><span class="p">,</span>
+            <span class="sb">`aria-valuemax`</span> <span class="o">=</span> <span class="m">100</span><span class="p">,</span>
+            tags<span class="o">$</span>span<span class="p">(</span>class <span class="o">=</span> <span class="kr">if</span> <span class="p">(</span><span class="o">!</span>label<span class="p">)</span> <span class="s">&#34;sr-only&#34;</span><span class="p">,</span> text_value<span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">}</span>
+
+progressGroup <span class="o">&lt;-</span> <span class="kr">function</span><span class="p">(</span>text<span class="p">,</span> value<span class="p">,</span> min <span class="o">=</span> <span class="m">0</span><span class="p">,</span> max <span class="o">=</span> value<span class="p">,</span> color <span class="o">=</span> <span class="s">&#34;aqua&#34;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kp">stopifnot</span><span class="p">(</span><span class="kp">is.character</span><span class="p">(</span>text<span class="p">))</span>
+    <span class="kp">stopifnot</span><span class="p">(</span><span class="kp">is.numeric</span><span class="p">(</span>value<span class="p">))</span>
+    <span class="kr">if</span> <span class="p">(</span>value <span class="o">&lt;</span> min <span class="o">||</span> value <span class="o">&gt;</span> <span class="kp">max</span><span class="p">)</span>
+        <span class="kp">stop</span><span class="p">(</span><span class="kp">sprintf</span><span class="p">(</span><span class="s">&#34;&#39;value&#39; should be in the range from %d to %d.&#34;</span><span class="p">,</span> <span class="kp">min</span><span class="p">,</span> <span class="kp">max</span><span class="p">),</span> call. <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
+    tags<span class="o">$</span>div<span class="p">(</span>
+        class <span class="o">=</span> <span class="s">&#34;progress-group&#34;</span><span class="p">,</span>
+        tags<span class="o">$</span>span<span class="p">(</span>class <span class="o">=</span> <span class="s">&#34;progress-text&#34;</span><span class="p">,</span> text<span class="p">),</span>
+        tags<span class="o">$</span>span<span class="p">(</span>class <span class="o">=</span> <span class="s">&#34;progress-number&#34;</span><span class="p">,</span> <span class="kp">sprintf</span><span class="p">(</span><span class="s">&#34;%d / %d&#34;</span><span class="p">,</span> value<span class="p">,</span> <span class="kp">max</span><span class="p">)),</span>
+        prgoressBar<span class="p">(</span><span class="kp">round</span><span class="p">(</span>value <span class="o">/</span> max <span class="o">*</span> <span class="m">100</span><span class="p">),</span> color <span class="o">=</span> color<span class="p">,</span> size <span class="o">=</span> <span class="s">&#34;sm&#34;</span><span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">}</span>
+
+
+shinyServer<span class="p">(</span><span class="kr">function</span><span class="p">(</span>input<span class="p">,</span>output<span class="p">){</span>
+
+    <span class="c1"># Create some REACTIVE VALUES</span>
+    progressValue <span class="o">&lt;-</span> reactiveValues<span class="p">()</span>
+    progressValue<span class="o">$</span>one <span class="o">&lt;-</span> <span class="m">0</span>
+    progressValue<span class="o">$</span>two <span class="o">&lt;-</span> <span class="m">0</span>
+    progressValue<span class="o">$</span>three <span class="o">&lt;-</span> <span class="m">0</span>
+    progressValue<span class="o">$</span>four <span class="o">&lt;-</span> <span class="m">0</span>
+
+    <span class="c1"># Render UI output</span>
+    output<span class="o">$</span>progressOne <span class="o">&lt;-</span> renderUI<span class="p">({</span>
+        progressGroup<span class="p">(</span>text <span class="o">=</span> <span class="s">&#34;Sample Parameter Space&#34;</span><span class="p">,</span>    value <span class="o">=</span> progressValue<span class="o">$</span>one<span class="p">,</span>   min <span class="o">=</span> <span class="m">0</span><span class="p">,</span> max <span class="o">=</span> <span class="m">100</span><span class="p">,</span> color <span class="o">=</span> <span class="s">&#34;aqua&#34;</span><span class="p">)</span>
+    <span class="p">})</span>
+
+    output<span class="o">$</span>progressTwo <span class="o">&lt;-</span> renderUI<span class="p">({</span>
+        progressGroup<span class="p">(</span>text <span class="o">=</span> <span class="s">&#34;Evaluate Simulation Error&#34;</span><span class="p">,</span> value <span class="o">=</span> progressValue<span class="o">$</span>two<span class="p">,</span>   min <span class="o">=</span> <span class="m">0</span><span class="p">,</span> max <span class="o">=</span> <span class="m">100</span><span class="p">,</span> color <span class="o">=</span> <span class="s">&#34;red&#34;</span><span class="p">)</span>
+    <span class="p">})</span>
+
+    output<span class="o">$</span>progressThree <span class="o">&lt;-</span> renderUI<span class="p">({</span>
+        progressGroup<span class="p">(</span>text <span class="o">=</span> <span class="s">&#34;Resample top 10%&#34;</span><span class="p">,</span>          value <span class="o">=</span> progressValue<span class="o">$</span>three<span class="p">,</span> min <span class="o">=</span> <span class="m">0</span><span class="p">,</span> max <span class="o">=</span> <span class="m">100</span><span class="p">,</span> color <span class="o">=</span> <span class="s">&#34;green&#34;</span><span class="p">)</span>
+    <span class="p">})</span>
+
+    output<span class="o">$</span>progressFour <span class="o">&lt;-</span> renderUI<span class="p">({</span>
+        progressGroup<span class="p">(</span>text <span class="o">=</span> <span class="s">&#34;Compile Output&#34;</span><span class="p">,</span>            value <span class="o">=</span> progressValue<span class="o">$</span>four<span class="p">,</span>  min <span class="o">=</span> <span class="m">0</span><span class="p">,</span> max <span class="o">=</span> <span class="m">100</span><span class="p">,</span> color <span class="o">=</span> <span class="s">&#34;yellow&#34;</span><span class="p">)</span>
+    <span class="p">})</span>
+
+    <span class="c1"># Then on action button, allow bar to move up.</span>
+    observeEvent<span class="p">(</span>input<span class="o">$</span>goButton<span class="p">,</span> <span class="p">{</span>
+
+        <span class="kr">for</span><span class="p">(</span>i <span class="kr">in</span> <span class="m">1</span><span class="o">:</span><span class="m">100</span><span class="p">)</span> <span class="p">{</span>
+            progressValue<span class="o">$</span>one <span class="o">&lt;-</span> i
+            progressValue<span class="o">$</span>two <span class="o">&lt;-</span> i
+            progressValue<span class="o">$</span>three <span class="o">&lt;-</span> i
+            progressValue<span class="o">$</span>four <span class="o">&lt;-</span> i
+            <span class="kp">Sys.sleep</span><span class="p">(</span><span class="m">0.1</span><span class="p">)</span>
+        <span class="p">}</span>
+
+    <span class="p">})</span>
+
+<span class="p">})</span></code></pre></div>
+<p>This is my <strong>ui.R</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="kn">library</span><span class="p">(</span>shiny<span class="p">)</span>
+<span class="kn">library</span><span class="p">(</span>shinydashboard<span class="p">)</span>
+
+shinyUI<span class="p">(</span>
+    dashboardPage<span class="p">(</span>
+      dashboardHeader<span class="p">(</span>title <span class="o">=</span> <span class="s">&#34;Playground App&#34;</span><span class="p">),</span>
+      dashboardSidebar<span class="p">(</span>
+            sidebarMenu<span class="p">(</span>
+                id <span class="o">=</span> <span class="s">&#34;sideBar&#34;</span><span class="p">,</span>
+                menuItem<span class="p">(</span><span class="s">&#34;Progress Bar&#34;</span><span class="p">,</span> tabName <span class="o">=</span> <span class="s">&#34;progress&#34;</span><span class="p">,</span> icon <span class="o">=</span> icon<span class="p">(</span><span class="s">&#34;home&#34;</span><span class="p">,</span> class <span class="o">=</span> <span class="s">&#34;fa-lg fa-fw&#34;</span><span class="p">,</span> lib <span class="o">=</span> <span class="s">&#34;font-awesome&#34;</span><span class="p">))</span>
+            <span class="p">)</span>
+        <span class="p">),</span>
+        dashboardBody<span class="p">(</span>
+            tabItems<span class="p">(</span>
+                tabItem<span class="p">(</span>tabName <span class="o">=</span> <span class="s">&#34;progress&#34;</span><span class="p">,</span>
+                    column<span class="p">(</span>width <span class="o">=</span> <span class="m">8</span><span class="p">,</span>
+                        box<span class="p">(</span>width <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span>
+                            status <span class="o">=</span> <span class="s">&#34;primary&#34;</span><span class="p">,</span>
+                            solidHeader <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+                            collapsible <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+                            collapsed <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span>
+                            title <span class="o">=</span> <span class="s">&#34;Calibration&#34;</span><span class="p">,</span>
+                            helpText<span class="p">(</span><span class="s">&#34;Progress Bar Demo.&#34;</span><span class="p">),</span>
+                            p<span class="p">(</span>strong<span class="p">(</span><span class="s">&#34;Goal Completion&#34;</span><span class="p">),</span> class <span class="o">=</span> <span class="s">&#34;text-center&#34;</span><span class="p">),</span>
+                            uiOutput<span class="p">(</span>outputId <span class="o">=</span> <span class="s">&#34;progressOne&#34;</span><span class="p">),</span>
+                            uiOutput<span class="p">(</span>outputId <span class="o">=</span> <span class="s">&#34;progressTwo&#34;</span><span class="p">),</span>
+                            uiOutput<span class="p">(</span>outputId <span class="o">=</span> <span class="s">&#34;progressThree&#34;</span><span class="p">),</span>
+                            uiOutput<span class="p">(</span>outputId <span class="o">=</span> <span class="s">&#34;progressFour&#34;</span><span class="p">)</span>
+                        <span class="p">)</span>
+                    <span class="p">),</span>
+                    column<span class="p">(</span>width <span class="o">=</span> <span class="m">4</span><span class="p">,</span>
+                        box<span class="p">(</span>width <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span>
+                            status <span class="o">=</span> <span class="s">&#34;warning&#34;</span><span class="p">,</span>
+                            solidHeader <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+                            title <span class="o">=</span> <span class="s">&#34;Button&#34;</span><span class="p">,</span>
+                            actionButton<span class="p">(</span><span class="s">&#34;goButton&#34;</span><span class="p">,</span> <span class="s">&#34;HIT ME&#34;</span><span class="p">)</span>
+                        <span class="p">)</span>
+                    <span class="p">)</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">)</span></code></pre></div>
+<p>The above works, if we just use a simple <a href="http://shiny.rstudio.com/reference/shiny/latest/actionButton.html">actionButton</a>, but if I include a loop, then the the progress bars just get <em>grayed out</em> almost as if the render function can&rsquo;t keep up with the for loop. Luckily, once the loop finishes then the bars update, but they are not of much use beforehand.</p>
+
+<h3 id="the-solution">The Solution<a href="#the-solution" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+
+<p>I decided, against my better judgement to move away from the group progress bar and rethink my use of <a href="http://shiny.rstudio.com/articles/progress.html">withProgress</a>. In fact, I could make do with this function if I could customise it, so I took the plunge and decided to get my hands dirty with the shiny CSS. After spending some time inspecting the soup of files that are generated and run when a shiny app is active, I located the attributes reponsible for the Shiny Progress Bar. Below are the changes I have made to improve the appearance of the bars.</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/* Make sure the filename doesn&#39;t extend past the bounds of the container */</span>
+<span class="p">.</span><span class="nc">shiny-input-container</span> <span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">file</span><span class="o">]</span> <span class="p">{</span>
+    <span class="k">overflow</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
+    <span class="k">max-width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">shiny-progress-container</span> <span class="p">{</span>
+    <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
+    <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+    <span class="k">z-index</span><span class="p">:</span> <span class="mi">2000</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">shiny-progress</span> <span class="p">.</span><span class="nc">progress</span> <span class="p">{</span>
+    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+    <span class="k">top</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+    <span class="c">/* The default height is only 1px which is find to be TINY */</span>
+    <span class="k">height</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">shiny-progress</span> <span class="p">.</span><span class="nc">bar</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="mh">#FF0000</span><span class="p">;</span>
+    <span class="err">.opacity</span> <span class="err">=</span> <span class="err">0.8</span><span class="p">;</span>
+    <span class="k">transition-duration</span><span class="p">:</span> <span class="mi">250</span><span class="kt">ms</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">shiny-progress</span> <span class="p">.</span><span class="nc">progress-text</span> <span class="p">{</span>
+    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+    <span class="k">right</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">height</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">490</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="mh">#D9534F</span><span class="p">;</span>
+    <span class="k">padding-top</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-right</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-bottom</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-left</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">opacity</span><span class="p">:</span> <span class="mf">0.95</span><span class="p">;</span>
+    <span class="c">/* I also wanted to round off the corners of the text box */</span>
+    <span class="k">border-radius</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+    <span class="kp">-webkit-</span><span class="k">border-radius</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+    <span class="kp">-moz-</span><span class="k">border-radius</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">progress-text</span> <span class="p">{</span>
+    <span class="c">/* Copy the below to vertically center the progress bar text box in the shiny dashboard header */</span>
+    <span class="c">/* !important is crucial here otherwise it gets overridden by the dreaded element.style */</span>
+    <span class="k">top</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="k">color</span><span class="p">:</span> <span class="mh">#FFFFFF</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Bold Initial part of message */</span>
+<span class="p">.</span><span class="nc">shiny-progress</span> <span class="p">.</span><span class="nc">progress-text</span> <span class="p">.</span><span class="nc">progress-message</span> <span class="p">{</span>
+    <span class="k">padding-top</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-right</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-bottom</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-left</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">18</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Message detail */</span>
+<span class="p">.</span><span class="nc">shiny-progress</span> <span class="p">.</span><span class="nc">progress-text</span> <span class="p">.</span><span class="nc">progress-detail</span> <span class="p">{</span>
+    <span class="k">padding-top</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-right</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-bottom</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-left</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">17</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+<p>To include this CSS in your Shiny app, you can either write it <a href="http://shiny.rstudio.com/articles/css.html">in-line</a>, but thats a bit naff, so dump it in a .css file and in your <strong>ui.R</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r">dashboardPage<span class="p">(</span>
+    dashboardBody<span class="p">(</span>
+        <span class="c1"># Write the path to your .css file</span>
+        includeCSS<span class="p">(</span><span class="s">&#34;styles.css&#34;</span><span class="p">)</span>
+        <span class="c1"># The guts of your app</span>
+    <span class="p">)</span>
+<span class="p">)</span></code></pre></div>
+<p>All done, enjoy!</p>
+
+<p><center><img src="../../images/progress-bars/result.png" alt="Shiny Progress Bar" style="width: 1000px;"/></center></p>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://jackolney.github.io/tags/shiny">shiny</a></span><span class="tag"><a href="https://jackolney.github.io/tags/r">R</a></span><span class="tag"><a href="https://jackolney.github.io/tags/css">CSS</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1267 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2016-04-01 10:41 &#43;0100</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="next-post" href="https://jackolney.github.io/posts/2016-06-21-sacema/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>SACEMA Quarterly</span>
+			</a>
+			<a class="prev-post" href="https://jackolney.github.io/posts/2016-03-09-croi/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>CROI 2016</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jackolney" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2019 <a href="https://jackolney.github.io/">Jack Olney</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://jackolney.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+	<script src="https://jackolney.github.io/js/main.min.35ccbf1cdceb91e4c64c06b5d009d6e2977fafe56beda7762febd4e67528d2ac.js" integrity="sha256-Ncy/HNzrkeTGTAa10AnW4pd/r+Vr7ad2L+vU5nUo0qw="></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</body>
+
+</html>

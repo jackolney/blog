@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Jack Olney</title>
+    <link>https://jackolney.github.io/tags/python/</link>
+    <description>Recent content in python on Jack Olney</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 01 Jul 2015 09:41:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jackolney.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Calling R from a Python instance</title>
+      <link>https://jackolney.github.io/posts/2015-07-01-calling-r-from-python/</link>
+      <pubDate>Wed, 01 Jul 2015 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/posts/2015-07-01-calling-r-from-python/</guid>
+      <description>After spending several hours today trying to figure out how to call R from an instance of Python running on the departmental cluster, I figured that I better document this.
+Why bother? Some background on my problem. I have an individual-based model written in C++ that describes the HIV epidemic in Kenya over time from 1970 to 2036&amp;frasl;2056. This model is called through R which supplies a whole bunch of arguments allowing me to simulate a whole bunch of different scenarios.</description>
+    </item>
+    
+  </channel>
+</rss>

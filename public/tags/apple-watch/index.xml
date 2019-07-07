@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apple Watch on Jack Olney</title>
+    <link>https://jackolney.github.io/tags/apple-watch/</link>
+    <description>Recent content in Apple Watch on Jack Olney</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 27 Dec 2015 09:41:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jackolney.github.io/tags/apple-watch/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Has the Apple Watch improved my fitness?</title>
+      <link>https://jackolney.github.io/posts/2015-12-27-apple-watch-health/</link>
+      <pubDate>Sun, 27 Dec 2015 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/posts/2015-12-27-apple-watch-health/</guid>
+      <description>Overview Having owned an Apple Watch since early May, I have built up a substantial amount of data in Apple&amp;rsquo;s &amp;lsquo;HealthKit&amp;rsquo;, detailing my daily steps from in excess of a year prior to owning the watch to at least six months after. Therefore, a simple analysis of whether the watch has improved my fitness should be possible. Additionally, I can pull out heart-rate data, stair-flight data, exercise data and map a whole bunch of other interesting stuff.</description>
+    </item>
+    
+  </channel>
+</rss>
