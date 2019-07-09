@@ -71,7 +71,7 @@ relevant industries
 ### Events
 
 - Management of all Centre events, including conferences, project meetings, dissemination and
-networking events;
+networking events
 - Promoting activities internally and externally via networks, social networking, online media
 and other marketing channels
 
@@ -90,7 +90,7 @@ Even Greater Health Benefits for Their Communities"]
 Hallett](https://www.imperial.ac.uk/people/timothy.hallett) and [Dr Jeffrey Eaton]
 (https://www.imperial.ac.uk/people/jeffrey.eaton).
 
-I still published research on various topics of interest, including HIV and Health Economics. My
+I still publish research on various topics of interest, including HIV and Health Economics. My
 latest publications can be found on [Google Scholar]
 (https://scholar.google.co.uk/citations?user=PipEQkEAAAAJ&hl=en).
 
