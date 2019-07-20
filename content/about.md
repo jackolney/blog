@@ -30,8 +30,8 @@ I am in charge of all aspects of Research Support for the Centre, including:
 - Ensuring compliance with all internal, funder-specific and national reporting requirements, audit
 requirements, contracts, costing, approvals, procurement and employment
 - Overseeing preparation of research content and financial reports as per funder requirements
-- Identifying suitable funding opportunities from Research Councils, Charities,
-Governments, Industry and other external bodies for our academics tailored to their research
+- Identifying suitable funding opportunities from research councils, charities,
+governments, industry and other external bodies for our academics tailored to their research
 interests, while facilitating cross-faculty and cross-discipline collaborations on bids
 
 ### Information Governance
