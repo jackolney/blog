@@ -4,7 +4,7 @@ description: "Some brief thoughts"
 categories: [health,data]
 tags: [data,health,healthcare]
 date: 2020-03-06 00:00:00
-draft: true
+draft: false
 ---
 
 In the field of public health, there is a need to access health and healthcare-related data much

@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 07 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jackolney.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rapid access to health data in the UK</title>
+      <link>https://jackolney.github.io/posts/2020-03-03-health-data/</link>
+      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/posts/2020-03-03-health-data/</guid>
+      <description>In the field of public health, there is a need to access health and healthcare-related data much faster than ever before.
+A pertinent example of this is the current coronavirus outbreak (COVID-19). In early February 2020, merely days after the first cases were confirmed in the UK, the Department of Health and Social Care along with UK Research &amp;amp; Innovation announced a £20M investment to facilitate rapid research on the virus by world-class UK academic and industry experts1.</description>
+    </item>
     
     <item>
       <title>About</title>
@@ -99,16 +109,6 @@ Shiny, is great package being developed by a handful of developers at RStudio, a
       
       <guid>https://jackolney.github.io/posts/2015-12-27-apple-watch-health/</guid>
       <description>Overview Having owned an Apple Watch since early May, I have built up a substantial amount of data in Apple&amp;rsquo;s &amp;lsquo;HealthKit&amp;rsquo;, detailing my daily steps from in excess of a year prior to owning the watch to at least six months after. Therefore, a simple analysis of whether the watch has improved my fitness should be possible. Additionally, I can pull out heart-rate data, stair-flight data, exercise data and map a whole bunch of other interesting stuff.</description>
-    </item>
-    
-    <item>
-      <title>Interactive Dynamic Models in R</title>
-      <link>https://jackolney.github.io/posts/2015-10-16-shiny-cascade/</link>
-      <pubDate>Fri, 16 Oct 2015 09:41:00 +0000</pubDate>
-      
-      <guid>https://jackolney.github.io/posts/2015-10-16-shiny-cascade/</guid>
-      <description>As part of a new work package I am part of, we needed to develop a dynamic transmission model of HIV care that has a relatively user-friendly interface and that can be run on almost any device.
-The initial choice was to go with an Excel spreadsheet, and have a tab hidden in the background with the model running and a whole bunch of simple stuff at the front for the user to interact with.</description>
     </item>
     
   </channel>
