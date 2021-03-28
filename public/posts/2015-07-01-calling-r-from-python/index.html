@@ -7,24 +7,17 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="theme-color" content="#494f5c">
 	<meta name="msapplication-TileColor" content="#494f5c">
-
 <meta itemprop="name" content="Calling R from a Python instance">
-<meta itemprop="description" content="R and Python play nice">
-
-
-<meta itemprop="datePublished" content="2015-07-01T09:41:00&#43;00:00" />
+<meta itemprop="description" content="R and Python play nice"><meta itemprop="datePublished" content="2015-07-01T09:41:00&#43;00:00" />
 <meta itemprop="dateModified" content="2015-07-01T09:41:00&#43;00:00" />
 <meta itemprop="wordCount" content="429">
-
-
-
-<meta itemprop="keywords" content="R,python," />
-<meta property="og:title" content="Calling R from a Python instance" />
+<meta itemprop="keywords" content="R,python," /><meta property="og:title" content="Calling R from a Python instance" />
 <meta property="og:description" content="R and Python play nice" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jackolney.github.io/posts/2015-07-01-calling-r-from-python/" />
-<meta property="article:published_time" content="2015-07-01T09:41:00&#43;00:00"/>
-<meta property="article:modified_time" content="2015-07-01T09:41:00&#43;00:00"/>
+<meta property="og:url" content="https://jackolney.github.io/posts/2015-07-01-calling-r-from-python/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2015-07-01T09:41:00&#43;00:00" />
+<meta property="article:modified_time" content="2015-07-01T09:41:00&#43;00:00" />
+
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Calling R from a Python instance"/>
 <meta name="twitter:description" content="R and Python play nice"/>
@@ -37,13 +30,13 @@
 	<link rel="shortcut icon" href="/favicon.ico">
 
 	<title>Calling R from a Python instance</title>
-	<link rel="stylesheet" href="https://jackolney.github.io/css/style.min.568c54a56780af2a70c45272522247710b69dbfc080b315211fb98381e3796f8.css" integrity="sha256-VoxUpWeArypwxFJyUiJHcQtp2/wICzFSEfuYOB43lvg=">
+	<link rel="stylesheet" href="https://jackolney.github.io/css/style.min.f74778e3020c87c304fb5982e09b92ba63a5c7f202996d4c7283d6057acfe9c1.css" integrity="sha256-90d44wIMh8ME+1mC4JuSumOlx/ICmW1McoPWBXrP6cE=" crossorigin="anonymous">
 	
 </head>
 
 <body id="page">
 	
-	<header id="site-header" class="animated slideInUp faster">
+	<header id="site-header" class="animated slideInUp">
 		<div class="hdr-wrapper section-inner">
 			<div class="hdr-left">
 				<div class="site-branding">
@@ -57,7 +50,7 @@
 				</nav>
 			</div>
 			<div class="hdr-right hdr-icons">
-				<span class="hdr-social hide-in-mobile"><a href="mailto:olney.jack@gmail.com" target="_blank" rel="noopener me" title="Email"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a><a href="https://github.com/jackolney" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://www.linkedin.com/in/jack-olney/" target="_blank" rel="noopener me" title="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="https://twitter.com/OlneyJack" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+				<span class="hdr-social hide-in-mobile"><a href="mailto:olney.jack@gmail.com" target="_blank" rel="noopener me" title="Email"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a><a href="https://github.com/jackolney" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://www.linkedin.com/in/jack-olney/" target="_blank" rel="noopener me" title="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="https://twitter.com/OlneyJack" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
 			</div>
 		</div>
 	</header>
@@ -76,24 +69,17 @@
 				<h1>Calling R from a Python instance</h1>
 			</header>
 			<div class="content">
-				
-
-<p>After spending several hours today trying to figure out how to call R from an instance of Python running on the departmental cluster, I figured that I better document this.</p>
-
+				<p>After spending several hours today trying to figure out how to call R from an instance of Python running on the departmental cluster, I figured that I better document this.</p>
 <h3 id="why-bother">Why bother?<a href="#why-bother" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
-
-<p>Some background on my problem. I have an individual-based model written in C++ that describes the HIV epidemic in Kenya over time from 1970 to <sup>2036</sup>&frasl;<sub>2056</sub>. This model is called through R which supplies a whole bunch of arguments allowing me to simulate a whole bunch of different scenarios. For some time now I have been using Python as a high-level manager for these simulations. I simple stick some python script in a directory, it creates all the directories, writes the R scripts, writes the .bat files and submits the jobs to the cluster.</p>
-
+<p>Some background on my problem. I have an individual-based model written in C++ that describes the HIV epidemic in Kenya over time from 1970 to 2036/2056. This model is called through R which supplies a whole bunch of arguments allowing me to simulate a whole bunch of different scenarios. For some time now I have been using Python as a high-level manager for these simulations. I simple stick some python script in a directory, it creates all the directories, writes the R scripts, writes the .bat files and submits the jobs to the cluster.</p>
 <p>Recently, I have been running a set of scenarios that involve learning from experience. I run some simulations and depending on the results, make some changes to the next set of simulations. A simple method for doing this was by running an R script across all the results and computing the changes that needed to be made. This was okay but if you want to run several hundred scenarios at once, it quickly becomes boring, and rather tedious.</p>
-
 <p>I figured that I would write some python code that would deploy the simulations, wait for them to complete then run some analysis in R and then deploy the next set of simulations. Actually, rather than have my instance of Python sleep for a while and take up resources I kill it off and allow each simulation to check if the others are done, create a lock-file if they have finished and run some analysis.</p>
-
 <p>This actually turned out better than my original plan, but I was still keen to know how to call R directly from my instance of python. The way I was submitting jobs and generally accessing the command line was by using the os module and calling:</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">os</span>
-<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&#34;job submit /scheduler:somewhere /numcores:lots </span><span class="se">\\</span><span class="s2">somecomputer\somewhere</span><span class="se">\&#34;</span><span class="s2">)</span></code></pre></div>
-<p>Yet, interestingly if I tried:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&#34;Rscript </span><span class="se">\\</span><span class="s2">somescript\somewhere&#34;</span><span class="p">)</span></code></pre></div>
-<p>I got nowhere. I then tried the absolute path to Rscript.exe (windows cluster), but to no avail. The solution turned out to be clunky.</p>
+<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&#34;job submit /scheduler:somewhere /numcores:lots </span><span class="se">\\</span><span class="s2">somecomputer\somewhere</span><span class="se">\&#34;</span><span class="s2">)</span>
+</code></pre></div><p>Yet, interestingly if I tried:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s2">&#34;Rscript </span><span class="se">\\</span><span class="s2">somescript\somewhere&#34;</span><span class="p">)</span>
+</code></pre></div><p>I got nowhere. I then tried the absolute path to Rscript.exe (windows cluster), but to no avail. The solution turned out to be clunky.</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Two methods:</span>
 <span class="kn">import</span> <span class="nn">subprocess</span>
 
@@ -106,8 +92,8 @@
 <span class="c1"># It turns out that using os.system is odd.</span>
 <span class="c1"># It needs to be in double-quotes then wrapped in single-quotes</span>
 <span class="c1"># Then where to arguments go? Within the single-quotes but not the double-quotes. WTF!?</span>
-<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;&#34;C:</span><span class="se">\\</span><span class="s1">Program Files</span><span class="se">\\</span><span class="s1">R\R-3.0.1</span><span class="se">\\</span><span class="s1">bin\Rscript.exe&#34; --version&#39;</span><span class="p">)</span></code></pre></div>
-<p>Anyway, now we have the solution.</p>
+<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;&#34;C:</span><span class="se">\\</span><span class="s1">Program Files</span><span class="se">\\</span><span class="s1">R\R-3.0.1</span><span class="se">\\</span><span class="s1">bin\Rscript.exe&#34; --version&#39;</span><span class="p">)</span>
+</code></pre></div><p>Anyway, now we have the solution.</p>
 
 			</div>
 			<hr class="post-end">
@@ -152,14 +138,16 @@
 	</main>
 
 	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
-		<p>&copy; 2020 <a href="https://jackolney.github.io/">Jack Olney</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>&copy; 2021 <a href="https://jackolney.github.io/">Jack Olney</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
 		<p>
 			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://jackolney.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
 		</p>
 	</footer>
 
 
-	<script src="https://jackolney.github.io/js/main.min.35ccbf1cdceb91e4c64c06b5d009d6e2977fafe56beda7762febd4e67528d2ac.js" integrity="sha256-Ncy/HNzrkeTGTAa10AnW4pd/r+Vr7ad2L+vU5nUo0qw="></script>
+
+	<script src="https://jackolney.github.io/js/bundle.min.7d8545daa55d62427355498dd8da13f98ff79a7938ce7d2a5e2ae1ec0de3beb8.js" integrity="sha256-fYVF2qVdYkJzVUmN2NoT+Y/3mnk4zn0qXirh7A3jvrg=" crossorigin="anonymous"></script>
+	
 <script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
