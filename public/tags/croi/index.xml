@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CROI on Jack Olney</title>
@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 21 Feb 2017 09:41:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://jackolney.github.io/tags/croi/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 21 Feb 2017 09:41:00 +0000</lastBuildDate><atom:link href="https://jackolney.github.io/tags/croi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CROI 2017</title>
       <link>https://jackolney.github.io/posts/2017-02-21-croi/</link>
@@ -28,8 +24,7 @@ I spoke about my new web-based modelling tool that enables countries to enter da
       <pubDate>Wed, 09 Mar 2016 01:41:00 +0000</pubDate>
       
       <guid>https://jackolney.github.io/posts/2016-03-09-croi/</guid>
-      <description>I was recently invited to speak at the annual Conference on Retroviruses and Opportunistic Infections (CROI), held this year in Boston. I spoke briefly about some of my work on home-based counselling and testing programmes in western Kenya, particularly with regard to the timing of testing rounds and the scale up of testing programmes to achieve the UNAIDS 90-90-90 targets by 2020.
- </description>
+      <description>I was recently invited to speak at the annual Conference on Retroviruses and Opportunistic Infections (CROI), held this year in Boston. I spoke briefly about some of my work on home-based counselling and testing programmes in western Kenya, particularly with regard to the timing of testing rounds and the scale up of testing programmes to achieve the UNAIDS 90-90-90 targets by 2020.</description>
     </item>
     
   </channel>

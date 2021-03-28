@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Care Cascade on Jack Olney</title>
@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 21 Jun 2016 09:41:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://jackolney.github.io/tags/care-cascade/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 21 Jun 2016 09:41:00 +0000</lastBuildDate><atom:link href="https://jackolney.github.io/tags/care-cascade/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Future Needs for Characterising the HIV Care Cascade</title>
       <link>https://jackolney.github.io/posts/2016-06-21-sacema/</link>
