@@ -14,14 +14,30 @@ Business School](https://imperial.ac.uk/business-school/).
 
 I am in charge of all aspects of Research Support for the Centre, including:
 
-### Core Centre Management
+### Core Management
 
-- Development and implementation of Centre's research and financial sustainability strategy
-- Managing all research projects both pre and post-award
-- Managing all highly sensitive datasets containing personal data for research purposes
-- Managing the Centre's communication strategy, the Centre website and media communications
-- Negotiating and managing office space and central resources
-- Leading the recruitment of new Academic and Professional Support Staff
+- Provide high level oversight to operational activities of the Centre
+- Lead the development of all initiatives and strategies to maximise the growth and sustainability
+of the Centre, including the development of our vision and mission
+- Undertake continuous operational and financial assessments against clear objectives, to maintain
+the quality, effectiveness and efficiency of our research
+- Engage with senior staff at all levels of the university to ensure the strategic alignment of
+our objectives
+- Attend and chair key management groups and committees
+- Establish and coordinate activities of the Centre's Advisory Board Provide management oversight
+on all research projects
+- Manage infrastructure and resources necessary for conducting research
+- Lead on and coordinate grant applications for external funding
+- Establish working relationships with data providers
+- Ensure the continuity of contracts, and faciliate the growth and career development of research
+staff
+- Maintain the financial accountability and sustainability of the Centre Lead the delivery of
+communication, dissemination and exploitation plans for all outputs
+- Utilise technological innovations to enhance the activities and impact of the Centre's research
+- Provide a supportive, inclusive and motivating working environment
+- Line management of professional and research staff
+- Responsibility for all marketing activities, including the website, social media and annual
+conference
 
 ### Financial Management
 
@@ -75,7 +91,7 @@ networking events
 - Promoting activities internally and externally via networks, social networking, online media
 and other marketing channels
 
-[_Curriculum vitae_] (https://drive.google.com/file/d/0B02uVauBTUwhaUR3S2pmeld2WDQ/preview)
+[_Curriculum vitae_](https://drive.google.com/file/d/0B02uVauBTUwhaUR3S2pmeld2WDQ/preview)
 
 ---
 
@@ -96,8 +112,9 @@ latest publications can be found on [Google Scholar]
 
 ---
 
-Outside of work I can usually be found fixing vintage racing cars with my dad, tinkering with my own
-car, playing guitar or mowing a field on the farm.
+Outside of work I am an enthusiastic recreational runner and clock an average of 70 miles a week. My
+current goal is a 2:45 marathon. If not running then I can usually be found fixing cars or playing
+the guitar.
 
 If you have made it this far, feel free to contact me using any of the links at the bottom of the
 screen.
