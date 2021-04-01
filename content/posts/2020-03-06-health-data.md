@@ -20,8 +20,7 @@ funding will enable us to ultimately control the current outbreak.
 Yet, a number of projects proposed in these applications hinge on expedited access to
 high-resolution population health and healthcare data, which reside --- rightly so --- in tightly
 controlled environments. In the UK, these data predominantly come from providers such as [NHS
-Digital](https://digital.nhs.uk/), who host [Hospital Episode Statistics (HES)]
-(https://digital.nhs.uk/data-and-information/data-tools-and-services/data-services/hospital-episode-statistics), a database containing details of all admissions, A&E attendances and outpatient appointments at
+Digital](https://digital.nhs.uk/), who host [Hospital Episode Statistics (HES)](https://digital.nhs.uk/data-and-information/data-tools-and-services/data-services/hospital-episode-statistics), a database containing details of all admissions, A&E attendances and outpatient appointments at
 NHS hospitals in England; or, from [Clinical Practice Research Datalink (CPRD)](https://cprd.com/)
 who collect de-identified patient data from a network of GP practices across the UK.
 
