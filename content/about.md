@@ -8,9 +8,8 @@ aliases = ["about-us","about-hugo","contact"]
 
 Hello, I'm [Jack](http://www.imperial.ac.uk/people/jack.olney).
 
-I manage the [Centre for Health Economics & Policy Innovation]
-(https://www.imperial.ac.uk/business-school/research/health-economics/) at [Imperial College
-Business School](https://imperial.ac.uk/business-school/).
+I manage the [Centre for Health Economics & Policy Innovation](https://www.imperial.ac.uk/business-school/research/health-economics/)
+at [Imperial College Business School](https://imperial.ac.uk/business-school/).
 
 I am in charge of all aspects of Research Support for the Centre, including:
 
@@ -95,20 +94,16 @@ and other marketing channels
 
 ---
 
-Previously I worked as a post-doctoral researcher with the [HIV Modelling Consortium]
-(http://www.hivmodelling.org/) at [Imperial College London](http://imperial.ac.uk/). My research
-focused on improving patient outcomes through strengthening HIV care programmes in sub-Saharan
-Africa.
+Previously I worked as a post-doctoral researcher with the [HIV Modelling Consortium](http://www.hivmodelling.org/)
+at [Imperial College London](http://imperial.ac.uk/). My research focused on improving patient
+outcomes through strengthening HIV care programmes in sub-Saharan Africa.
 
 My PhD thesis ["Understanding How Health Systems Providing ART in sub-Saharan Africa Can Generate
-Even Greater Health Benefits for Their Communities"]
-(https://drive.google.com/file/d/0B02uVauBTUwhaU1vSXQzSE9OV0k/preview) was supervised by [Prof. Tim
-Hallett](https://www.imperial.ac.uk/people/timothy.hallett) and [Dr Jeffrey Eaton]
-(https://www.imperial.ac.uk/people/jeffrey.eaton).
+Even Greater Health Benefits for Their Communities"](https://drive.google.com/file/d/0B02uVauBTUwhaU1vSXQzSE9OV0k/preview)
+was supervised by [Prof. Tim Hallett](https://www.imperial.ac.uk/people/timothy.hallett) and [Dr Jeffrey Eaton](https://www.imperial.ac.uk/people/jeffrey.eaton).
 
 I still publish research on various topics of interest, including HIV and Health Economics. My
-latest publications can be found on [Google Scholar]
-(https://scholar.google.co.uk/citations?user=PipEQkEAAAAJ&hl=en).
+latest publications can be found on [Google Scholar](https://scholar.google.co.uk/citations?user=PipEQkEAAAAJ&hl=en).
 
 ---
 
