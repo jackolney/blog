@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on Jack Olney</title>
+    <link>https://jackolney.github.io/categories/programming/</link>
+    <description>Recent content in programming on Jack Olney</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Aug 2016 09:41:00 +0000</lastBuildDate><atom:link href="https://jackolney.github.io/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Webfonts in ggplot2</title>
+      <link>https://jackolney.github.io/posts/2016-08-15-ggplot2-font/</link>
+      <pubDate>Mon, 15 Aug 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/posts/2016-08-15-ggplot2-font/</guid>
+      <description>Thanks to Hadley&amp;rsquo;s ggplot2 package, we are no longer confined to base graphics plots in R. However, by default all fonts are generated using the &amp;lsquo;Helvetica&amp;rsquo; family. Now this is a great sans serif font, as evidenced by the fact that it is use literally everywhere in everything.
+But now that we have these incredible graphical capabilities, and the ability to produce FiveThirtyEight quality figures, we should really explore how to enhance our plots further with the use of better fonts.</description>
+    </item>
+    
+    <item>
+      <title>Shiny Progress Bars</title>
+      <link>https://jackolney.github.io/posts/2016-04-01-shiny/</link>
+      <pubDate>Fri, 01 Apr 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/posts/2016-04-01-shiny/</guid>
+      <description>Lately, I have been working on developing a friendly shiny app around a mathematical model to enable non-modellers to get to grips with the model, play around and perhaps learn something too. This has really been as much about teaching myself Shiny as it has been about enabling others to interact with models.
+Shiny, is great package being developed by a handful of developers at RStudio, and it enables anyone to wrap their R code in an HTML front-end that will run on any computer with R installed, and perhaps most importantly, run on any computer if deployed to a Linux server running ShinyServer.</description>
+    </item>
+    
+    <item>
+      <title>Hubot - a Siri to call my own</title>
+      <link>https://jackolney.github.io/posts/2016-01-09-hubot/</link>
+      <pubDate>Sat, 09 Jan 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/posts/2016-01-09-hubot/</guid>
+      <description>I have always been interested in how these automated personal assistants: Siri, Google Now, Cortana etc. actually function. Aside from the speech recognition algorithms, the meaning of the sentence spoken to these programs must be deciphered and then acted upon pretty quickly. &amp;lsquo;Trigger&amp;rsquo; words are clearly important here e.g. &amp;ldquo;give me directions to&amp;hellip;&amp;rdquo; but the breadth of words that a computer must understand in order to appear human is simply vast.</description>
+    </item>
+    
+    <item>
+      <title>Has the Apple Watch improved my fitness?</title>
+      <link>https://jackolney.github.io/posts/2015-12-27-apple-watch-health/</link>
+      <pubDate>Sun, 27 Dec 2015 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/posts/2015-12-27-apple-watch-health/</guid>
+      <description>Overview Having owned an Apple Watch since early May, I have built up a substantial amount of data in Apple&amp;rsquo;s &amp;lsquo;HealthKit&amp;rsquo;, detailing my daily steps from in excess of a year prior to owning the watch to at least six months after. Therefore, a simple analysis of whether the watch has improved my fitness should be possible. Additionally, I can pull out heart-rate data, stair-flight data, exercise data and map a whole bunch of other interesting stuff.</description>
+    </item>
+    
+    <item>
+      <title>Interactive Dynamic Models in R</title>
+      <link>https://jackolney.github.io/posts/2015-10-16-shiny-cascade/</link>
+      <pubDate>Fri, 16 Oct 2015 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/posts/2015-10-16-shiny-cascade/</guid>
+      <description>As part of a new work package I am part of, we needed to develop a dynamic transmission model of HIV care that has a relatively user-friendly interface and that can be run on almost any device.
+The initial choice was to go with an Excel spreadsheet, and have a tab hidden in the background with the model running and a whole bunch of simple stuff at the front for the user to interact with.</description>
+    </item>
+    
+    <item>
+      <title>Calling R from a Python instance</title>
+      <link>https://jackolney.github.io/posts/2015-07-01-calling-r-from-python/</link>
+      <pubDate>Wed, 01 Jul 2015 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/posts/2015-07-01-calling-r-from-python/</guid>
+      <description>After spending several hours today trying to figure out how to call R from an instance of Python running on the departmental cluster, I figured that I better document this.
+Why bother? Some background on my problem. I have an individual-based model written in C++ that describes the HIV epidemic in Kenya over time from 1970 to 2036/2056. This model is called through R which supplies a whole bunch of arguments allowing me to simulate a whole bunch of different scenarios.</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on priority queues in C&#43;&#43;</title>
+      <link>https://jackolney.github.io/posts/2014-08-25-thoughts-on-priority-queues/</link>
+      <pubDate>Mon, 25 Aug 2014 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/posts/2014-08-25-thoughts-on-priority-queues/</guid>
+      <description>Taking comfort in the fact that I am sure that nobody will read this site except me, I have decided to procrastinate by writing something about a problem, or perhaps I should say challange that I am currently facing. To add some background, I have written an individual-based time-to-event model that describes a series of events that make up HIV care. I have written this model purely in C++, but as it was my first &amp;ldquo;big&amp;rdquo; model and I was still learning C++ at the time, I have since thought about revisiting the source code and changing the fundamentals of the model.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Jack Olney</title>
+    <link>https://jackolney.github.io/categories/</link>
+    <description>Recent content in Categories on Jack Olney</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://jackolney.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>data</title>
+      <link>https://jackolney.github.io/categories/data/</link>
+      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/categories/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>health</title>
+      <link>https://jackolney.github.io/categories/health/</link>
+      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/categories/health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>conference</title>
+      <link>https://jackolney.github.io/categories/conference/</link>
+      <pubDate>Tue, 21 Feb 2017 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/categories/conference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thesis</title>
+      <link>https://jackolney.github.io/categories/thesis/</link>
+      <pubDate>Thu, 17 Nov 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/categories/thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://jackolney.github.io/categories/programming/</link>
+      <pubDate>Mon, 15 Aug 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/categories/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>writing</title>
+      <link>https://jackolney.github.io/categories/writing/</link>
+      <pubDate>Tue, 21 Jun 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/categories/writing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shiny</title>
+      <link>https://jackolney.github.io/categories/shiny/</link>
+      <pubDate>Fri, 01 Apr 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/categories/shiny/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>slack</title>
+      <link>https://jackolney.github.io/categories/slack/</link>
+      <pubDate>Sat, 09 Jan 2016 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/categories/slack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apple</title>
+      <link>https://jackolney.github.io/categories/apple/</link>
+      <pubDate>Sun, 27 Dec 2015 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/categories/apple/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google</title>
+      <link>https://jackolney.github.io/categories/google/</link>
+      <pubDate>Thu, 01 Jan 2015 09:41:00 +0000</pubDate>
+      
+      <guid>https://jackolney.github.io/categories/google/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
