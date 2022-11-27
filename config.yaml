@@ -3,7 +3,7 @@ languageCode: "en-us"
 title: "Jack Olney"
 theme: hugo-profile
 
-Paginate: 3
+Paginate: 24
 disqusShortname: jackolney
 googleAnalytics: UA-123-45
 
