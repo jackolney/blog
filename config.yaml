@@ -1,0 +1,208 @@
+baseURL: "https://jackolney.github.io/"
+languageCode: "en-us"
+title: "Jack Olney"
+theme: hugo-profile
+
+Paginate: 3
+disqusShortname: jackolney
+googleAnalytics: UA-123-45
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /posts
+      weight: 1
+
+params:
+  title: "Jack Olney"
+  description: Text about my cool site
+  # staticPath: "/static"  # The path to serve the static files from
+  # favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    disableThemeToggle: false
+    # defaultTheme: "light" # dark
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Jack."
+    subtitle: "Executive Director"
+    content: "A passionate leader at the Centre for Health Economics & Policy Innovation, Imperial College Business School."
+    image: /me.jpg
+    button:
+      enable: true
+      name: "Curriculum vitae"
+      url: "https://drive.google.com/file/d/0B02uVauBTUwhaUR3S2pmeld2WDQ/preview?resourcekey=0-NQthybL05e6-150h9V3KNA"
+      download: true
+      newPage: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fa fa-envelope
+          url: mailto:olney.jack@gmail.com
+        - icon: fa fa-globe
+          url: https://www.imperial.ac.uk/people/jack.olney
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/jack-olney/
+        - icon: fab fa-twitter
+          url: https://twitter.com/OlneyJack
+        - icon: fab fa-github
+          url: https://github.com/jackolney
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/me.jpg"
+    content:
+      I am the Executive Director of the [Centre for Health Economics & Policy Innovation (CHEPI)](https://www.imperial.ac.uk/business-school/research/health-economics/) at [Imperial College Business School](https://imperial.ac.uk/business-school/).
+
+
+
+      After completing a PhD in infectious disease epidemiology and mathematical modelling at Imperial College, I pivoted to a management position and moved to the Business School to support the establishment and development of [CHEPI](https://www.imperial.ac.uk/business-school/research/health-economics/).
+
+
+
+      CHEPI is now the largest and most active research centre in the School and has established itself as the focal point for world-class research and teaching in health economics, policy, and management across [Imperial College](http://imperial.ac.uk/).
+
+
+
+      With no prior experience, I switched from a research career into management, which has now developed into leadership. I lead the development of our ambitious growth and impact strategies, which rely heavily on establishing new partnerships and fund raising, along with directing a team of administrative staff and overseeing all operational activities of the centre.
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Imperial College Business School"
+        company: "Executive Director"
+        companyUrl: "https://www.imperial.ac.uk/people/jack.olney"
+        date: "Aug 2022 - present"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: false
+          content: Blank.
+        content: |
+
+          - Centre leadership (30 faculty and research staff)
+          - Direct all operational activities (15 active research projects)
+          - Lead the development and implementation of growth and impact strategies (grant revenue of >£13M)
+          - Lead fundraising efforts through mixed portfolio of grants and contracts
+          - Manage research programme and data assets
+          - Manage project and centre budgets
+          - Ensure ethical, financial, funder, and data compliance
+          - Chair key management groups and operational committees
+          - Establish links with external organisations, including academic partners and policy experts
+          - Line management of professional and research staff
+          - Lead the delivery of communication, dissemination and exploitation strategies
+          - High-level ambassador for the Centre at external meetings and events
+
+      - job: "Imperial College Business School"
+        company: "Centre Manager"
+        companyUrl: "https://www.imperial.ac.uk/people/jack.olney"
+        date: "Apr 2017 - Sep 2022"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: false
+          content: I was promoted to Executive Director in August 2022.
+        content: "Managing the development of the Centre for Health Economics & Policy Innovation at Imperial College Business School. I was promoted to Executive Director in August 2022."
+
+      - job: "Imperial College London"
+        company: "Research Associate"
+        companyUrl: "http://hivmodeling.org/"
+        date: "Nov 2016 - Mar 2017"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: false
+          content: I was promoted to Executive Director in August 2022.
+        content: |
+
+          - Development of a mobile-based advanced mathematical model capable of simulating real-time estimates of HIV care pathways at the country-level to inform UNAIDS 90-90-90 targets
+          - Member of the Bill & Melinda Gates Foundation funded HIV Modelling Consortium
+
+      - job: "Imperial College London"
+        company: "Research Assistant"
+        companyUrl: "http://hivmodeling.org/"
+        date: "Sep 2012 - Nov 2016"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: true
+          content: I was promoted to Research Associate when I completed my PhD.
+        content: |
+
+          - Developed complex agent-based microsimulation models of HIV care systems in sub-Saharan Africa to optimise care pathways
+          - Self-taught skills in C++, R, Terminal and Python
+          - Member of the Bill & Melinda Gates Foundation funded HIV Modelling Consortium
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    # index: true
+    items:
+      - title: "PhD, Infectious Disease Epidemiology"
+        school:
+          name: "Imperial College London"
+          url: "https://www.imperial.ac.uk/"
+        date: "Oct 2013 - Nov 2016"
+        content: |-
+          - Thesis title: "[Understanding How Health Systems Providing ART in sub-Saharan Africa Can Generate Even Greater Health Benefits for Their Communities](https://drive.google.com/file/d/0B02uVauBTUwhaU1vSXQzSE9OV0k/preview)"
+          - Supervised by [Prof. Tim Hallett](https://www.imperial.ac.uk/people/timothy.hallett) and [Dr Jeffrey Eaton](https://www.imperial.ac.uk/people/jeffrey.eaton)
+          - Funded by the [Bill & Melinda Gates Foundation](https://www.gatesfoundation.org/) through the HIV Modelling Consortium
+
+      - title: "MSc, Infectious Disease Epidemiology"
+        school:
+          name: "Imperial College London"
+          url: "https://www.imperial.ac.uk/"
+        date: "Oct 2011 - Oct 2012"
+        content: |-
+          - Thesis title: “Doxycycline for the Control of Human Onchocerciasis”
+          - Supervised by [Prof. Maria-Gloria Basanez](https://www.imperial.ac.uk/people/m.basanez)
+
+      - title: "BSc (Hons), Biology"
+        school:
+          name: "University of Southampton"
+          url: "https://www.soton.ac.uk/"
+        date: "Oct 2008 - Jun 2011"
+        content: |-
+          - Thesis title: “Investigating Lateral Root Formation in Arabidopsis thaliana”
+          - Supervised by [Dr. Alan Marchant](https://www.southampton.ac.uk/people/5x5cbc/doctor-alan-marchant)
+
+  #Contact
+  contact:
+    enable: true
+    title: "Contact me"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    email: olney.jack@gmail.com
+    btnName: Mail me
+
+  footer:
+    recentPosts: true
+    socialNetworks:
+      linkedin: https://linkedin.com
+      twitter: https://twitter.com
+      github: https://github.com
