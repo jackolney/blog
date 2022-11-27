@@ -24,7 +24,7 @@ params:
   title: "Jack Olney"
   description: Text about my cool site
   # staticPath: "/static"  # The path to serve the static files from
-  # favicon: "/fav.png"
+  favicon: "/me.jpg"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -59,7 +59,7 @@ params:
         - icon: fa fa-globe
           url: https://www.imperial.ac.uk/people/jack.olney
         - icon: fab fa-linkedin
-          url: https://www.linkedin.com/in/jack-olney/
+          url: https://www.linkedin.com/in/jackolney/
         - icon: fab fa-twitter
           url: https://twitter.com/OlneyJack
         - icon: fab fa-github
@@ -202,7 +202,3 @@ params:
 
   footer:
     recentPosts: true
-    socialNetworks:
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
-      github: https://github.com
