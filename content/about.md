@@ -99,8 +99,7 @@ at [Imperial College London](http://imperial.ac.uk/). My research focused on imp
 outcomes through strengthening HIV care programmes in sub-Saharan Africa.
 
 My PhD thesis ["Understanding How Health Systems Providing ART in sub-Saharan Africa Can Generate
-Even Greater Health Benefits for Their Communities"](https://drive.google.com/file/d/0B02uVauBTUwhaU1vSXQzSE9OV0k/preview)
-was supervised by [Prof. Tim Hallett](https://www.imperial.ac.uk/people/timothy.hallett) and [Dr Jeffrey Eaton](https://www.imperial.ac.uk/people/jeffrey.eaton).
+Even Greater Health Benefits for Their Communities"](https://drive.google.com/file/d/0B02uVauBTUwhaU1vSXQzSE9OV0k/view?usp=sharing&resourcekey=0-uyQc6EUMC3Zl68v5scI97g) was supervised by [Prof. Tim Hallett](https://www.imperial.ac.uk/people/timothy.hallett) and [Dr Jeffrey Eaton](https://www.imperial.ac.uk/people/jeffrey.eaton).
 
 I still publish research on various topics of interest, including HIV and Health Economics. My
 latest publications can be found on [Google Scholar](https://scholar.google.co.uk/citations?user=PipEQkEAAAAJ&hl=en).
