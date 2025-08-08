@@ -3,9 +3,11 @@ languageCode: "en-us"
 title: "Jack Olney"
 theme: hugo-profile
 
-Paginate: 24
+
+pagination:
+  pagerSize: 24
+
 disqusShortname: jackolney
-googleAnalytics: UA-123-45
 
 markup:
   goldmark:
@@ -49,7 +51,7 @@ params:
     button:
       enable: true
       name: "Curriculum vitae"
-      url: "https://drive.google.com/file/d/0B02uVauBTUwhaUR3S2pmeld2WDQ/preview?resourcekey=0-NQthybL05e6-150h9V3KNA"
+      url: "https://drive.google.com/file/d/1gkunYz-f4saTw-dkCAuaP4AEL25jVm0i/preview"
       download: true
       newPage: true
     socialLinks:
@@ -102,18 +104,13 @@ params:
           content: Blank.
         content: |
 
-          - Centre leadership (30 faculty and research staff)
-          - Direct all operational activities (15 active research projects)
-          - Lead the development and implementation of growth and impact strategies (grant revenue of >£13M)
-          - Lead fundraising efforts through mixed portfolio of grants and contracts
-          - Manage research programme and data assets
-          - Manage project and centre budgets
-          - Ensure ethical, financial, funder, and data compliance
-          - Chair key management groups and operational committees
-          - Establish links with external organisations, including academic partners and policy experts
-          - Line management of professional and research staff
-          - Lead the delivery of communication, dissemination and exploitation strategies
-          - High-level ambassador for the Centre at external meetings and events
+          - Provide strategic and operational leadership of a £13M+ research portfolio, managing 30+ staff and aligning with Business School and university priorities.
+          - Drive Centre-wide planning, finance and budgets, risk management, compliance, and ensuring long-term sustainability.
+          - Build strategic partnerships with UKRI, NIHR, WHO and academic collaborators to expand CHEPI’s policy impact and external profiles.
+          - Lead business development, securing grants and long-term contracts, and steering governance and executive decision-making.
+          - Oversee development of flagship tools (e.g. Health-GPS), positioning CHEPI as a leader in health policy and simulation modelling.
+          - Mentor mid-level leaders, foster a high-performance culture, and lead hiring, retention, and staff development.
+          - Serve as module lead for MSc and BSc programmes, delivering cross-Faculty teaching and student supervision.
 
       - job: "Imperial College Business School"
         company: "Centre Manager"
@@ -201,4 +198,8 @@ params:
     btnName: Mail me
 
   footer:
-    recentPosts: true
+    recentPosts:
+      enable: true
+      path: "posts"     # section to pull from (e.g., content/posts)
+      count: 3          # how many to show
+      title: "Recent posts"  # optional, depending on theme
